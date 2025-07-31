@@ -9,6 +9,12 @@ export default function Home() {
     const saved = localStorage.getItem('darkMode');
     return saved ? JSON.parse(saved) : false;
   });
+  
+  // Touch/Swipe state
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const [isSwipeActive, setIsSwipeActive] = useState(false);
+  
   const totalWords = words.length;
 
   // Save dark mode preference
@@ -26,6 +32,37 @@ export default function Home() {
 
   const goToWord = (index) => {
     setCurrentIndex(index);
+  };
+
+  // Touch event handlers for swipe navigation
+  const handleTouchStart = (e) => {
+    setTouchEnd(null); // Reset touch end
+    setTouchStart(e.targetTouches[0].clientX);
+    setIsSwipeActive(true);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) {
+      setIsSwipeActive(false);
+      return;
+    }
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextWord(); // Swipe left = next word
+    }
+    if (isRightSwipe) {
+      prevWord(); // Swipe right = previous word
+    }
+    
+    setIsSwipeActive(false);
   };
 
   const toggleDarkMode = useCallback(() => {
@@ -228,10 +265,10 @@ export default function Home() {
         {/* Word Card Container */}
         <div className="max-w-4xl mx-auto">
           <div className="relative flex items-center">
-            {/* Left Navigation Button */}
+            {/* Left Navigation Button - Hidden on mobile */}
             <button
               onClick={prevWord}
-              className={`mr-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group ${
+              className={`mr-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-600'
@@ -249,7 +286,13 @@ export default function Home() {
             </button>
             
             {/* Word Card */}
-            <div className="flex-1">
+            <div 
+              className={`flex-1 transition-transform duration-200 select-none touch-manipulation ${isSwipeActive ? 'scale-[0.98]' : ''}`}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              style={{ touchAction: 'pan-y pinch-zoom' }}
+            >
               <WordCard 
                 word={words[currentIndex]} 
                 wordNumber={currentIndex + 1}
@@ -258,10 +301,10 @@ export default function Home() {
               />
             </div>
             
-            {/* Right Navigation Button */}
+            {/* Right Navigation Button - Hidden on mobile */}
             <button
               onClick={nextWord}
-              className={`ml-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group ${
+              className={`ml-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-600'
@@ -277,6 +320,19 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
+          </div>
+
+          {/* Mobile Swipe Indicator */}
+          <div className="md:hidden mt-4 text-center">
+            <div className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm ${
+              isDarkMode 
+                ? 'bg-gray-800/50 text-gray-400' 
+                : 'bg-gray-100/50 text-gray-500'
+            }`}>
+              <span>👈</span>
+              <span>Swipe to navigate</span>
+              <span>👉</span>
+            </div>
           </div>
 
           {/* Word Dots Navigation */}
