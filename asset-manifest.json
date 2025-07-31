@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vocab-app/static/css/main.b444beeb.css",
-    "main.js": "/vocab-app/static/js/main.92486d17.js",
+    "main.css": "/vocab-app/static/css/main.5c103d42.css",
+    "main.js": "/vocab-app/static/js/main.dd053539.js",
     "static/js/453.48e165e0.chunk.js": "/vocab-app/static/js/453.48e165e0.chunk.js",
     "index.html": "/vocab-app/index.html",
-    "main.b444beeb.css.map": "/vocab-app/static/css/main.b444beeb.css.map",
-    "main.92486d17.js.map": "/vocab-app/static/js/main.92486d17.js.map",
+    "main.5c103d42.css.map": "/vocab-app/static/css/main.5c103d42.css.map",
+    "main.dd053539.js.map": "/vocab-app/static/js/main.dd053539.js.map",
     "453.48e165e0.chunk.js.map": "/vocab-app/static/js/453.48e165e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b444beeb.css",
-    "static/js/main.92486d17.js"
+    "static/css/main.5c103d42.css",
+    "static/js/main.dd053539.js"
   ]
 }
