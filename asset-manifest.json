@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/web-app/static/css/main.b444beeb.css",
-    "main.js": "/web-app/static/js/main.48b066ea.js",
-    "static/js/453.48e165e0.chunk.js": "/web-app/static/js/453.48e165e0.chunk.js",
-    "index.html": "/web-app/index.html",
-    "main.b444beeb.css.map": "/web-app/static/css/main.b444beeb.css.map",
-    "main.48b066ea.js.map": "/web-app/static/js/main.48b066ea.js.map",
-    "453.48e165e0.chunk.js.map": "/web-app/static/js/453.48e165e0.chunk.js.map"
+    "main.css": "/vocab-app/static/css/main.b444beeb.css",
+    "main.js": "/vocab-app/static/js/main.92486d17.js",
+    "static/js/453.48e165e0.chunk.js": "/vocab-app/static/js/453.48e165e0.chunk.js",
+    "index.html": "/vocab-app/index.html",
+    "main.b444beeb.css.map": "/vocab-app/static/css/main.b444beeb.css.map",
+    "main.92486d17.js.map": "/vocab-app/static/js/main.92486d17.js.map",
+    "453.48e165e0.chunk.js.map": "/vocab-app/static/js/453.48e165e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b444beeb.css",
-    "static/js/main.48b066ea.js"
+    "static/js/main.92486d17.js"
   ]
 }
