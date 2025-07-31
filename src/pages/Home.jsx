@@ -14,6 +14,8 @@ export default function Home() {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
   const [isSwipeActive, setIsSwipeActive] = useState(false);
+  const [swipeDistance, setSwipeDistance] = useState(0);
+  const [cardTransition, setCardTransition] = useState(false);
   
   const totalWords = words.length;
 
@@ -30,39 +32,81 @@ export default function Home() {
     setCurrentIndex((prev) => (prev - 1 + totalWords) % totalWords);
   }, [totalWords]);
 
+  // Animated navigation functions for arrow clicks
+  const nextWordWithAnimation = useCallback(() => {
+    setCardTransition(true);
+    setSwipeDistance(-window.innerWidth);
+    setTimeout(() => {
+      nextWord();
+      setSwipeDistance(window.innerWidth);
+      setTimeout(() => setSwipeDistance(0), 150);
+    }, 150);
+    setTimeout(() => setCardTransition(false), 300);
+  }, [nextWord]);
+
+  const prevWordWithAnimation = useCallback(() => {
+    setCardTransition(true);
+    setSwipeDistance(window.innerWidth);
+    setTimeout(() => {
+      prevWord();
+      setSwipeDistance(-window.innerWidth);
+      setTimeout(() => setSwipeDistance(0), 150);
+    }, 150);
+    setTimeout(() => setCardTransition(false), 300);
+  }, [prevWord]);
+
   const goToWord = (index) => {
     setCurrentIndex(index);
   };
 
   // Touch event handlers for swipe navigation
+  // Touch event handlers for swipe navigation and animation
   const handleTouchStart = (e) => {
     setTouchEnd(null); // Reset touch end
     setTouchStart(e.targetTouches[0].clientX);
     setIsSwipeActive(true);
+    setSwipeDistance(0);
+    setCardTransition(false);
   };
 
   const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    const currentX = e.targetTouches[0].clientX;
+    setTouchEnd(currentX);
+    if (touchStart !== null) {
+      setSwipeDistance(currentX - touchStart);
+    }
   };
 
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) {
       setIsSwipeActive(false);
+      setSwipeDistance(0);
       return;
     }
-    
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > 50;
     const isRightSwipe = distance < -50;
 
+    setCardTransition(true);
     if (isLeftSwipe) {
-      nextWord(); // Swipe left = next word
+      setSwipeDistance(-window.innerWidth); // Animate out left
+      setTimeout(() => {
+        nextWord();
+        setSwipeDistance(window.innerWidth); // Animate in right
+        setTimeout(() => setSwipeDistance(0), 150);
+      }, 150);
+    } else if (isRightSwipe) {
+      setSwipeDistance(window.innerWidth); // Animate out right
+      setTimeout(() => {
+        prevWord();
+        setSwipeDistance(-window.innerWidth); // Animate in left
+        setTimeout(() => setSwipeDistance(0), 150);
+      }, 150);
+    } else {
+      setSwipeDistance(0);
     }
-    if (isRightSwipe) {
-      prevWord(); // Swipe right = previous word
-    }
-    
     setIsSwipeActive(false);
+    setTimeout(() => setCardTransition(false), 300);
   };
 
   const toggleDarkMode = useCallback(() => {
@@ -267,7 +311,7 @@ export default function Home() {
           <div className="relative flex items-center">
             {/* Left Navigation Button - Hidden on mobile */}
             <button
-              onClick={prevWord}
+              onClick={prevWordWithAnimation}
               className={`mr-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
@@ -285,16 +329,21 @@ export default function Home() {
               </svg>
             </button>
             
-            {/* Word Card */}
-            <div 
-              className={`flex-1 transition-transform duration-200 select-none touch-manipulation ${isSwipeActive ? 'scale-[0.98]' : ''}`}
+            {/* Word Card with swipe animation */}
+            <div
+              className={`flex-1 select-none touch-manipulation md:cursor-default ${isSwipeActive ? 'cursor-grabbing md:cursor-default' : ''}`}
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
-              style={{ touchAction: 'pan-y pinch-zoom' }}
+              style={{
+                touchAction: 'pan-y pinch-zoom',
+                transition: cardTransition ? 'transform 0.15s cubic-bezier(.4,2,.3,1), opacity 0.15s' : 'transform 0.2s',
+                transform: `translateX(${swipeDistance}px)`,
+                opacity: Math.abs(swipeDistance) > 0 ? Math.max(0.4, 1 - Math.abs(swipeDistance) / 300) : 1,
+              }}
             >
-              <WordCard 
-                word={words[currentIndex]} 
+              <WordCard
+                word={words[currentIndex]}
                 wordNumber={currentIndex + 1}
                 totalWords={totalWords}
                 isDarkMode={isDarkMode}
@@ -303,7 +352,7 @@ export default function Home() {
             
             {/* Right Navigation Button - Hidden on mobile */}
             <button
-              onClick={nextWord}
+              onClick={nextWordWithAnimation}
               className={`ml-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
@@ -322,15 +371,16 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Mobile Swipe Indicator */}
-          <div className="md:hidden mt-4 text-center">
+          {/* Navigation Indicator */}
+          <div className="mt-4 text-center">
             <div className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm ${
               isDarkMode 
                 ? 'bg-gray-800/50 text-gray-400' 
                 : 'bg-gray-100/50 text-gray-500'
             }`}>
               <span>👈</span>
-              <span>Swipe to navigate</span>
+              <span className="md:hidden">Swipe to navigate</span>
+              <span className="hidden md:inline">Click arrows to navigate</span>
               <span>👉</span>
             </div>
           </div>
