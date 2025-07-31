@@ -88,7 +88,7 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       </div>
 
       {/* Word Number Badge */}
-      <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+      <div className="absolute top-4 md:right-4 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
         #{wordNumber}
       </div>
 
