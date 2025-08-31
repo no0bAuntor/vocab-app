@@ -113,34 +113,6 @@ export default function Home() {
     setIsDarkMode(!isDarkMode);
   }, [isDarkMode]);
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyPress = (event) => {
-      if (event.key === 'ArrowRight' || event.key === ' ') {
-        event.preventDefault();
-        nextWord();
-      } else if (event.key === 'ArrowLeft') {
-        event.preventDefault();
-        prevWord();
-      } else if (event.key === 'Home') {
-        event.preventDefault();
-        setCurrentIndex(0);
-      } else if (event.key === 'End') {
-        event.preventDefault();
-        setCurrentIndex(totalWords - 1);
-      } else if (event.key === 'r' || event.key === 'R') {
-        event.preventDefault();
-        setCurrentIndex(Math.floor(Math.random() * totalWords));
-      } else if (event.key === 'd' || event.key === 'D') {
-        event.preventDefault();
-        toggleDarkMode();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [totalWords, nextWord, prevWord, toggleDarkMode]);
-
   return (
     <div className={`min-h-screen transition-all duration-300 relative overflow-hidden ${
       isDarkMode 
@@ -250,7 +222,7 @@ export default function Home() {
             className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
               isDarkMode ? 'bg-blue-600' : 'bg-gray-300'
             }`}
-            title="Toggle dark mode (D key)"
+            title="Toggle dark mode"
           >
             <span
               className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform duration-300 ${
@@ -276,11 +248,6 @@ export default function Home() {
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
             Master your vocabulary with interactive word cards
-          </p>
-          <p className={`text-sm ${
-            isDarkMode ? 'text-gray-400' : 'text-gray-500'
-          }`}>
-            💡 Use ← → arrow keys, Space, Home, End, R for navigation, or D for dark mode
           </p>
         </div>
 
@@ -318,7 +285,7 @@ export default function Home() {
                   : 'bg-white hover:bg-gray-50 text-gray-600'
               }`}
               disabled={totalWords <= 1}
-              title="Previous word (← key)"
+              title="Previous word"
             >
               <svg className={`w-6 h-6 transition-colors ${
                 isDarkMode 
@@ -359,7 +326,7 @@ export default function Home() {
                   : 'bg-white hover:bg-gray-50 text-gray-600'
               }`}
               disabled={totalWords <= 1}
-              title="Next word (→ key or Space)"
+              title="Next word"
             >
               <svg className={`w-6 h-6 transition-colors ${
                 isDarkMode 
@@ -412,14 +379,14 @@ export default function Home() {
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-700'
               }`}
-              title="First word (Home key)"
+              title="First word"
             >
               ⏮️ First
             </button>
             <button
               onClick={() => setCurrentIndex(Math.floor(Math.random() * totalWords))}
               className="px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-lg shadow-md transition-all duration-200 hover:shadow-lg"
-              title="Random word (R key)"
+              title="Random word"
             >
               🎲 Random
             </button>
@@ -430,7 +397,7 @@ export default function Home() {
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-700'
               }`}
-              title="Last word (End key)"
+              title="Last word"
             >
               ⏭️ Last
             </button>

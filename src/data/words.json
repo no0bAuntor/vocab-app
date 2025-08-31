@@ -38,5 +38,19 @@
     "synonym": ["stray (বিপথগামী)", "perverse (বিপরীতভাবে)", "divergent (ভিন্নধর্মী)", "erring (বিপথগামী)", "excursive (ভ্রমণকারী)"],
     "antonym": ["normal (স্বাভাবিক)", "typical (প্রচলিত)", "conventional (প্রচলিত রীতি অনুযায়ী)", "regular (নিয়মিত)", "standard (মানসম্মত)"],
     "example": "His aberrant behavior at the meeting raised many eyebrows. (মিটিংয়ে তার অস্বাভাবিক আচরণ অনেকের চোখে পড়েছিল।)"
+  },
+  {
+    "id": 5,
+    "word": "welter",
+    "pos": "Noun, verb",
+    "bengali": "বিশৃংখল, স্ফিত হওয়া, বিক্ষোভ",
+    "Explanation": "A state of turmoil or chaos",
+    "synonym": ["Turmoil (বিশৃঙ্খলা)", "Chaos (বিশৃঙ্খলা, অরাজকতা)", "Disorder (অগোছালো অবস্থা, বিশৃঙ্খলা)", "Unrest (অশান্তি)", "Vexation (বিরক্তি, অসন্তোষ, কষ্ট)"],
+    "antonym": ["Order (অর্ডার, শৃঙ্খলা)", "Organization (সংগঠন, সুবিন্যস্ত অবস্থা)", "Neatness (পরিপাটি অবস্থা)", "Calm (শান্তি, স্থিরতা)"],
+    "example": "After the storm, the streets were a welter of fallen branches and debris. (ঝড়ের পর, রাস্তাগুলো ছিল পড়া শাখা এবং ধ্বংসাবশেষের বিশৃঙ্খলা।)"
   }
+  
 ]
+
+
+
