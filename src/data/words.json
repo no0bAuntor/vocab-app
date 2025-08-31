@@ -48,6 +48,16 @@
     "synonym": ["Turmoil (বিশৃঙ্খলা)", "Chaos (বিশৃঙ্খলা, অরাজকতা)", "Disorder (অগোছালো অবস্থা, বিশৃঙ্খলা)", "Unrest (অশান্তি)", "Vexation (বিরক্তি, অসন্তোষ, কষ্ট)"],
     "antonym": ["Order (অর্ডার, শৃঙ্খলা)", "Organization (সংগঠন, সুবিন্যস্ত অবস্থা)", "Neatness (পরিপাটি অবস্থা)", "Calm (শান্তি, স্থিরতা)"],
     "example": "After the storm, the streets were a welter of fallen branches and debris. (ঝড়ের পর, রাস্তাগুলো ছিল পড়া শাখা এবং ধ্বংসাবশেষের বিশৃঙ্খলা।)"
+  },
+  {
+    "id": 6,
+    "word": "dogmatic",
+    "pos": "Adjective",
+    "bengali": "উদ্দত, মতামত সংক্রান্ত",
+    "Explanation": "a way of thinking or expressing opinions that is rigid, authoritative, and not open to questioning",
+    "synonym": ["opinionated (একপক্ষীয়)", "arbitrary (ইচ্ছামত)", "doctrinal (মতবাদ্গত, নিতিমূলক)", "tyrannical (নিপীরণপমূলক, অত্যাচারী)", "audacious (দুঃসাহসী)"],
+    "antonym": ["open-minded (উদারমনস্ক)", "flexible (নমনীয়)", "Tolerant (সহিষ্ণু)", "unbiased (নিরপেক্ষ)", "permissive (অনুমোদনকারী, শিথিল)"],
+    "example": "He was so dogmatic about his ideas that he refused to hear anyone else's suggestions. (তিনি তাঁর ধারণাগুলি সম্পর্কে এত উদ্দত ছিলেন যে তিনি অন্য কারো পরামর্শ শুনতে অস্বীকার করেছিলেন।)"
   }
   
 ]
