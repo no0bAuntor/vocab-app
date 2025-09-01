@@ -5,8 +5,20 @@
     "pos": "noun",
     "bengali": "মানুষবিদ্বেষী",
     "Explanation": "A man who hates and avoid other people",
-    "synonym": ["cynic (নিন্দুক)", "recluse (নির্জন)", "antisocial (অসামাজিক)", "churl (ছিঁচকে চোর)", "Grouch (ক্ষোভ)", "Grump (ক্ষুব্ধ)"],
-    "antonym": ["philanthropist (দানশীল/মানবপ্রেমিক)", "humanitarian (মানবতাব্দী)", "Sociable person (সামাজিক ব্যক্তি)", "Extrovert (বহির্মুখী)"],
+    "synonym": [
+      "cynic (নিন্দুক)",
+      "recluse (নির্জন)",
+      "antisocial (অসামাজিক)",
+      "churl (ছিঁচকে চোর)",
+      "Grouch (ক্ষোভ)",
+      "Grump (ক্ষুব্ধ)"
+    ],
+    "antonym": [
+      "philanthropist (দানশীল/মানবপ্রেমিক)",
+      "humanitarian (মানবতাব্দী)",
+      "Sociable person (সামাজিক ব্যক্তি)",
+      "Extrovert (বহির্মুখী)"
+    ],
     "example": "The old man was a misanthrope who avoided all social interactions and lived alone in the mountains. (বৃদ্ধ লোকটি একজন মানুষ বিদ্বেষী ছিলেন যিনি সকল সামাজিক যোগাযোগ এড়িয়ে চলতেন এবং পর্বতে একা বাস করতেন।)"
   },
   {
@@ -15,8 +27,20 @@
     "pos": "verb",
     "bengali": "হ্রাস করা, কমানো, উপশম করা, প্রশমিত করা",
     "Explanation": "lasting or used for only a short period of time",
-     "synonym": ["minimize (ছোট করা)", "shorten (ছোট করা)", "reduce (কমানো)", "diminish (হ্রাস করা)", "soothe (শান্ত করা)", "mitigate (প্রশমিত করা)", "subside (কমানো)"],
-    "antonym": ["increase (বৃদ্ধি পাওয়া)", "intensify (তীব্র হওয়াঁ)", "escalate (বাড়তে থাকা)"],
+    "synonym": [
+      "minimize (ছোট করা)",
+      "shorten (ছোট করা)",
+      "reduce (কমানো)",
+      "diminish (হ্রাস করা)",
+      "soothe (শান্ত করা)",
+      "mitigate (প্রশমিত করা)",
+      "subside (কমানো)"
+    ],
+    "antonym": [
+      "increase (বৃদ্ধি পাওয়া)",
+      "intensify (তীব্র হওয়াঁ)",
+      "escalate (বাড়তে থাকা)"
+    ],
     "example": "The pain abatated after taking the medicine. (ঔষধ খাওয়ার পর ব্যথা কমে গেল।)"
   },
   {
@@ -25,8 +49,20 @@
     "pos": "adjective",
     "bengali": "ক্ষণস্থায়ী, ক্ষণজীবি",
     "Explanation": "to become less intense or severe, to make something less intense or severe",
-    "synonym": ["short-lived (স্বল্পস্থায়ী)", "fleeting (ক্ষণস্থায়ী)", "momentary (ক্ষণিক)", "transient (অস্থায়ী)", "temporary (অস্থায়ী)", "brief (সংক্ষিপ্ত)", "passing (অস্থায়ী)"],
-    "antonym": ["Permanent (স্থায়ী)", "enduring (তীব্র হওয়া)", "lasting (টেকসই)"],
+    "synonym": [
+      "short-lived (স্বল্পস্থায়ী)",
+      "fleeting (ক্ষণস্থায়ী)",
+      "momentary (ক্ষণিক)",
+      "transient (অস্থায়ী)",
+      "temporary (অস্থায়ী)",
+      "brief (সংক্ষিপ্ত)",
+      "passing (অস্থায়ী)"
+    ],
+    "antonym": [
+      "Permanent (স্থায়ী)",
+      "enduring (তীব্র হওয়া)",
+      "lasting (টেকসই)"
+    ],
     "example": "The beauty of the sunset was ephemeral, fading away within minutes. (সূর্যাস্তের সৌন্দর্য ক্ষণস্থায়ী ছিল, মিনিটের মধ্যে মিলিয়ে গেল।)"
   },
   {
@@ -35,8 +71,20 @@
     "pos": "adjective",
     "bengali": "নীতিভ্রষ্ট, বিপথগামী, বিচ্যুত",
     "Explanation": "not usual or not socially acceptable",
-    "synonym": ["stray (বিপথগামী)", "perverse (বিপরীতভাবে)", "divergent (ভিন্নধর্মী)", "erring (বিপথগামী)", "excursive (ভ্রমণকারী)"],
-    "antonym": ["normal (স্বাভাবিক)", "typical (প্রচলিত)", "conventional (প্রচলিত রীতি অনুযায়ী)", "regular (নিয়মিত)", "standard (মানসম্মত)"],
+    "synonym": [
+      "stray (বিপথগামী)",
+      "perverse (বিপরীতভাবে)",
+      "divergent (ভিন্নধর্মী)",
+      "erring (বিপথগামী)",
+      "excursive (ভ্রমণকারী)"
+    ],
+    "antonym": [
+      "normal (স্বাভাবিক)",
+      "typical (প্রচলিত)",
+      "conventional (প্রচলিত রীতি অনুযায়ী)",
+      "regular (নিয়মিত)",
+      "standard (মানসম্মত)"
+    ],
     "example": "His aberrant behavior at the meeting raised many eyebrows. (মিটিংয়ে তার অস্বাভাবিক আচরণ অনেকের চোখে পড়েছিল।)"
   },
   {
@@ -45,8 +93,19 @@
     "pos": "Noun, verb",
     "bengali": "বিশৃংখল, স্ফিত হওয়া, বিক্ষোভ",
     "Explanation": "A state of turmoil or chaos",
-    "synonym": ["Turmoil (বিশৃঙ্খলা)", "Chaos (বিশৃঙ্খলা, অরাজকতা)", "Disorder (অগোছালো অবস্থা, বিশৃঙ্খলা)", "Unrest (অশান্তি)", "Vexation (বিরক্তি, অসন্তোষ, কষ্ট)"],
-    "antonym": ["Order (অর্ডার, শৃঙ্খলা)", "Organization (সংগঠন, সুবিন্যস্ত অবস্থা)", "Neatness (পরিপাটি অবস্থা)", "Calm (শান্তি, স্থিরতা)"],
+    "synonym": [
+      "Turmoil (বিশৃঙ্খলা)",
+      "Chaos (বিশৃঙ্খলা, অরাজকতা)",
+      "Disorder (অগোছালো অবস্থা, বিশৃঙ্খলা)",
+      "Unrest (অশান্তি)",
+      "Vexation (বিরক্তি, অসন্তোষ, কষ্ট)"
+    ],
+    "antonym": [
+      "Order (অর্ডার, শৃঙ্খলা)",
+      "Organization (সংগঠন, সুবিন্যস্ত অবস্থা)",
+      "Neatness (পরিপাটি অবস্থা)",
+      "Calm (শান্তি, স্থিরতা)"
+    ],
     "example": "After the storm, the streets were a welter of fallen branches and debris. (ঝড়ের পর, রাস্তাগুলো ছিল পড়া শাখা এবং ধ্বংসাবশেষের বিশৃঙ্খলা।)"
   },
   {
@@ -55,12 +114,69 @@
     "pos": "Adjective",
     "bengali": "উদ্দত, মতামত সংক্রান্ত",
     "Explanation": "a way of thinking or expressing opinions that is rigid, authoritative, and not open to questioning",
-    "synonym": ["opinionated (একপক্ষীয়)", "arbitrary (ইচ্ছামত)", "doctrinal (মতবাদ্গত, নিতিমূলক)", "tyrannical (নিপীরণপমূলক, অত্যাচারী)", "audacious (দুঃসাহসী)"],
-    "antonym": ["open-minded (উদারমনস্ক)", "flexible (নমনীয়)", "Tolerant (সহিষ্ণু)", "unbiased (নিরপেক্ষ)", "permissive (অনুমোদনকারী, শিথিল)"],
+    "synonym": [
+      "opinionated (একপক্ষীয়)",
+      "arbitrary (ইচ্ছামত)",
+      "doctrinal (মতবাদ্গত, নিতিমূলক)",
+      "tyrannical (নিপীরণপমূলক, অত্যাচারী)",
+      "audacious (দুঃসাহসী)"
+    ],
+    "antonym": [
+      "open-minded (উদারমনস্ক)",
+      "flexible (নমনীয়)",
+      "Tolerant (সহিষ্ণু)",
+      "unbiased (নিরপেক্ষ)",
+      "permissive (অনুমোদনকারী, শিথিল)"
+    ],
     "example": "He was so dogmatic about his ideas that he refused to hear anyone else's suggestions. (তিনি তাঁর ধারণাগুলি সম্পর্কে এত উদ্দত ছিলেন যে তিনি অন্য কারো পরামর্শ শুনতে অস্বীকার করেছিলেন।)"
+  },
+  {
+    "id": 7,
+    "word": "efficacy",
+    "pos": "noun",
+    "bengali": "কার্যক্ষমতা",
+    "Explanation": "the ability of something to produce the intended result or effect.",
+    "synonym": ["Efficiency (কার্যকারিতা)", "Productiveness (উৎপাদনশীলতা)"],
+    "antonym": ["ineffectiveness (কার্যহীনতা)", "uselessness (অকার্যকারিতা)"],
+    "example": "The efficacy of the new drug was proven in clinical trials. (নতুন ঔষধের কার্যক্ষমতা ক্লিনিকাল ট্রায়ালে প্রমাণিত হয়েছে।)"
+  },
+  {
+    "id": 8,
+    "word": "disinterested",
+    "pos": "adj",
+    "bengali": "কৌতুহল শূন্য, নির্লিপ্ত, বিমুখ, অনিচ্ছুক, উদাস",
+    "Explanation": "someone who has no personal stake, bias, or selfish motive in a situation — they are impartial and fair.",
+    "synonym": [
+      "unprejudiced (কৌতুহল শূন্য)",
+      "impassible (নির্লিপ্ত)",
+      "averse (বিমুখ)",
+      "reluctant (অনিচ্ছুক)"
+    ],
+    "antonym": [
+      "interested (আগ্রহী)",
+      "prejudiced (পক্ষপাতদুষ্ট)",
+      "partial (অংশীদার)"
+    ],
+    "example": "The judge remained disinterested during the trial, ensuring fairness. (বিচারক বিচার চলাকালীন নিরপেক্ষ ছিলেন, ন্যায় নিশ্চিত করার জন্য।)"
+  },
+  {
+    "id": 9,
+    "word": "laconic",
+    "pos": "adj",
+    "bengali": "অল্প কথায় অর্থপূর্ণ, সংক্ষিপ্ত, স্বল্পবাক",
+    "Explanation": "a style of speaking or writing that is very brief, concise, and to the point, sometimes so much that it seems blunt or rude.",
+    "synonym": ["short (সংক্ষিপ্ত)", "brief (সংক্ষিপ্ত)", "summary (সারসংক্ষেপ)", "reserved (সংযত)", "terse (সংক্ষিপ্ত)"],
+    "antonym": ["verbose (বিস্তৃত)", "wordy (শব্দবহুল)", "talkative (বাঁচাল)"],
+    "example": "His laconic reply suggested that he was not interested in the conversation. (তার অল্প কথায় উত্তর দেওয়ার মাধ্যমে বোঝা গেল যে তিনি কথোপকথনে আগ্রহী নন।)"
+  }, 
+  {
+    "id": 10,
+    "word": "truculence",
+    "pos": "noun",
+    "bengali": "নৃশংসা, নিষ্ঠুরতা",
+    "Explanation": "defiant aggressiveness, a disposition to fight, or a state of being aggressively hostile.",
+    "synonym": ["cruelty (নৃশংসতা)", "atrocity (অত্যাচার)", "barbarity (বর্বরতা)", "clutches (আক্রমণাত্মক আচরণ)", "inhumanity (অমানবিকতা)"],
+    "antonym": ["gentleness (কোমলতা)", "kindness (দয়ালুতা)", "mildness (মৃদুতা)", "tenderness (কোমলতা)", "meekness (বিনয়)"],
+    "example": "The truculence of the crowd was evident as they shouted for justice. (জনতার নৃশংসতা স্পষ্ট ছিল যখন তারা ন্যায়ের জন্য চিৎকার করছিল।)"
   }
-  
 ]
-
-
-
