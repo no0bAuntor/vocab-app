@@ -1,0 +1,1322 @@
+[
+  {
+    "id": 1,
+    "question": "The Bengali meaning 'মানুষবিদ্বেষী' corresponds to which English word?",
+    "options": {
+      "a": "Philanthropist",
+      "b": "Misanthrope",
+      "c": "Recluse",
+      "d": "Extrovert"
+    },
+    "answer": "b",
+    "explanation": "Misanthrope means a person who hates and avoids humankind, which directly translates to 'মানুষবিদ্বেষী'."
+  },
+  {
+    "id": 2,
+    "question": "What is the primary part of speech for the word 'abate'?",
+    "options": {
+      "a": "Noun",
+      "b": "Adjective",
+      "c": "Verb",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Abate' is an action word, meaning to reduce or become less intense, making it a verb."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is a synonym for 'ephemeral'?",
+    "options": {
+      "a": "Permanent",
+      "b": "Enduring",
+      "c": "Fleeting",
+      "d": "Dogmatic"
+    },
+    "answer": "c",
+    "explanation": "'Fleeting' means lasting for a very short time, which is the core meaning of 'ephemeral'."
+  },
+  {
+    "id": 4,
+    "question": "Select the antonym for 'aberrant'.",
+    "options": {
+      "a": "Deviant",
+      "b": "Stray",
+      "c": "Normal",
+      "d": "Perverse"
+    },
+    "answer": "c",
+    "explanation": "'Aberrant' means departing from the norm. Therefore, its direct opposite is 'normal'."
+  },
+  {
+    "id": 5,
+    "question": "Complete the sentence: After the riot, the city center was a _____ of broken glass and overturned cars.",
+    "options": {
+      "a": "efficacy",
+      "b": "welter",
+      "c": "truculence",
+      "d": "calm"
+    },
+    "answer": "b",
+    "explanation": "'Welter' means a state of confusion, turmoil, or chaos, which perfectly describes the scene after a riot."
+  },
+  {
+    "id": 6,
+    "question": "A person who is rigidly authoritative in their opinions and not open to debate is best described as:",
+    "options": {
+      "a": "Laconic",
+      "b": "Disinterested",
+      "c": "Dogmatic",
+      "d": "Ephemeral"
+    },
+    "answer": "c",
+    "explanation": "The key description is 'rigidly authoritative and not open to debate,' which is the definition of 'dogmatic'."
+  },
+  {
+    "id": 7,
+    "question": "The word 'efficacy' is primarily concerned with:",
+    "options": {
+      "a": "Hostility",
+      "b": "Effectiveness",
+      "c": "Briefness",
+      "d": "Impartiality"
+    },
+    "answer": "b",
+    "explanation": "'Efficacy' means the ability to produce a desired or intended result, i.e., effectiveness."
+  },
+  {
+    "id": 8,
+    "question": "Which word describes someone who is unbiased and has no personal stake in the outcome?",
+    "options": {
+      "a": "Interested",
+      "b": "Prejudiced",
+      "c": "Disinterested",
+      "d": "Dogmatic"
+    },
+    "answer": "c",
+    "explanation": "'Disinterested' specifically means neutral and impartial, free from self-interest."
+  },
+  {
+    "id": 9,
+    "question": "If a reply is 'laconic', it is:",
+    "options": {
+      "a": "Verbose and detailed",
+      "b": "Using very few words",
+      "c": "Full of hatred",
+      "d": "Highly effective"
+    },
+    "answer": "b",
+    "explanation": "'Laconic' means using very few words, often to the point of seeming rude or mysterious."
+  },
+  {
+    "id": 10,
+    "question": "The noun 'truculence' refers to a quality of:",
+    "options": {
+      "a": "Short-lived beauty",
+      "b": "Aggressive defiance",
+      "c": "Confused chaos",
+      "d": "Productive ability"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' means being eager or quick to argue or fight; aggressively defiant."
+  },
+  {
+    "id": 11,
+    "question": "Which word's Bengali meaning is 'ক্ষণস্থায়ী'?",
+    "options": {
+      "a": "Aberrant",
+      "b": "Ephemeral",
+      "c": "Welter",
+      "d": "Truculence"
+    },
+    "answer": "b",
+    "explanation": "'Ephemeral' translates directly to 'ক্ষণস্থায়ী', meaning lasting for a very short time."
+  },
+  {
+    "id": 12,
+    "question": "What part of speech is 'welter'?",
+    "options": {
+      "a": "Only a verb",
+      "b": "Only a noun",
+      "c": "Noun and verb",
+      "d": "Adjective"
+    },
+    "answer": "c",
+    "explanation": "'Welter' can be used as a noun (e.g., a welter of confusion) and as a verb (e.g., to welter in chaos)."
+  },
+  {
+    "id": 13,
+    "question": "Which word is a synonym for 'mitigate'?",
+    "options": {
+      "a": "Abate",
+      "b": "Escalate",
+      "c": "Intensify",
+      "d": "Permanent"
+    },
+    "answer": "a",
+    "explanation": "Both 'mitigate' and 'abate' mean to make less severe or intense."
+  },
+  {
+    "id": 14,
+    "question": "What is an antonym for 'philanthropist'?",
+    "options": {
+      "a": "Humanitarian",
+      "b": "Cynic",
+      "c": "Misanthrope",
+      "d": "Extrovert"
+    },
+    "answer": "c",
+    "explanation": "A 'philanthropist' loves humanity, while a 'misanthrope' hates and avoids people. They are direct opposites."
+  },
+  {
+    "id": 15,
+    "question": "Fill in the blank: The medicine's _____ was proven as it successfully reduced fever in 95% of patients.",
+    "options": {
+      "a": "truculence",
+      "b": "efficacy",
+      "c": "welter",
+      "d": "aberration"
+    },
+    "answer": "b",
+    "explanation": "The sentence is about the medicine's ability to produce a result (reduce fever), which is its 'efficacy'."
+  },
+  {
+    "id": 16,
+    "question": "The Bengali meaning 'নীতিভ্রষ্ট' is associated with which word?",
+    "options": {
+      "a": "Abate",
+      "b": "Aberrant",
+      "c": "Laconic",
+      "d": "Disinterested"
+    },
+    "answer": "b",
+    "explanation": "'Aberrant' means deviating from the accepted standard, which aligns with 'নীতিভ্রষ্ট' (morally deviant)."
+  },
+  {
+    "id": 17,
+    "question": "A 'recluse' is a synonym for which type of person?",
+    "options": {
+      "a": "A misanthrope",
+      "b": "A philanthropist",
+      "c": "An extrovert",
+      "d": "A humanitarian"
+    },
+    "answer": "a",
+    "explanation": "A 'recluse' (a person who lives in solitude) is a common synonym for a 'misanthrope' (a person who avoids people)."
+  },
+  {
+    "id": 18,
+    "question": "Which word pair contains an antonym?",
+    "options": {
+      "a": "Ephemeral - Temporary",
+      "b": "Laconic - Verbose",
+      "c": "Aberrant - Stray",
+      "d": "Welter - Chaos"
+    },
+    "answer": "b",
+    "explanation": "'Laconic' (brief) and 'verbose' (wordy) are direct opposites, making them antonyms."
+  },
+  {
+    "id": 19,
+    "question": "Complete the sentence: The general's _____ commands left no room for interpretation or discussion.",
+    "options": {
+      "a": "ephemeral",
+      "b": "dogmatic",
+      "c": "disinterested",
+      "d": "laconic"
+    },
+    "answer": "b",
+    "explanation": "The phrase 'left no room for interpretation or discussion' points to an inflexible, authoritative style, which is 'dogmatic'."
+  },
+  {
+    "id": 20,
+    "question": "The word 'disinterested' is often confused with 'uninterested', but it actually means:",
+    "options": {
+      "a": "Bored",
+      "b": "Impartial",
+      "c": "Ineffective",
+      "d": "Brief"
+    },
+    "answer": "b",
+    "explanation": "'Disinterested' means neutral and unbiased, not lacking interest (which is 'uninterested')."
+  },
+  {
+    "id": 21,
+    "question": "Which word means 'to become less intense or severe'?",
+    "options": {
+      "a": "Escalate",
+      "b": "Intensify",
+      "c": "Abate",
+      "d": "Endure"
+    },
+    "answer": "c",
+    "explanation": "The definition 'to become less intense or severe' is the core meaning of the verb 'abate'."
+  },
+  {
+    "id": 22,
+    "question": "The Bengali meaning 'হ্রাস করা' is best matched with:",
+    "options": {
+      "a": "Ephemeral",
+      "b": "Abate",
+      "c": "Aberrant",
+      "d": "Truculence"
+    },
+    "answer": "b",
+    "explanation": "'Abate' means to reduce or lessen, which directly translates to 'হ্রাস করা'."
+  },
+  {
+    "id": 23,
+    "question": "Which of the following is NOT a synonym for 'ephemeral'?",
+    "options": {
+      "a": "Momentary",
+      "b": "Transient",
+      "c": "Permanent",
+      "d": "Fleeting"
+    },
+    "answer": "c",
+    "explanation": "'Permanent' is the direct antonym of 'ephemeral', which means lasting for a very short time."
+  },
+  {
+    "id": 24,
+    "question": "A judge must be _____ to ensure a fair trial.",
+    "options": {
+      "a": "dogmatic",
+      "b": "disinterested",
+      "c": "truculent",
+      "d": "laconic"
+    },
+    "answer": "b",
+    "explanation": "A fair trial requires a judge who is neutral, unbiased, and impartial, which is the meaning of 'disinterested'."
+  },
+  {
+    "id": 25,
+    "question": "The crowd's _____ was evident from their shouting and aggressive gestures.",
+    "options": {
+      "a": "efficacy",
+      "b": "truculence",
+      "c": "ephemerality",
+      "d": "disinterest"
+    },
+    "answer": "b",
+    "explanation": "Shouting and aggressive gestures are clear signs of aggressive defiance or hostility, which is 'truculence'."
+  },
+  {
+    "id": 26,
+    "question": "What is the part of speech for 'laconic'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Laconic' is used to describe a noun (e.g., a laconic reply), making it an adjective."
+  },
+  {
+    "id": 27,
+    "question": "Which word is an antonym for 'reduce'?",
+    "options": {
+      "a": "Abate",
+      "b": "Mitigate",
+      "c": "Increase",
+      "d": "Soothe"
+    },
+    "answer": "c",
+    "explanation": "The opposite of 'reduce' is 'increase'. 'Abate' and 'mitigate' are synonyms for 'reduce'."
+  },
+  {
+    "id": 28,
+    "question": "The Bengali meaning 'বিপথগামী' refers to:",
+    "options": {
+      "a": "Abate",
+      "b": "Misanthrope",
+      "c": "Aberrant",
+      "d": "Welter"
+    },
+    "answer": "c",
+    "explanation": "'Aberrant' means straying from the right path or standard, which aligns with 'বিপথগামী'."
+  },
+  {
+    "id": 29,
+    "question": "Complete the sentence: The butterfly's beauty was _____, lasting only for a single day.",
+    "options": {
+      "a": "dogmatic",
+      "b": "permanent",
+      "c": "ephemeral",
+      "d": "aberrant"
+    },
+    "answer": "c",
+    "explanation": "The clue 'lasting only for a single day' points directly to something short-lived, or 'ephemeral'."
+  },
+  {
+    "id": 30,
+    "question": "A person who is 'antisocial' shares a similar meaning with:",
+    "options": {
+      "a": "Philanthropist",
+      "b": "Misanthrope",
+      "c": "Humanitarian",
+      "d": "Extrovert"
+    },
+    "answer": "b",
+    "explanation": "Both 'antisocial' and 'misanthrope' describe someone who avoids the company of others and is often hostile to society."
+  },
+  {
+    "id": 31,
+    "question": "Which word describes a confused mixture or a state of turmoil?",
+    "options": {
+      "a": "Efficacy",
+      "b": "Welter",
+      "c": "Truculence",
+      "d": "Laconic"
+    },
+    "answer": "b",
+    "explanation": "This is the definition of 'welter', as in 'a welter of emotions' or 'a welter of confusion'."
+  },
+  {
+    "id": 32,
+    "question": "The antonym of 'open-minded' is:",
+    "options": {
+      "a": "Disinterested",
+      "b": "Dogmatic",
+      "c": "Laconic",
+      "d": "Aberrant"
+    },
+    "answer": "b",
+    "explanation": "'Dogmatic' means asserting opinions in an arrogant, inflexible way, which is the opposite of being 'open-minded'."
+  },
+  {
+    "id": 33,
+    "question": "The Bengali word 'উদ্দত' is translated to English as:",
+    "options": {
+      "a": "Laconic",
+      "b": "Dogmatic",
+      "c": "Truculent",
+      "d": "Ephemeral"
+    },
+    "answer": "b",
+    "explanation": "'Dogmatic' means rigidly authoritative, which is the meaning captured by 'উদ্দত'."
+  },
+  {
+    "id": 34,
+    "question": "If a solution has high _____, it works very well.",
+    "options": {
+      "a": "welter",
+      "b": "truculence",
+      "c": "efficacy",
+      "d": "aberration"
+    },
+    "answer": "c",
+    "explanation": "'Efficacy' means the capacity for producing a desired result or effect; effectiveness."
+  },
+  {
+    "id": 35,
+    "question": "Which of these is a characteristic of a 'laconic' speaker?",
+    "options": {
+      "a": "They are very talkative.",
+      "b": "They use few words.",
+      "c": "They are highly biased.",
+      "d": "They are ineffective."
+    },
+    "answer": "b",
+    "explanation": "A 'laconic' person is notably brief in their speech, often to the point of seeming rude."
+  },
+  {
+    "id": 36,
+    "question": "A synonym for 'cruelty' is:",
+    "options": {
+      "a": "Efficacy",
+      "b": "Truculence",
+      "c": "Welter",
+      "d": "Abatement"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' encompasses a disposition towards cruelty, brutality, and aggressive behavior."
+  },
+  {
+    "id": 37,
+    "question": "What part of speech is 'efficacy'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Efficacy' is a thing, a concept (the ability to be effective), so it is a noun."
+  },
+  {
+    "id": 38,
+    "question": "The heavy rain did not _____ until the early hours of the morning.",
+    "options": {
+      "a": "increase",
+      "b": "escalate",
+      "c": "abate",
+      "d": "intensify"
+    },
+    "answer": "c",
+    "explanation": "The sentence requires a verb that means 'to lessen'. The rain lessened or 'abated'."
+  },
+  {
+    "id": 39,
+    "question": "The Bengali meaning 'কার্যক্ষমতা' refers to:",
+    "options": {
+      "a": "Truculence",
+      "b": "Efficacy",
+      "c": "Welter",
+      "d": "Aberration"
+    },
+    "answer": "b",
+    "explanation": "'Efficacy' means effectiveness or the power to produce a result, which is 'কার্যক্ষমতা'."
+  },
+  {
+    "id": 40,
+    "question": "Which word pair is a correct synonym match?",
+    "options": {
+      "a": "Misanthrope - Philanthropist",
+      "b": "Abate - Intensify",
+      "c": "Ephemeral - Transient",
+      "d": "Dogmatic - Open-minded"
+    },
+    "answer": "c",
+    "explanation": "'Ephemeral' and 'Transient' both mean lasting for a short time. The other pairs are antonyms."
+  },
+  {
+    "id": 41,
+    "question": "An 'aberrant' result in an experiment is one that is:",
+    "options": {
+      "a": "Expected and normal",
+      "b": "Highly effective",
+      "c": "Unusual and unexpected",
+      "d": "Brief and fleeting"
+    },
+    "answer": "c",
+    "explanation": "'Aberrant' means departing from the normal or usual course, making it unusual and unexpected."
+  },
+  {
+    "id": 42,
+    "question": "The political debate created a _____ of conflicting opinions.",
+    "options": {
+      "a": "efficacy",
+      "b": "welter",
+      "c": "truculence",
+      "d": "laconic"
+    },
+    "answer": "b",
+    "explanation": "A 'welter' is a state of general confusion, which aptly describes a scene of many conflicting opinions."
+  },
+  {
+    "id": 43,
+    "question": "What is an antonym for 'subside'?",
+    "options": {
+      "a": "Abate",
+      "b": "Escalate",
+      "c": "Reduce",
+      "d": "Mitigate"
+    },
+    "answer": "b",
+    "explanation": "'Subside' is a synonym for 'abate' (to lessen). Therefore, its antonym is 'escalate' (to increase)."
+  },
+  {
+    "id": 44,
+    "question": "The Bengali meaning 'অল্প কথায় অর্থপূর্ণ' describes:",
+    "options": {
+      "a": "Dogmatic",
+      "b": "Laconic",
+      "c": "Truculent",
+      "d": "Disinterested"
+    },
+    "answer": "b",
+    "explanation": "This phrase means 'meaningful with few words', which is the exact definition of 'laconic'."
+  },
+  {
+    "id": 45,
+    "question": "A _____ individual would likely avoid parties and large gatherings.",
+    "options": {
+      "a": "sociable",
+      "b": "extroverted",
+      "c": "misanthrope",
+      "d": "philanthropic"
+    },
+    "answer": "c",
+    "explanation": "A 'misanthrope' dislikes human society and would avoid social gatherings like parties."
+  },
+  {
+    "id": 46,
+    "question": "Which word is most closely related to 'brutality'?",
+    "options": {
+      "a": "Efficacy",
+      "b": "Truculence",
+      "c": "Welter",
+      "d": "Ephemeral"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' involves a fierce, savage, or brutal quality, making it closely related to 'brutality'."
+  },
+  {
+    "id": 47,
+    "question": "The part of speech for 'dogmatic' is:",
+    "options": {
+      "a": "Adverb",
+      "b": "Noun",
+      "c": "Verb",
+      "d": "Adjective"
+    },
+    "answer": "d",
+    "explanation": "'Dogmatic' is used to describe a noun (e.g., a dogmatic person, a dogmatic statement), so it is an adjective."
+  },
+  {
+    "id": 48,
+    "question": "Fill in the blank: Her behavior was so _____ that it violated several social norms.",
+    "options": {
+      "a": "normal",
+      "b": "aberrant",
+      "c": "disinterested",
+      "d": "efficacious"
+    },
+    "answer": "b",
+    "explanation": "Violating social norms means the behavior was not normal or acceptable, i.e., 'aberrant'."
+  },
+  {
+    "id": 49,
+    "question": "Which of these is a characteristic of something 'ephemeral'?",
+    "options": {
+      "a": "It lasts forever.",
+      "b": "It is highly effective.",
+      "c": "It is very brief.",
+      "d": "It is morally wrong."
+    },
+    "answer": "c",
+    "explanation": "The defining feature of something 'ephemeral' is its short duration."
+  },
+  {
+    "id": 50,
+    "question": "The argument _____ after a mediator helped them find common ground.",
+    "options": {
+      "a": "escalated",
+      "b": "intensified",
+      "c": "abated",
+      "d": "weltered"
+    },
+    "answer": "c",
+    "explanation": "Finding common ground would cause an argument to become less intense, or 'abate'."
+  },
+  {
+    "id": 51,
+    "question": "A 'cynic' is a synonym for:",
+    "options": {
+      "a": "Philanthropist",
+      "b": "Misanthrope",
+      "c": "Humanitarian",
+      "d": "Extrovert"
+    },
+    "answer": "b",
+    "explanation": "A 'cynic' is someone who believes people are motivated purely by self-interest, which aligns with the distrustful nature of a 'misanthrope'."
+  },
+  {
+    "id": 52,
+    "question": "The Bengali meaning 'নৃশংসা' is translated as:",
+    "options": {
+      "a": "Welter",
+      "b": "Truculence",
+      "c": "Efficacy",
+      "d": "Abatement"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' means aggressiveness and cruelty, which matches the meaning of 'নৃশংসা' (cruelty/atrocity)."
+  },
+  {
+    "id": 53,
+    "question": "Which word is an antonym for 'soothe'?",
+    "options": {
+      "a": "Abate",
+      "b": "Mitigate",
+      "c": "Intensify",
+      "d": "Reduce"
+    },
+    "answer": "c",
+    "explanation": "'Soothe' means to calm or reduce pain. Its opposite would be to 'intensify' or worsen it."
+  },
+  {
+    "id": 54,
+    "question": "A _____ scientific theory is one that is backed by strong evidence and produces reliable results.",
+    "options": {
+      "a": "truculent",
+      "b": "efficacious",
+      "c": "aberrant",
+      "d": "ephemeral"
+    },
+    "answer": "b",
+    "explanation": "A theory that produces reliable results is effective, or 'efficacious'."
+  },
+  {
+    "id": 55,
+    "question": "What part of speech is 'truculence'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Truculence' is the name for the quality of being truculent, so it is a noun."
+  },
+  {
+    "id": 56,
+    "question": "The CEO's _____ management style discouraged employees from sharing new ideas.",
+    "options": {
+      "a": "disinterested",
+      "b": "dogmatic",
+      "c": "laconic",
+      "d": "ephemeral"
+    },
+    "answer": "b",
+    "explanation": "A 'dogmatic' (inflexibly authoritative) style would stifle creativity and discourage input from others."
+  },
+  {
+    "id": 57,
+    "question": "Which word means 'lasting for a very short time'?",
+    "options": {
+      "a": "Permanent",
+      "b": "Enduring",
+      "c": "Ephemeral",
+      "d": "Dogmatic"
+    },
+    "answer": "c",
+    "explanation": "This is the direct definition of 'ephemeral'."
+  },
+  {
+    "id": 58,
+    "question": "The Bengali meaning 'বিশৃংখল' refers to:",
+    "options": {
+      "a": "Welter",
+      "b": "Abate",
+      "c": "Efficacy",
+      "d": "Misanthrope"
+    },
+    "answer": "a",
+    "explanation": "'Welter' means a state of confusion or disorder, which is the meaning of 'বিশৃংখল'."
+  },
+  {
+    "id": 59,
+    "question": "An antonym for 'gentleness' is:",
+    "options": {
+      "a": "Kindness",
+      "b": "Truculence",
+      "c": "Meekness",
+      "d": "Mildness"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' implies aggression and harshness, which is the opposite of 'gentleness'."
+  },
+  {
+    "id": 60,
+    "question": "The spy was known for his _____ responses that revealed very little information.",
+    "options": {
+      "a": "verbose",
+      "b": "dogmatic",
+      "c": "laconic",
+      "d": "truculent"
+    },
+    "answer": "c",
+    "explanation": "Responses that reveal very little information are characteristically brief and 'laconic'."
+  },
+  {
+    "id": 61,
+    "question": "Which word is a synonym for 'minimize'?",
+    "options": {
+      "a": "Escalate",
+      "b": "Intensify",
+      "c": "Abate",
+      "d": "Increase"
+    },
+    "answer": "c",
+    "explanation": "To 'minimize' means to reduce, which is synonymous with 'abate'."
+  },
+  {
+    "id": 62,
+    "question": "The part of speech for 'disinterested' is:",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Disinterested' describes a noun (e.g., a disinterested party), making it an adjective."
+  },
+  {
+    "id": 63,
+    "question": "A _____ event is one that happens only once and is never repeated.",
+    "options": {
+      "a": "permanent",
+      "b": "ephemeral",
+      "c": "dogmatic",
+      "d": "efficacious"
+    },
+    "answer": "b",
+    "explanation": "'Ephemeral' can describe something that is transient and occurs for a fleeting moment."
+  },
+  {
+    "id": 64,
+    "question": "The Bengali meaning 'নির্লিপ্ত' is best matched with:",
+    "options": {
+      "a": "Laconic",
+      "b": "Disinterested",
+      "c": "Truculent",
+      "d": "Aberrant"
+    },
+    "answer": "b",
+    "explanation": "'Disinterested' means impartial and unbiased, which aligns with the detached connotation of 'নির্লিপ্ত'."
+  },
+  {
+    "id": 65,
+    "question": "The _____ of the new law was questioned as crime rates continued to rise.",
+    "options": {
+      "a": "welter",
+      "b": "efficacy",
+      "c": "truculence",
+      "d": "aberration"
+    },
+    "answer": "b",
+    "explanation": "The sentence questions whether the law is *effective* (its 'efficacy') since it isn't reducing crime."
+  },
+  {
+    "id": 66,
+    "question": "Which word is an antonym for 'divergent'?",
+    "options": {
+      "a": "Aberrant",
+      "b": "Stray",
+      "c": "Normal",
+      "d": "Perverse"
+    },
+    "answer": "c",
+    "explanation": "'Divergent' means differing from the standard, so its antonym is 'normal' or 'standard'."
+  },
+  {
+    "id": 67,
+    "question": "His _____ in the argument was clear; he didn't care who won.",
+    "options": {
+      "a": "interest",
+      "b": "disinterest",
+      "c": "truculence",
+      "d": "dogmatism"
+    },
+    "answer": "b",
+    "explanation": "Not caring about the outcome shows a lack of bias or personal stake, which is 'disinterest'."
+  },
+  {
+    "id": 68,
+    "question": "The fog began to _____ as the sun grew stronger.",
+    "options": {
+      "a": "intensify",
+      "b": "escalate",
+      "c": "abate",
+      "d": "welter"
+    },
+    "answer": "c",
+    "explanation": "The fog lessened or became less dense, so it 'abated'."
+  },
+  {
+    "id": 69,
+    "question": "Which of these is a characteristic of a 'welter'?",
+    "options": {
+      "a": "Perfect order",
+      "b": "Confused mixture",
+      "c": "Lasting peace",
+      "d": "Brief duration"
+    },
+    "answer": "b",
+    "explanation": "A 'welter' is defined by its confused and disordered nature."
+  },
+  {
+    "id": 70,
+    "question": "The Bengali word 'সংক্ষিপ্ত' is a synonym for:",
+    "options": {
+      "a": "Dogmatic",
+      "b": "Laconic",
+      "c": "Truculent",
+      "d": "Ephemeral"
+    },
+    "answer": "b",
+    "explanation": "'সংক্ষিপ্ত' means brief or concise, which is the meaning of 'laconic'."
+  },
+  {
+    "id": 71,
+    "question": "A person who is 'churlish' shares similarities with a:",
+    "options": {
+      "a": "Philanthropist",
+      "b": "Misanthrope",
+      "c": "Humanitarian",
+      "d": "Extrovert"
+    },
+    "answer": "b",
+    "explanation": "'Churlish' means rude or mean-spirited, a trait often associated with a 'misanthrope' who dislikes people."
+  },
+  {
+    "id": 72,
+    "question": "What is an antonym for 'uselessness'?",
+    "options": {
+      "a": "Ineffectiveness",
+      "b": "Efficacy",
+      "c": "Truculence",
+      "d": "Welter"
+    },
+    "answer": "b",
+    "explanation": "'Uselessness' is the state of being ineffective. Its direct opposite is 'efficacy' (effectiveness)."
+  },
+  {
+    "id": 73,
+    "question": "The _____ of the spring flowers is part of their charm; they are beautiful because they are fleeting.",
+    "options": {
+      "a": "permanence",
+      "b": "ephemerality",
+      "c": "dogmatism",
+      "d": "truculence"
+    },
+    "answer": "b",
+    "explanation": "The clue 'fleeting' points directly to the noun form of ephemeral, which is 'ephemerality'."
+  },
+  {
+    "id": 74,
+    "question": "The part of speech for 'aberrant' is:",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Aberrant' describes a noun (e.g., aberrant behavior), so it is an adjective."
+  },
+  {
+    "id": 75,
+    "question": "Fill in the blank: The peace talks were threatened by the _____ of a few hardline delegates.",
+    "options": {
+      "a": "efficacy",
+      "b": "truculence",
+      "c": "disinterest",
+      "d": "ephemerality"
+    },
+    "answer": "b",
+    "explanation": "Hardline delegates would be aggressively defiant and hostile, showing 'truculence'."
+  },
+  {
+    "id": 76,
+    "question": "The Bengali meaning 'উপশম করা' is associated with:",
+    "options": {
+      "a": "Abate",
+      "b": "Intensify",
+      "c": "Escalate",
+      "d": "Welter"
+    },
+    "answer": "a",
+    "explanation": "'Abate' means to lessen or reduce in intensity, which is the meaning of 'উপশম করা' (to soothe/relieve)."
+  },
+  {
+    "id": 77,
+    "question": "Which word is a synonym for 'hostility'?",
+    "options": {
+      "a": "Efficacy",
+      "b": "Truculence",
+      "c": "Welter",
+      "d": "Abatement"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' encompasses a fierce and hostile nature."
+  },
+  {
+    "id": 78,
+    "question": "A _____ statement is one that is not open to debate.",
+    "options": {
+      "a": "laconic",
+      "b": "dogmatic",
+      "c": "disinterested",
+      "d": "ephemeral"
+    },
+    "answer": "b",
+    "explanation": "'Dogmatic' means asserting opinions in an arrogant, unquestionable way."
+  },
+  {
+    "id": 79,
+    "question": "The fever's _____ was a sign that the infection was finally clearing.",
+    "options": {
+      "a": "escalation",
+      "b": "intensification",
+      "c": "abatement",
+      "d": "welter"
+    },
+    "answer": "c",
+    "explanation": "The infection clearing means the fever was lessening, so its 'abatement' was a good sign."
+  },
+  {
+    "id": 80,
+    "question": "What is the part of speech for 'misanthrope'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "A 'misanthrope' is a person, so it is a noun."
+  },
+  {
+    "id": 81,
+    "question": "The artist was concerned that his online fame would be _____, not lasting.",
+    "options": {
+      "a": "permanent",
+      "b": "ephemeral",
+      "c": "dogmatic",
+      "d": "efficacious"
+    },
+    "answer": "b",
+    "explanation": "The contrast with 'lasting' indicates the opposite meaning is needed: short-lived, or 'ephemeral'."
+  },
+  {
+    "id": 82,
+    "question": "The Bengali meaning 'ক্ষণজীবি' is a synonym for:",
+    "options": {
+      "a": "Aberrant",
+      "b": "Ephemeral",
+      "c": "Welter",
+      "d": "Truculence"
+    },
+    "answer": "b",
+    "explanation": "'ক্ষণজীবি' means short-lived or transient, which is the meaning of 'ephemeral'."
+  },
+  {
+    "id": 83,
+    "question": "Which word is an antonym for 'biased'?",
+    "options": {
+      "a": "Prejudiced",
+      "b": "Disinterested",
+      "c": "Partial",
+      "d": "Dogmatic"
+    },
+    "answer": "b",
+    "explanation": "'Disinterested' means impartial and unbiased, making it the direct antonym of 'biased'."
+  },
+  {
+    "id": 84,
+    "question": "The company tested the _____ of its new marketing strategy.",
+    "options": {
+      "a": "welter",
+      "b": "truculence",
+      "c": "efficacy",
+      "d": "aberration"
+    },
+    "answer": "c",
+    "explanation": "A company would test how *effective* ('efficacy') a new strategy is."
+  },
+  {
+    "id": 85,
+    "question": "A _____ of regulations made it difficult for new businesses to start.",
+    "options": {
+      "a": "efficacy",
+      "b": "welter",
+      "c": "truculence",
+      "d": "abatement"
+    },
+    "answer": "b",
+    "explanation": "A confusing and overwhelming mass ('welter') of regulations would be a significant barrier."
+  },
+  {
+    "id": 86,
+    "question": "The part of speech for 'ephemeral' is:",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Ephemeral' describes a noun (ephemeral beauty), so it is an adjective."
+  },
+  {
+    "id": 87,
+    "question": "His _____ response, 'No,' ended the conversation abruptly.",
+    "options": {
+      "a": "verbose",
+      "b": "laconic",
+      "c": "dogmatic",
+      "d": "truculent"
+    },
+    "answer": "b",
+    "explanation": "A one-word response is the epitome of being 'laconic'."
+  },
+  {
+    "id": 88,
+    "question": "The Bengali meaning 'বিচ্যুত' refers to:",
+    "options": {
+      "a": "Abate",
+      "b": "Aberrant",
+      "c": "Laconic",
+      "d": "Disinterested"
+    },
+    "answer": "b",
+    "explanation": "'Aberrant' means deviating from what is normal, which is the meaning of 'বিচ্যুত' (deviant/stray)."
+  },
+  {
+    "id": 89,
+    "question": "An antonym for 'kindness' is:",
+    "options": {
+      "a": "Gentleness",
+      "b": "Truculence",
+      "c": "Meekness",
+      "d": "Mildness"
+    },
+    "answer": "b",
+    "explanation": "'Truculence' implies brutality and harshness, which is the opposite of 'kindness'."
+  },
+  {
+    "id": 90,
+    "question": "The storm's _____ was a relief to the coastal residents.",
+    "options": {
+      "a": "intensification",
+      "b": "escalation",
+      "c": "abatement",
+      "d": "welter"
+    },
+    "answer": "c",
+    "explanation": "Residents would be relieved if the storm lessened in intensity, or 'abated'."
+  },
+  {
+    "id": 91,
+    "question": "Which word is a synonym for 'terse'?",
+    "options": {
+      "a": "Verbose",
+      "b": "Laconic",
+      "c": "Wordy",
+      "d": "Talkative"
+    },
+    "answer": "b",
+    "explanation": "Both 'terse' and 'laconic' mean using few words, often in a blunt way."
+  },
+  {
+    "id": 92,
+    "question": "The _____ of the judge ensured that the trial was fair for both sides.",
+    "options": {
+      "a": "bias",
+      "b": "disinterest",
+      "c": "truculence",
+      "d": "dogmatism"
+    },
+    "answer": "b",
+    "explanation": "A fair trial requires the judge's impartiality, or 'disinterest'."
+  },
+  {
+    "id": 93,
+    "question": "What is the part of speech for 'dogmatism'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Dogmatism' is the name for the quality of being dogmatic, so it is a noun."
+  },
+  {
+    "id": 94,
+    "question": "The Bengali meaning 'স্ফিত হওয়া' can be associated with:",
+    "options": {
+      "a": "Abate",
+      "b": "Welter",
+      "c": "Efficacy",
+      "d": "Truculence"
+    },
+    "answer": "b",
+    "explanation": "'Welter' as a verb can mean to writhe or swell, relating to the meaning of 'স্ফিত হওয়া' (to swell/billow)."
+  },
+  {
+    "id": 95,
+    "question": "A _____ pattern in the data can indicate a significant discovery or an error.",
+    "options": {
+      "a": "normal",
+      "b": "aberrant",
+      "c": "efficacious",
+      "d": "ephemeral"
+    },
+    "answer": "b",
+    "explanation": "An 'aberrant' pattern is one that deviates from the norm, which could be either important or mistaken."
+  },
+  {
+    "id": 96,
+    "question": "Which word is an antonym for 'flexible'?",
+    "options": {
+      "a": "Open-minded",
+      "b": "Dogmatic",
+      "c": "Tolerant",
+      "d": "Disinterested"
+    },
+    "answer": "b",
+    "explanation": "'Dogmatic' means rigidly inflexible in one's beliefs, the opposite of 'flexible'."
+  },
+  {
+    "id": 97,
+    "question": "The _____ of the old bridge was unknown, so engineers conducted stress tests.",
+    "options": {
+      "a": "welter",
+      "b": "efficacy",
+      "c": "truculence",
+      "d": "ephemerality"
+    },
+    "answer": "b",
+    "explanation": "Stress tests would determine the bridge's effectiveness at bearing weight, i.e., its 'efficacy'."
+  },
+  {
+    "id": 98,
+    "question": "Her _____ was clear from her sharp tone and critical remarks.",
+    "options": {
+      "a": "gentleness",
+      "b": "truculence",
+      "c": "kindness",
+      "d": "meekness"
+    },
+    "answer": "b",
+    "explanation": "A sharp tone and critical remarks are signs of aggressiveness and hostility, or 'truculence'."
+  },
+  {
+    "id": 99,
+    "question": "The part of speech for 'abate' is:",
+    "options": {
+      "a": "Noun",
+      "b": "Adjective",
+      "c": "Verb",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Abate' is an action (to lessen), so it is a verb."
+  },
+  {
+    "id": 100,
+    "question": "The celebrity's popularity was _____, fading away after a single hit song.",
+    "options": {
+      "a": "permanent",
+      "b": "enduring",
+      "c": "ephemeral",
+      "d": "dogmatic"
+    },
+    "answer": "c",
+    "explanation": "Fading away quickly after a short time is the definition of 'ephemeral'."
+  },
+  {
+    "id": 101,
+    "question": "The Bengali meaning 'বিক্ষোভ' is related to:",
+    "options": {
+      "a": "Welter",
+      "b": "Truculence",
+      "c": "Abate",
+      "d": "Efficacy"
+    },
+    "answer": "b",
+    "explanation": "'বিক্ষোভ' can mean turmoil or agitation, which is related to the aggressive energy of 'truculence'."
+  },
+  {
+    "id": 102,
+    "question": "Which word is a synonym for 'unprejudiced'?",
+    "options": {
+      "a": "Biased",
+      "b": "Disinterested",
+      "c": "Partial",
+      "d": "Dogmatic"
+    },
+    "answer": "b",
+    "explanation": "'Disinterested' means unbiased and impartial, making it a synonym for 'unprejudiced'."
+  },
+  {
+    "id": 103,
+    "question": "The _____ of the winter meant the snow stayed on the ground for months.",
+    "options": {
+      "a": "ephemerality",
+      "b": "permanence",
+      "c": "abatement",
+      "d": "welter"
+    },
+    "answer": "b",
+    "explanation": "Snow lasting for months shows a lack of change or lasting quality, i.e., 'permanence'."
+  },
+  {
+    "id": 104,
+    "question": "A _____ opinion is one that is fair and not influenced by personal gain.",
+    "options": {
+      "a": "dogmatic",
+      "b": "disinterested",
+      "c": "truculent",
+      "d": "aberrant"
+    },
+    "answer": "b",
+    "explanation": "This is the definition of a 'disinterested' opinion—neutral and unbiased."
+  },
+  {
+    "id": 105,
+    "question": "What is an antonym for 'chaos'?",
+    "options": {
+      "a": "Welter",
+      "b": "Order",
+      "c": "Turmoil",
+      "d": "Unrest"
+    },
+    "answer": "b",
+    "explanation": "The direct opposite of 'chaos' is 'order'."
+  },
+  {
+    "id": 106,
+    "question": "The part of speech for 'truculent' is:",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Truculent' describes a noun (a truculent person), so it is an adjective."
+  },
+  {
+    "id": 107,
+    "question": "The activist fought against the _____ of the oppressive regime.",
+    "options": {
+      "a": "gentleness",
+      "b": "truculence",
+      "c": "kindness",
+      "d": "meekness"
+    },
+    "answer": "b",
+    "explanation": "An oppressive regime would likely be characterized by its aggression and brutality, or 'truculence'."
+  },
+  {
+    "id": 108,
+    "question": "The Bengali meaning 'প্রশমিত করা' is a synonym for:",
+    "options": {
+      "a": "Intensify",
+      "b": "Escalate",
+      "c": "Abate",
+      "d": "Increase"
+    },
+    "answer": "c",
+    "explanation": "'Abate' means to lessen or pacify, which is the meaning of 'প্রশমিত করা' (to pacify/soothe)."
+  },
+  {
+    "id": 109,
+    "question": "Which word is an antonym for 'enduring'?",
+    "options": {
+      "a": "Permanent",
+      "b": "Lasting",
+      "c": "Ephemeral",
+      "d": "Dogmatic"
+    },
+    "answer": "c",
+    "explanation": "'Ephemeral' means short-lived, which is the direct opposite of 'enduring' (long-lasting)."
+  },
+  {
+    "id": 110,
+    "question": "The scientist remained _____ about the controversial theory until more evidence was presented.",
+    "options": {
+      "a": "dogmatic",
+      "b": "disinterested",
+      "c": "truculent",
+      "d": "aberrant"
+    },
+    "answer": "b",
+    "explanation": "Withholding judgment until more evidence is seen shows a neutral, unbiased ('disinterested') stance."
+  }
+]

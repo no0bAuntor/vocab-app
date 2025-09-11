@@ -1,14 +1,10 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 import words from "../data/words.json";
 import WordCard from "../components/WordCard";
 
-export default function Home() {
+export default function Home({ isDarkMode, toggleDarkMode }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check if user previously selected dark mode
-    const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : false;
-  });
   
   // Touch/Swipe state
   const [touchStart, setTouchStart] = useState(null);
@@ -18,11 +14,6 @@ export default function Home() {
   const [cardTransition, setCardTransition] = useState(false);
   
   const totalWords = words.length;
-
-  // Save dark mode preference
-  useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
-  }, [isDarkMode]);
 
   const nextWord = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % totalWords);
@@ -108,10 +99,6 @@ export default function Home() {
     setIsSwipeActive(false);
     setTimeout(() => setCardTransition(false), 300);
   };
-
-  const toggleDarkMode = useCallback(() => {
-    setIsDarkMode(!isDarkMode);
-  }, [isDarkMode]);
 
   return (
     <div className={`min-h-screen transition-all duration-300 relative overflow-hidden ${
@@ -215,27 +202,6 @@ export default function Home() {
       <div className="relative z-10">
         {/* Header */}
         <div className="container mx-auto px-4 py-8">
-        {/* Dark Mode Toggle */}
-        <div className="flex justify-end mb-4">
-          <button
-            onClick={toggleDarkMode}
-            className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
-              isDarkMode ? 'bg-blue-600' : 'bg-gray-300'
-            }`}
-            title="Toggle dark mode"
-          >
-            <span
-              className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform duration-300 ${
-                isDarkMode ? 'translate-x-7' : 'translate-x-1'
-              }`}
-            >
-              <span className="flex items-center justify-center h-full text-xs">
-                {isDarkMode ? '🌙' : '☀️'}
-              </span>
-            </span>
-          </button>
-        </div>
-
         <div className="text-center mb-8">
           <h1 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${
             isDarkMode 
@@ -248,6 +214,24 @@ export default function Home() {
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
             Master your vocabulary with interactive word cards
+          </p>
+        </div>
+
+        {/* Quiz Navigation */}
+        <div className="max-w-4xl mx-auto mb-8 text-center">
+          <Link 
+            to="/quiz"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white rounded-xl shadow-lg transition-all duration-200 hover:shadow-xl transform hover:scale-105 font-semibold text-lg"
+          >
+            🧠 Take Phase 1 Quiz
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+          <p className={`text-sm mt-2 ${
+            isDarkMode ? 'text-gray-400' : 'text-gray-500'
+          }`}>
+            Test your knowledge with 110 questions about the first 10 words
           </p>
         </div>
 
