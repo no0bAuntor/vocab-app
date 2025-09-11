@@ -201,16 +201,16 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
       {/* Content Layer */}
       <div className="relative z-10">
         {/* Header */}
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-3 md:px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r ${
+          <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r ${
             isDarkMode 
               ? 'from-blue-400 to-purple-400' 
               : 'from-blue-600 to-purple-600'
           } bg-clip-text text-transparent mb-4`}>
             📚 Vocabulary Master
           </h1>
-          <p className={`text-lg mb-2 ${
+          <p className={`text-base md:text-lg mb-2 ${
             isDarkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
             Master your vocabulary with interactive word cards
@@ -258,12 +258,12 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
         </div>
 
         {/* Word Card Container */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-2 md:px-0">
           <div className="relative flex items-center">
             {/* Left Navigation Button - Hidden on mobile */}
             <button
               onClick={prevWordWithAnimation}
-              className={`mr-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
+              className={`mr-4 md:mr-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-600'
@@ -282,7 +282,7 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
             
             {/* Word Card with swipe animation */}
             <div
-              className={`flex-1 select-none touch-manipulation md:cursor-default ${isSwipeActive ? 'cursor-grabbing md:cursor-default' : ''}`}
+              className={`flex-1 px-1 md:px-0 select-none touch-manipulation md:cursor-default ${isSwipeActive ? 'cursor-grabbing md:cursor-default' : ''}`}
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
@@ -304,7 +304,7 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
             {/* Right Navigation Button - Hidden on mobile */}
             <button
               onClick={nextWordWithAnimation}
-              className={`ml-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
+              className={`ml-4 md:ml-6 shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group hidden md:block ${
                 isDarkMode 
                   ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                   : 'bg-white hover:bg-gray-50 text-gray-600'
@@ -322,22 +322,126 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
             </button>
           </div>
 
-          {/* Word Dots Navigation */}
-          <div className="flex justify-center mt-8 space-x-2 max-w-full overflow-x-auto pb-4">
-            {words.map((_, index) => (
+          {/* Enhanced Dots Navigation */}
+          <div className="flex justify-center items-center mt-8 mb-4 gap-3">
+            {/* Left arrow for more words */}
+            {currentIndex > 2 && (
               <button
-                key={index}
-                onClick={() => goToWord(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                  index === currentIndex
-                    ? 'bg-blue-500 scale-125'
-                    : isDarkMode 
-                      ? 'bg-gray-600 hover:bg-gray-500' 
-                      : 'bg-gray-300 hover:bg-gray-400'
+                onClick={() => goToWord(Math.max(0, currentIndex - 5))}
+                className={`p-2 rounded-full transition-all duration-200 hover:scale-110 ${
+                  isDarkMode 
+                    ? 'bg-gray-700 hover:bg-gray-600 text-gray-400 hover:text-blue-400' 
+                    : 'bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-blue-600'
                 }`}
-                title={`Word ${index + 1}: ${words[index].word}`}
-              />
-            ))}
+                title="Previous 5 words"
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+            
+            <div className={`flex items-center gap-3 px-6 py-3 rounded-full ${
+              isDarkMode 
+                ? 'bg-gray-800/60 border border-gray-700' 
+                : 'bg-white/60 border border-gray-200'
+            } backdrop-blur-md shadow-lg`}>
+              {/* Previous indicator */}
+              {currentIndex > 2 && (
+                <div className="flex items-center gap-1">
+                  <div className={`w-1.5 h-1.5 rounded-full ${
+                    isDarkMode ? 'bg-gray-500' : 'bg-gray-400'
+                  }`}></div>
+                  <div className={`w-1 h-1 rounded-full ${
+                    isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
+                  }`}></div>
+                </div>
+              )}
+              
+              {/* Main dots (showing 5 maximum) */}
+              {(() => {
+                const startIndex = Math.max(0, Math.min(currentIndex - 2, totalWords - 5));
+                const endIndex = Math.min(startIndex + 5, totalWords);
+                const visibleDots = [];
+                
+                for (let i = startIndex; i < endIndex; i++) {
+                  const isActive = i === currentIndex;
+                  const distance = Math.abs(i - currentIndex);
+                  
+                  visibleDots.push(
+                    <button
+                      key={i}
+                      onClick={() => goToWord(i)}
+                      className={`relative transition-all duration-300 group ${
+                        isActive ? 'scale-110' : 'hover:scale-105'
+                      }`}
+                      title={`Word ${i + 1}: ${words[i].word}`}
+                    >
+                      <div className={`rounded-full transition-all duration-300 ${
+                        isActive 
+                          ? 'w-10 h-4 bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg shadow-blue-500/30' 
+                          : distance === 1
+                            ? 'w-3 h-3 bg-gradient-to-r from-blue-400/60 to-purple-400/60 hover:from-blue-500 hover:to-purple-500'
+                            : 'w-2 h-2 bg-gradient-to-r from-gray-400/60 to-gray-500/60 hover:from-blue-400 hover:to-purple-400'
+                      }`}>
+                        {isActive && (
+                          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 animate-pulse opacity-30"></div>
+                        )}
+                      </div>
+                      
+                      {/* Word number tooltip */}
+                      <div className={`absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none ${
+                        isDarkMode 
+                          ? 'bg-gray-900 text-gray-200 border border-gray-700' 
+                          : 'bg-white text-gray-700 border border-gray-200 shadow-md'
+                      }`}>
+                        {i + 1}
+                      </div>
+                    </button>
+                  );
+                }
+                
+                return visibleDots;
+              })()}
+              
+              {/* Next indicator */}
+              {currentIndex < totalWords - 3 && (
+                <div className="flex items-center gap-1">
+                  <div className={`w-1 h-1 rounded-full ${
+                    isDarkMode ? 'bg-gray-600' : 'bg-gray-300'
+                  }`}></div>
+                  <div className={`w-1.5 h-1.5 rounded-full ${
+                    isDarkMode ? 'bg-gray-500' : 'bg-gray-400'
+                  }`}></div>
+                </div>
+              )}
+              
+              {/* Progress text */}
+              <div className={`ml-4 pl-4 border-l ${
+                isDarkMode ? 'border-gray-600 text-gray-400' : 'border-gray-300 text-gray-500'
+              }`}>
+                <span className="text-xs font-medium">
+                  {currentIndex + 1}/{totalWords}
+                </span>
+              </div>
+            </div>
+            
+            {/* Right arrow for more words */}
+            {currentIndex < totalWords - 3 && (
+              <button
+                onClick={() => goToWord(Math.min(totalWords - 1, currentIndex + 5))}
+                className={`p-2 rounded-full transition-all duration-200 hover:scale-110 ${
+                  isDarkMode 
+                    ? 'bg-gray-700 hover:bg-gray-600 text-gray-400 hover:text-blue-400' 
+                    : 'bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-blue-600'
+                }`}
+                title="Next 5 words"
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
           </div>
 
           {/* Quick Navigation */}

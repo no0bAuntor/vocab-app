@@ -68,7 +68,7 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
   };
 
   return (
-    <div className={`rounded-2xl shadow-xl p-8 mb-6 border hover:shadow-2xl transition-all duration-300 relative overflow-hidden ${
+    <div className={`rounded-2xl shadow-xl p-4 md:p-8 mb-6 border hover:shadow-2xl transition-all duration-300 relative overflow-hidden ${
       isDarkMode 
         ? 'bg-gray-800 border-gray-700' 
         : 'bg-white border-gray-100'
@@ -88,18 +88,18 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       </div>
 
       {/* Word Number Badge */}
-      <div className="absolute top-4 md:right-4 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+      <div className="absolute top-3 md:top-4 right-3 md:right-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
         #{wordNumber}
       </div>
 
       {/* Word Header */}
-      <div className="mb-6">
-        <div className="flex items-center gap-4 mb-2">
-          <h2 className={`text-3xl md:text-4xl font-bold leading-tight ${
+      <div className="mb-4 md:mb-6 mt-8 md:mt-0">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 md:gap-4 mb-2">
+          <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold leading-tight ${
             isDarkMode ? 'text-gray-100' : 'text-gray-800'
           }`}>
             {capitalizeFirst(word.word)}
-            <span className={`text-lg ml-3 font-normal ${
+            <span className={`text-base md:text-lg ml-3 font-normal ${
               isDarkMode ? 'text-gray-400' : 'text-gray-500'
             }`}>({word.pos})</span>
           </h2>
@@ -112,7 +112,7 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
               console.log('Button clicked!');
               pronounceWord();
             }}
-            className={`p-3 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer ${
+            className={`p-2 md:p-3 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer self-start sm:self-auto ${
               isDarkMode 
                 ? 'bg-blue-600 hover:bg-blue-700 text-white' 
                 : 'bg-blue-500 hover:bg-blue-600 text-white'
@@ -127,24 +127,24 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       </div>
 
       {/* Bengali Translation */}
-      <div className={`rounded-xl p-4 mb-6 ${
+      <div className={`rounded-xl p-3 md:p-4 mb-4 md:mb-6 ${
         isDarkMode 
           ? 'bg-gradient-to-r from-blue-900/50 to-purple-900/50' 
           : 'bg-gradient-to-r from-blue-50 to-purple-50'
       }`}>
-        <p className={`text-lg ${
+        <p className={`text-base md:text-lg ${
           isDarkMode ? 'text-gray-200' : 'text-gray-800'
         }`}>
           <span className={`font-semibold ${
             isDarkMode ? 'text-blue-400' : 'text-blue-700'
           }`}>🇧🇩 বাংলা:</span>
-          <span className="ml-2 font-medium">{word.bengali}</span>
+          <span className="ml-2 font-medium break-words">{word.bengali}</span>
         </p>
       </div>
 
       {/* Explanation */}
-      <div className="mb-6">
-        <h3 className={`text-lg font-semibold mb-3 flex items-center ${
+      <div className="mb-4 md:mb-6">
+        <h3 className={`text-base md:text-lg font-semibold mb-3 flex items-center ${
           isDarkMode ? 'text-gray-200' : 'text-gray-800'
         }`}>
           <span className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
@@ -154,7 +154,7 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
           </span>
           Explanation
         </h3>
-        <p className={`text-lg leading-relaxed pl-8 ${
+        <p className={`text-sm md:text-base lg:text-lg leading-relaxed pl-6 md:pl-8 ${
           isDarkMode ? 'text-gray-300' : 'text-gray-700'
         }`}>
           {capitalizeFirst(word.Explanation)}
@@ -162,12 +162,12 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       </div>
 
       {/* Synonyms and Antonyms Grid */}
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
         {/* Synonyms */}
-        <div className={`rounded-xl p-4 ${
+        <div className={`rounded-xl p-3 md:p-4 ${
           isDarkMode ? 'bg-green-900/30' : 'bg-green-50'
         }`}>
-          <h3 className={`text-lg font-semibold mb-3 flex items-center ${
+          <h3 className={`text-base md:text-lg font-semibold mb-3 flex items-center ${
             isDarkMode ? 'text-green-400' : 'text-green-800'
           }`}>
             <span className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
@@ -177,11 +177,11 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
             </span>
             Synonyms
           </h3>
-          <div>
+          <div className="flex flex-wrap gap-1 md:gap-2">
             {capitalizeArray(word.synonym).map((syn, index) => (
               <span
                 key={index}
-                className={`inline-block px-3 py-1 rounded-full text-sm mr-2 mb-2 border ${
+                className={`inline-block px-2 md:px-3 py-1 rounded-full text-xs md:text-sm border ${
                   isDarkMode 
                     ? 'bg-green-800/50 text-green-300 border-green-700' 
                     : 'bg-green-100 text-green-800 border-green-200'
@@ -194,10 +194,10 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
         </div>
 
         {/* Antonyms */}
-        <div className={`rounded-xl p-4 ${
+        <div className={`rounded-xl p-3 md:p-4 ${
           isDarkMode ? 'bg-red-900/30' : 'bg-red-50'
         }`}>
-          <h3 className={`text-lg font-semibold mb-3 flex items-center ${
+          <h3 className={`text-base md:text-lg font-semibold mb-3 flex items-center ${
             isDarkMode ? 'text-red-400' : 'text-red-800'
           }`}>
             <span className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
@@ -207,11 +207,11 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
             </span>
             Antonyms
           </h3>
-          <div>
+          <div className="flex flex-wrap gap-1 md:gap-2">
             {capitalizeArray(word.antonym).map((ant, index) => (
               <span
                 key={index}
-                className={`inline-block px-3 py-1 rounded-full text-sm mr-2 mb-2 border ${
+                className={`inline-block px-2 md:px-3 py-1 rounded-full text-xs md:text-sm border ${
                   isDarkMode 
                     ? 'bg-red-800/50 text-red-300 border-red-700' 
                     : 'bg-red-100 text-red-800 border-red-200'
@@ -225,10 +225,10 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       </div>
 
       {/* Example */}
-      <div className={`rounded-xl p-6 border-l-4 border-purple-500 ${
+      <div className={`rounded-xl p-4 md:p-6 border-l-4 border-purple-500 ${
         isDarkMode ? 'bg-gray-700/50' : 'bg-gray-50'
       }`}>
-        <h3 className={`text-lg font-semibold mb-3 flex items-center ${
+        <h3 className={`text-base md:text-lg font-semibold mb-3 flex items-center ${
           isDarkMode ? 'text-gray-200' : 'text-gray-800'
         }`}>
           <span className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
@@ -238,7 +238,7 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
           </span>
           Example
         </h3>
-        <p className={`italic text-lg leading-relaxed pl-8 ${
+        <p className={`italic text-sm md:text-base lg:text-lg leading-relaxed pl-6 md:pl-8 ${
           isDarkMode ? 'text-gray-300' : 'text-gray-700'
         }`}>
           "{word.example}"

@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar({ isDarkMode, toggleDarkMode }) {
   const [isVocabOpen, setIsVocabOpen] = useState(false);
   const [isQuizOpen, setIsQuizOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
@@ -19,17 +20,24 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl">📚</span>
-            <span className={`text-xl font-bold bg-gradient-to-r ${
+            <span className={`text-lg md:text-xl font-bold bg-gradient-to-r ${
               isDarkMode 
                 ? 'from-blue-400 to-purple-400' 
                 : 'from-blue-600 to-purple-600'
-            } bg-clip-text text-transparent`}>
+            } bg-clip-text text-transparent hidden sm:block`}>
               Vocabulary Master
+            </span>
+            <span className={`text-sm font-bold bg-gradient-to-r ${
+              isDarkMode 
+                ? 'from-blue-400 to-purple-400' 
+                : 'from-blue-600 to-purple-600'
+            } bg-clip-text text-transparent sm:hidden`}>
+              Vocab
             </span>
           </Link>
 
-          {/* Navigation Items */}
-          <div className="flex items-center space-x-6">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-6">
             {/* Vocabulary Dropdown */}
             <div className="relative">
               <button
@@ -37,7 +45,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                   setIsVocabOpen(!isVocabOpen);
                   setIsQuizOpen(false);
                 }}
-                className={`flex items-center space-x-1 px-4 py-2 rounded-lg transition-all duration-200 ${
+                className={`flex items-center space-x-1 px-4 py-2 rounded-lg transition-all duration-200 min-w-[120px] justify-between ${
                   isActive('/') 
                     ? 'bg-blue-500 text-white' 
                     : isDarkMode
@@ -60,7 +68,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
 
               {/* Vocabulary Dropdown Menu */}
               {isVocabOpen && (
-                <div className={`absolute top-full left-0 mt-2 py-2 w-48 rounded-lg shadow-lg border ${
+                <div className={`absolute top-full right-0 mt-2 py-2 w-40 rounded-lg shadow-lg border z-50 ${
                   isDarkMode 
                     ? 'bg-gray-800 border-gray-700' 
                     : 'bg-white border-gray-200'
@@ -90,7 +98,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                   setIsQuizOpen(!isQuizOpen);
                   setIsVocabOpen(false);
                 }}
-                className={`flex items-center space-x-1 px-4 py-2 rounded-lg transition-all duration-200 ${
+                className={`flex items-center space-x-1 px-4 py-2 rounded-lg transition-all duration-200 min-w-[120px] justify-between ${
                   isActive('/quiz') 
                     ? 'bg-purple-500 text-white' 
                     : isDarkMode
@@ -113,7 +121,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
 
               {/* Quiz Dropdown Menu */}
               {isQuizOpen && (
-                <div className={`absolute top-full left-0 mt-2 py-2 w-48 rounded-lg shadow-lg border ${
+                <div className={`absolute top-full right-0 mt-2 py-2 w-40 rounded-lg shadow-lg border z-50 ${
                   isDarkMode 
                     ? 'bg-gray-800 border-gray-700' 
                     : 'bg-white border-gray-200'
@@ -151,16 +159,106 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
               </span>
             </button>
           </div>
+
+          {/* Mobile Menu Button & Dark Mode Toggle */}
+          <div className="flex md:hidden items-center space-x-2">
+            <button
+              onClick={toggleDarkMode}
+              className={`p-2 rounded-lg transition-all duration-200 ${
+                isDarkMode
+                  ? 'text-gray-300 hover:text-white hover:bg-gray-800'
+                  : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
+              }`}
+              title="Toggle dark mode"
+            >
+              <span className="text-lg">
+                {isDarkMode ? '🌙' : '☀️'}
+              </span>
+            </button>
+            
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={`p-2 rounded-lg transition-all duration-200 ${
+                isDarkMode
+                  ? 'text-gray-300 hover:text-white hover:bg-gray-800'
+                  : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
+              }`}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className={`md:hidden border-t ${
+            isDarkMode ? 'border-gray-700 bg-gray-900/95' : 'border-gray-200 bg-white/95'
+          } backdrop-blur-md`}>
+            <div className="px-4 py-2 space-y-1">
+              {/* Vocabulary Section */}
+              <div>
+                <div className={`px-3 py-2 text-sm font-medium ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                }`}>
+                  Vocabulary
+                </div>
+                <Link
+                  to="/"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center px-6 py-3 rounded-lg transition-colors duration-200 ${
+                    isActive('/')
+                      ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
+                      : isDarkMode 
+                        ? 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <span className="mr-3">📖</span>
+                  <span>Phase 1</span>
+                </Link>
+              </div>
+
+              {/* Quiz Section */}
+              <div>
+                <div className={`px-3 py-2 text-sm font-medium ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                }`}>
+                  Quiz
+                </div>
+                <Link
+                  to="/quiz"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center px-6 py-3 rounded-lg transition-colors duration-200 ${
+                    isActive('/quiz')
+                      ? isDarkMode ? 'bg-purple-600 text-white' : 'bg-purple-500 text-white'
+                      : isDarkMode 
+                        ? 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <span className="mr-3">🧠</span>
+                  <span>Phase 1</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Mobile overlay to close dropdowns */}
-      {(isVocabOpen || isQuizOpen) && (
+      {/* Mobile overlay to close dropdowns and mobile menu */}
+      {(isVocabOpen || isQuizOpen || isMobileMenuOpen) && (
         <div 
-          className="fixed inset-0 z-40"
+          className="fixed inset-0 z-40 md:hidden"
           onClick={() => {
             setIsVocabOpen(false);
             setIsQuizOpen(false);
+            setIsMobileMenuOpen(false);
           }}
         />
       )}
