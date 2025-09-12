@@ -197,7 +197,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className={`md:hidden border-t ${
+          <div className={`md:hidden border-t z-50 relative ${
             isDarkMode ? 'border-gray-700 bg-gray-900/95' : 'border-gray-200 bg-white/95'
           } backdrop-blur-md`}>
             <div className="px-4 py-2 space-y-1">
@@ -251,15 +251,22 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
         )}
       </div>
 
-      {/* Mobile overlay to close dropdowns and mobile menu */}
-      {(isVocabOpen || isQuizOpen || isMobileMenuOpen) && (
+      {/* Overlay to close dropdowns and mobile menu */}
+      {(isVocabOpen || isQuizOpen) && (
         <div 
-          className="fixed inset-0 z-40 md:hidden"
+          className="fixed inset-0 z-40"
           onClick={() => {
             setIsVocabOpen(false);
             setIsQuizOpen(false);
-            setIsMobileMenuOpen(false);
           }}
+        />
+      )}
+      
+      {/* Mobile menu overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 z-30 md:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
         />
       )}
     </nav>
