@@ -9,6 +9,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
+  const [jumpToQuestion, setJumpToQuestion] = useState('');
 
   const handleOption = (option) => {
     if (showExplanation) return;
@@ -39,6 +40,28 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     }
   };
 
+  const jumpToQuestionNumber = (questionNum) => {
+    const questionIndex = questionNum - 1; // Convert to 0-based index
+    if (questionIndex >= 0 && questionIndex < phase1Quiz.length) {
+      setCurrent(questionIndex);
+      setSelected(null);
+      setShowExplanation(false);
+      setJumpToQuestion('');
+    }
+  };
+
+  const handleJumpInputChange = (e) => {
+    setJumpToQuestion(e.target.value);
+  };
+
+  const handleJumpSubmit = (e) => {
+    e.preventDefault();
+    const questionNum = parseInt(jumpToQuestion);
+    if (!isNaN(questionNum)) {
+      jumpToQuestionNumber(questionNum);
+    }
+  };
+
   const restartQuiz = () => {
     setCurrent(0);
     setSelected(null);
@@ -46,6 +69,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     setScore(0);
     setFinished(false);
     setUserAnswers([]);
+    setJumpToQuestion('');
   };
 
   if (finished) {
@@ -166,7 +190,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
           </div>
 
           {/* Progress Bar */}
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="flex justify-between items-center mb-2">
               <span className={`text-sm font-medium ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
@@ -184,6 +208,84 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                 className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-300"
                 style={{ width: `${((current + 1) / phase1Quiz.length) * 100}%` }}
               ></div>
+            </div>
+          </div>
+
+          {/* Jump to Question Section */}
+          <div className={`p-4 rounded-xl shadow-md mb-6 ${
+            isDarkMode ? 'bg-gray-800/50' : 'bg-white/50'
+          } backdrop-blur-md border ${
+            isDarkMode ? 'border-gray-700' : 'border-gray-200'
+          }`}>
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <div className="flex items-center gap-3 flex-1">
+                <span className={`text-sm font-medium whitespace-nowrap ${
+                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
+                }`}>
+                  🎯 Jump to Question:
+                </span>
+                
+                {/* Quick Jump Buttons for first 10 questions */}
+                <div className="flex flex-wrap gap-1">
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+                    <button
+                      key={num}
+                      onClick={() => jumpToQuestionNumber(num)}
+                      className={`w-8 h-8 rounded-full text-xs font-semibold transition-all duration-200 hover:scale-110 ${
+                        current + 1 === num
+                          ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
+                          : isDarkMode
+                            ? 'bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white'
+                            : 'bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-800'
+                      }`}
+                      title={`Jump to question ${num}`}
+                    >
+                      {num}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Manual Input for any question number */}
+              <form onSubmit={handleJumpSubmit} className="flex items-center gap-2">
+                <input
+                  type="number"
+                  min="1"
+                  max={phase1Quiz.length}
+                  value={jumpToQuestion}
+                  onChange={handleJumpInputChange}
+                  placeholder="Enter #"
+                  className={`w-20 px-3 py-2 rounded-lg border text-center text-sm transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
+                    isDarkMode 
+                      ? 'bg-gray-700 border-gray-600 text-gray-200 placeholder-gray-400' 
+                      : 'bg-white border-gray-300 text-gray-800 placeholder-gray-500'
+                  }`}
+                />
+                <button
+                  type="submit"
+                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 ${
+                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= phase1Quiz.length
+                      ? 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-md'
+                      : isDarkMode
+                        ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                        : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  }`}
+                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > phase1Quiz.length}
+                >
+                  Go
+                </button>
+              </form>
+            </div>
+
+            {/* Question Range Info */}
+            <div className={`mt-3 pt-3 border-t text-center ${
+              isDarkMode ? 'border-gray-700' : 'border-gray-200'
+            }`}>
+              <p className={`text-xs ${
+                isDarkMode ? 'text-gray-400' : 'text-gray-500'
+              }`}>
+                You can jump to any question (1-{phase1Quiz.length}). Your progress and score will be maintained.
+              </p>
             </div>
           </div>
 
@@ -257,6 +359,53 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                 </p>
               </div>
             )}
+
+            {/* Navigation Buttons */}
+            <div className="flex justify-between items-center mt-6">
+              <button
+                onClick={() => current > 0 && jumpToQuestionNumber(current)}
+                disabled={current === 0}
+                className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  current === 0
+                    ? isDarkMode 
+                      ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                    : isDarkMode
+                      ? 'bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white'
+                      : 'bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-800'
+                } hover:scale-105`}
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                Previous
+              </button>
+
+              <div className={`text-sm font-medium ${
+                isDarkMode ? 'text-gray-400' : 'text-gray-500'
+              }`}>
+                Question {current + 1} of {phase1Quiz.length}
+              </div>
+
+              <button
+                onClick={() => jumpToQuestionNumber(current + 2)}
+                disabled={current === phase1Quiz.length - 1}
+                className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  current === phase1Quiz.length - 1
+                    ? isDarkMode 
+                      ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                    : isDarkMode
+                      ? 'bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white'
+                      : 'bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-800'
+                } hover:scale-105`}
+              >
+                Next
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
 
             {/* Next Button */}
             {showExplanation && (
