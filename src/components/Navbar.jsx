@@ -25,7 +25,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                 ? 'from-blue-400 to-purple-400' 
                 : 'from-blue-600 to-purple-600'
             } bg-clip-text text-transparent hidden sm:block`}>
-              Vocabulary Master
+              Vocabulary Master v2.0
             </span>
             <span className={`text-sm font-bold bg-gradient-to-r ${
               isDarkMode 
