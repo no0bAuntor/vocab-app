@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Vocabulary Master App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app helps you learn vocabulary through interactive flashcards and quizzes.
+
+## Features
+- **Phase 1**: First 10 vocabulary words  
+- **Phase 2**: Words 11-20
+- Interactive flashcards with swipe navigation
+- Comprehensive quizzes with explanations
+- Dark/Light mode toggle
+- Mobile responsive design
+- **Automatic deployment with GitHub Actions** ✨
 
 ## Available Scripts
 
