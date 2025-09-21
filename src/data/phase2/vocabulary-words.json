@@ -1,0 +1,102 @@
+[
+  {
+    "id": 11,
+    "word": "abeyance",
+    "pos": "noun",
+    "bengali": "স্থগিতাবস্থা, অপ্রয়োগ",
+    "Explanation": "a temporary state of suspension, inactivity, or disuse.",
+    "synonym": ["Delay (বিলম্ব)", "misuse (অপব্যবহার)", "postponement (স্থগিতকরণ)", "inactivity (নিষ্ক্রিয়তা)"],
+    "antonym": ["activation (সক্রিয়করণ)", "implementation (বাস্তবায়ন)", "continuation (চালিয়ে যাওয়া)", "progress (অগ্রগতি)", "advancement (উন্নতি)"],
+    "example": "The project is currently in abeyance until further notice. (প্রকল্পটি বর্তমানে স্থগিতাবস্থায় রয়েছে যতক্ষণ না পরবর্তী নির্দেশনা দেওয়া হয়।)"
+  },
+  {
+    "id": 12,
+    "word": "abscond",
+    "pos": "verb",
+    "bengali": "পলাতক হওয়া, গা ঢাকা দেওয়া",
+    "Explanation": "to leave secretly and quickly, often to avoid being caught or facing trouble",
+    "synonym": ["run away (পলাতক হওয়া)", "flee (পলাতক হওয়া)", "bolt (দৌড়ানো)", "escape (পলাতক হওয়া)", "decamp (গা ঢাকা দেওয়া)", "make off (পলাতক হওয়া)"],
+    "antonym": ["Remain (থাকা)", "Stay (থাকা)", "Appear (উপস্থিত হওয়া)", "face (মুখোমুখি হওয়া)", "surrender (আত্মসমর্পণ করা)"],
+    "example": "The thief absconded with the stolen money before the police arrived. (চোরটি পুলিশ আসার আগে চুরি করা টাকা নিয়ে গা ঢাকা দিয়েছিল।)"
+  },
+  {
+    "id": 13,
+    "word": "abstemious",
+    "pos": "adj",
+    "bengali": "স্বল্পাহারী, সংযোগচিত্ত, মিতাচারী",
+    "Explanation": "characterized by self-denial or abstinence, especially in the consumption of food or drink.",
+    "synonym": ["temperate (মিতাচারী)", "continent (সংযোগচিত্ত)", "ascetic (তপস্বী)"],
+    "antonym": ["indulgent (অবাধ্য)", "gluttonous (অতিভোজনকারী)", "self-indulgent (আত্মসুখী)", "extravagant (অবাধ্য)", "intemperate (অমিতব্যয়ী)"],
+    "example": "Her abstemious lifestyle allowed her to maintain a healthy weight. (তার স্বল্পাহারী জীবনযাত্রা তাকে একটি স্বাস্থ্যকর ওজন বজায় রাখতে সাহায্য করেছে।)"
+  },
+  {
+    "id": 14,
+    "word": "admonish",
+    "pos": "verb",
+    "bengali": "সতর্ক করা, উপদেশ দেওয়া",
+    "Explanation": "to warn or reprimand someone firmly.",
+    "synonym": ["reprimand (সতর্ক করা)", "rebuke (নিন্দা করা)", "reprove (সতর্ক করা)", "caution (সতর্ক করা)"],
+    "antonym": ["praise (প্রশংসা করা)", "commend (শ্রেষ্ঠত্ব দেওয়া)", "laud (গুণগান করা)", "applaud (তালি দেওয়া)", "endorse (সমর্থন করা)"],
+    "example": "The teacher admonished the students for being late. (শিক্ষক ছাত্রদের দেরিতে আসার জন্য সতর্ক করেছিলেন।)"
+  },
+  {
+    "id": 15,
+    "word": "adulterate",
+    "pos": "adj, verb",
+    "bengali": "অশুদ্ধ করা, মিশ্রিত করা",
+    "Explanation": "to make something impure or weaker by adding something of inferior quality.",
+    "synonym": ["contaminate (অশুদ্ধ করা)", "debase (অবমাননা করা)", "impair (ক্ষতিগ্রস্ত করা)", "immoral (অনৈতিক)", "wrongful (অন্যায়)"],
+    "antonym": ["purify (শুদ্ধ করা)", "refine (শোধন করা)", "clarify (পরিষ্কার করা)", "strengthen (শক্তিশালী করা)"],
+    "example": "The company was fined for trying to adulterate its products with cheaper ingredients. (কোম্পানিটি সস্তা উপাদান মিশ্রিত করার চেষ্টা করার জন্য জরিমানা করা হয়েছিল।)"
+  },
+  {
+    "id": 16,
+    "word": "aesthetic",
+    "pos": "adj",
+    "bengali": "শিল্প রুচিসম্মত, নান্দনিক",
+    "Explanation": "concerned with beauty or the appreciation of beauty.",
+    "synonym": ["artistic (শিল্পীসুলভ)", "creative (সৃজনশীল)", "elegant (সুন্দর)", "tasteful (রুচিশীল)", "esthetic (শিল্প রুচিসম্মত)"],
+    "antonym": ["unaesthetic (অশিল্পীসুলভ)", "unartistic (অশিল্পী)", "tasteless (রুচিহীন)"],
+    "example": "The aesthetic design of the building was praised by all. (ভবনের নান্দনিক নকশার প্রশংসা সকলেই করেছেন।)"
+  },
+  {
+    "id": 17,
+    "word": "aggregate",
+    "pos": "verb, noun, adj",
+    "bengali": "সমষ্টিগত, একত্রিত করা",
+    "Explanation": "to combine or group together; a whole formed by combining several elements.",
+    "synonym": ["collect (সংগ্রহ করা)", "amass (জমা করা)", "assemble (একত্রিত করা)", "consolidate (মজবুত করা)", "accumulate (জমা করা)", "accrue (বৃদ্ধি হওয়া)"],
+    "antonym": ["disperse (বিক্ষিপ্ত করা)", "separate (বিভক্ত করা)", "scatter (ছড়িয়ে দেওয়া)"],
+    "example": "The aggregate data from the surveys provided valuable insights. (সার্ভে থেকে সংগৃহীত সমষ্টিগত তথ্য মূল্যবান অন্তর্দৃষ্টি প্রদান করেছে।)"
+  },
+  {
+    "id": 18,
+    "word": "alacrity",
+    "pos": "noun",
+    "bengali": "উদ্যম, তৎপরতা, উৎসাহ, উদ্দীপনা",
+    "Explanation": "brisk and cheerful readiness.",
+    "synonym": ["eagerness (উদ্যম)", "enthusiasm (উৎসাহ)", "zeal (উদ্যম)", "promptness (তৎপরতা)", "ardor (উদ্দীপনা)", "anxiety (আগ্রহীতা)", "punctuality (সময়ানুবর্তিতা)", "liveliness (উদ্যম)"],
+    "antonym": ["apathy (উদাসীনতা)", "indifference (অবহেলা)", "reluctance (অবহেলা)"],
+    "example": "She accepted the invitation with alacrity. (তিনি উদ্যমের সাথে আমন্ত্রণ গ্রহণ করেছিলেন।)"
+  },
+  {
+    "id": 19,
+    "word": "zealot",
+    "pos": "noun",
+    "bengali": "উৎসাহী ব্যক্তি, ধর্মান্ধ, অতি গোড়া লোক",
+    "Explanation": "a person who is fanatical and uncompromising in pursuit of their religious, political, or other ideals.",
+    "synonym": ["fanatic (উৎসাহী)", "extremist (চরমপন্থী)", "radical (বিপ্লবী)", "diehard (অবিচল)", "bigot (অন্ধবিশ্বাসী)"],
+    "antonym": ["moderate (মিতভাষী)", "pacifist (শান্তিবাদী)", "dove (শান্তিপ্রিয় ব্যক্তি)"],
+    "example": "The zealot refused to consider any compromise on his beliefs. (ধর্মান্ধ ব্যক্তি তার বিশ্বাসের উপর কোনো আপস করতে অস্বীকার করেছিল।)"
+  },
+  {
+    "id": 20,
+    "word": "verbose",
+    "pos": "adj",
+    "bengali": "শব্দবহুল, বাগাড়ম্বরপূর্ণ",
+    "Explanation": "using or expressed in more words than are needed.",
+    "synonym": ["wordy (শব্দবহুল)", "long-winded (বাগাড়ম্বরপূর্ণ)", "prolix (বিস্তৃত)", "loquacious (বাগ্মী)", "garrulous (গালগল্পকারী)", "grandiloquent (বাগাড়ম্বরপূর্ণ)", "grandiose (বাগাড়ম্বরপূর্ণ)", "mouthy (বাগাড়ম্বরপূর্ণ)"],
+    "antonym": ["concise (সংক্ষিপ্ত)", "succinct (সুসংক্ষিপ্ত)", "terse (সংক্ষিপ্ত)", "brief (সংক্ষিপ্ত)", "pithy (সংক্ষিপ্ত ও অর্থবহ)"],
+    "example": "His verbose explanation only served to confuse the students further. (তার শব্দবহুল ব্যাখ্যা কেবল ছাত্রদের আরও বিভ্রান্ত করতে সাহায্য করেছিল।)"
+  }
+]

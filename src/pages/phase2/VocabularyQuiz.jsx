@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import phase1Quiz from "../data/phase1-quiz.json";
+import phase2Quiz from "../../data/phase2/quiz-questions.json";
 
-function Quiz({ isDarkMode, toggleDarkMode }) {
+function Phase2Quiz({ isDarkMode, toggleDarkMode }) {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -17,21 +17,21 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     setSelected(option);
     setShowExplanation(true);
     
-    const isCorrect = option === phase1Quiz[current].answer;
+    const isCorrect = option === phase2Quiz[current].answer;
     if (isCorrect) {
       setScore(score + 1);
     }
     
     setUserAnswers([...userAnswers, {
-      questionId: phase1Quiz[current].id,
+      questionId: phase2Quiz[current].id,
       selected: option,
-      correct: phase1Quiz[current].answer,
+      correct: phase2Quiz[current].answer,
       isCorrect
     }]);
   };
 
   const handleNext = () => {
-    if (current < phase1Quiz.length - 1) {
+    if (current < phase2Quiz.length - 1) {
       setCurrent(current + 1);
       setSelected(null);
       setShowExplanation(false);
@@ -42,7 +42,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
 
   const jumpToQuestionNumber = (questionNum) => {
     const questionIndex = questionNum - 1; // Convert to 0-based index
-    if (questionIndex >= 0 && questionIndex < phase1Quiz.length) {
+    if (questionIndex >= 0 && questionIndex < phase2Quiz.length) {
       setCurrent(questionIndex);
       setSelected(null);
       setShowExplanation(false);
@@ -72,8 +72,10 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     setJumpToQuestion('');
   };
 
+  // Quiz finished screen
   if (finished) {
-    const percentage = ((score / phase1Quiz.length) * 100).toFixed(1);
+    const percentage = Math.round((score / phase2Quiz.length) * 100);
+    
     return (
       <div className={`min-h-screen transition-all duration-300 ${
         isDarkMode 
@@ -81,46 +83,28 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
           : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'
       }`}>
         <div className="container mx-auto px-4 py-8">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-8">
-            <Link 
-              to="/" 
-              className={`px-4 py-2 rounded-lg shadow-md transition-all duration-200 hover:shadow-lg ${
-                isDarkMode 
-                  ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
-                  : 'bg-white hover:bg-gray-50 text-gray-700'
-              }`}
-            >
-              ← Back to Home
-            </Link>
-          </div>
-
-          <div className="max-w-2xl mx-auto text-center">
-            <div className={`p-8 rounded-xl shadow-lg ${
+          <div className="max-w-2xl mx-auto">
+            <div className={`p-8 rounded-xl shadow-lg text-center ${
               isDarkMode ? 'bg-gray-800' : 'bg-white'
             }`}>
               <div className="mb-6">
-                <div className={`text-6xl mb-4 ${
-                  percentage >= 80 ? 'text-green-500' : 
-                  percentage >= 60 ? 'text-yellow-500' : 'text-red-500'
-                }`}>
-                  {percentage >= 80 ? '🎉' : percentage >= 60 ? '👍' : '📚'}
-                </div>
-                <h2 className={`text-3xl font-bold mb-4 ${
+                <h1 className={`text-3xl font-bold mb-4 ${
                   isDarkMode ? 'text-white' : 'text-gray-800'
-                }`}>
-                  Quiz Complete!
-                </h2>
-                <div className={`text-5xl font-bold mb-2 ${
-                  percentage >= 80 ? 'text-green-500' : 
-                  percentage >= 60 ? 'text-yellow-500' : 'text-red-500'
-                }`}>
-                  {percentage}%
+                }`}>🎉 Quiz Completed!</h1>
+                <div className="text-6xl mb-4">
+                  {percentage >= 80 ? '🏆' : percentage >= 60 ? '🎯' : '📚'}
                 </div>
-                <p className={`text-xl ${
+                <p className={`text-xl mb-2 ${
                   isDarkMode ? 'text-gray-300' : 'text-gray-600'
                 }`}>
-                  You scored {score} out of {phase1Quiz.length} questions
+                  Your Score: <span className="font-bold text-2xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                    {score}/{phase2Quiz.length}
+                  </span>
+                </p>
+                <p className={`text-lg ${
+                  isDarkMode ? 'text-gray-400' : 'text-gray-500'
+                }`}>
+                  Percentage: {percentage}%
                 </p>
               </div>
 
@@ -132,14 +116,14 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                   🔄 Retake Quiz
                 </button>
                 <Link 
-                  to="/"
+                  to="/phase2"
                   className={`block w-full px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:shadow-lg text-center ${
                     isDarkMode 
                       ? 'bg-gray-700 hover:bg-gray-600 text-gray-300' 
                       : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
                   }`}
                 >
-                  📚 Study Words
+                  📚 Study Phase 2 Words
                 </Link>
               </div>
             </div>
@@ -149,7 +133,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     );
   }
 
-  const q = phase1Quiz[current];
+  const q = phase2Quiz[current];
 
   return (
     <div className={`min-h-screen transition-all duration-300 ${
@@ -161,14 +145,14 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <Link 
-            to="/" 
+            to="/phase2" 
             className={`px-4 py-2 rounded-lg shadow-md transition-all duration-200 hover:shadow-lg ${
               isDarkMode 
                 ? 'bg-gray-800 hover:bg-gray-700 text-gray-300' 
                 : 'bg-white hover:bg-gray-50 text-gray-700'
             }`}
           >
-            ← Back to Home
+            ← Back to Phase 2
           </Link>
         </div>
 
@@ -180,12 +164,12 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                 ? 'from-blue-400 to-purple-400' 
                 : 'from-blue-600 to-purple-600'
             } bg-clip-text text-transparent mb-4`}>
-              🧠 Phase 1 Quiz
+              🧠 Phase 2 Quiz
             </h1>
             <p className={`text-lg ${
               isDarkMode ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              Test your knowledge of the first 10 vocabulary words
+              Test your knowledge of vocabulary words 11-20
             </p>
           </div>
 
@@ -198,7 +182,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
               <span className={`text-sm font-medium ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                {current + 1} of {phase1Quiz.length}
+                {current + 1} of {phase2Quiz.length}
               </span>
             </div>
             <div className={`w-full rounded-full h-3 ${
@@ -206,7 +190,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
             }`}>
               <div 
                 className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-300"
-                style={{ width: `${((current + 1) / phase1Quiz.length) * 100}%` }}
+                style={{ width: `${((current + 1) / phase2Quiz.length) * 100}%` }}
               ></div>
             </div>
           </div>
@@ -251,7 +235,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                 <input
                   type="number"
                   min="1"
-                  max={phase1Quiz.length}
+                  max={phase2Quiz.length}
                   value={jumpToQuestion}
                   onChange={handleJumpInputChange}
                   placeholder="Enter #"
@@ -264,13 +248,13 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                 <button
                   type="submit"
                   className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 ${
-                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= phase1Quiz.length
+                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= phase2Quiz.length
                       ? 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-md'
                       : isDarkMode
                         ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
                         : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
-                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > phase1Quiz.length}
+                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > phase2Quiz.length}
                 >
                   Go
                 </button>
@@ -284,7 +268,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
               <p className={`text-xs ${
                 isDarkMode ? 'text-gray-400' : 'text-gray-500'
               }`}>
-                You can jump to any question (1-{phase1Quiz.length}). Your progress and score will be maintained.
+                You can jump to any question (1-{phase2Quiz.length}). Your progress and score will be maintained.
               </p>
             </div>
           </div>
@@ -300,7 +284,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
               }`}>
                 Question {q.id}
               </h2>
-              <p className={`text-lg leading-relaxed ${
+              <p className={`text-lg md:text-xl leading-relaxed ${
                 isDarkMode ? 'text-gray-200' : 'text-gray-700'
               }`}>
                 {q.question}
@@ -308,35 +292,34 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
             </div>
 
             {/* Options */}
-            <div className="space-y-3 mb-6">
-              {Object.entries(q.options).map(([key, value]) => (
+            <div className="space-y-4 mb-8">
+              {Object.entries(q.options).map(([key, option]) => (
                 <button
                   key={key}
-                  className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-200 ${
-                    selected === key
-                      ? selected === q.answer
-                        ? 'border-green-500 bg-green-50 text-green-800'
-                        : 'border-red-500 bg-red-50 text-red-800'
-                      : showExplanation && key === q.answer
-                        ? 'border-green-500 bg-green-50 text-green-800'
-                        : isDarkMode
-                          ? 'border-gray-600 bg-gray-700 hover:bg-gray-600 text-gray-200'
-                          : 'border-gray-200 bg-gray-50 hover:bg-gray-100 text-gray-700'
-                  } ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer hover:shadow-md'}`}
                   onClick={() => handleOption(key)}
                   disabled={showExplanation}
+                  className={`w-full p-4 rounded-lg text-left transition-all duration-200 hover:scale-[1.02] ${
+                    selected === key
+                      ? selected === q.answer
+                        ? isDarkMode ? 'bg-green-600 text-white' : 'bg-green-500 text-white'
+                        : isDarkMode ? 'bg-red-600 text-white' : 'bg-red-500 text-white'
+                      : key === q.answer && showExplanation
+                        ? isDarkMode ? 'bg-green-600 text-white' : 'bg-green-500 text-white'
+                        : isDarkMode
+                          ? 'bg-gray-700 hover:bg-gray-600 text-gray-200'
+                          : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
+                  } ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                 >
-                  <span className="font-semibold">{key.toUpperCase()}.</span> {value}
+                  <span className="font-semibold mr-3">{key.toUpperCase()}.</span>
+                  {option}
                 </button>
               ))}
             </div>
 
             {/* Explanation */}
             {showExplanation && (
-              <div className={`p-4 rounded-lg mb-6 ${
-                selected === q.answer
-                  ? isDarkMode ? 'bg-green-900/30 border border-green-700' : 'bg-green-50 border border-green-200'
-                  : isDarkMode ? 'bg-red-900/30 border border-red-700' : 'bg-red-50 border border-red-200'
+              <div className={`p-6 rounded-lg mb-6 ${
+                isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
               }`}>
                 <div className="flex items-start space-x-2 mb-2">
                   <span className="text-xl">
@@ -384,14 +367,14 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
               <div className={`text-sm font-medium ${
                 isDarkMode ? 'text-gray-400' : 'text-gray-500'
               }`}>
-                Question {current + 1} of {phase1Quiz.length}
+                Question {current + 1} of {phase2Quiz.length}
               </div>
 
               <button
                 onClick={() => jumpToQuestionNumber(current + 2)}
-                disabled={current === phase1Quiz.length - 1}
+                disabled={current === phase2Quiz.length - 1}
                 className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  current === phase1Quiz.length - 1
+                  current === phase2Quiz.length - 1
                     ? isDarkMode 
                       ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -414,7 +397,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
                   onClick={handleNext}
                   className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
                 >
-                  {current < phase1Quiz.length - 1 ? 'Next Question →' : 'Finish Quiz 🎯'}
+                  {current < phase2Quiz.length - 1 ? 'Next Question →' : 'Finish Quiz 🎯'}
                 </button>
               </div>
             )}
@@ -441,4 +424,4 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
   );
 }
 
-export default Quiz;
+export default Phase2Quiz;

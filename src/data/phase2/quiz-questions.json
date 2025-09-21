@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "The Bengali meaning 'স্থগিতাবস্থা' corresponds to which English word?",
+    "options": {
+      "a": "Active continuation",
+      "b": "Abeyance",
+      "c": "Permanent termination",
+      "d": "Rapid acceleration"
+    },
+    "answer": "b",
+    "explanation": "Abeyance means a temporary state of suspension, inactivity, or disuse, which directly translates to 'স্থগিতাবস্থা'."
+  },
+  {
+    "id": 2,
+    "question": "What is the primary part of speech for the word 'abeyance'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "Abeyance is a noun that refers to a state of temporary suspension or inactivity."
+  },
+  {
+    "id": 3,
+    "question": "The Bengali meaning 'পলাতক হওয়া' corresponds to which English word?",
+    "options": {
+      "a": "Appear",
+      "b": "Remain",
+      "c": "Abscond",
+      "d": "Surrender"
+    },
+    "answer": "c",
+    "explanation": "Abscond means to leave secretly and quickly, which translates to 'পলাতক হওয়া'."
+  },
+  {
+    "id": 4,
+    "question": "What is the primary part of speech for the word 'abscond'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "b",
+    "explanation": "Abscond is a verb meaning to leave secretly and quickly to avoid trouble."
+  },
+  {
+    "id": 5,
+    "question": "The Bengali meaning 'বিষণ্ণ' corresponds to which English word?",
+    "options": {
+      "a": "Joyful",
+      "b": "Excited",
+      "c": "Despondent",
+      "d": "Energetic"
+    },
+    "answer": "c",
+    "explanation": "Despondent means feeling dejected and discouraged, which translates to 'বিষণ্ণ'."
+  },
+  {
+    "id": 6,
+    "question": "What is the primary part of speech for the word 'despondent'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "Despondent is an adjective describing a state of dejection and discouragement."
+  },
+  {
+    "id": 7,
+    "question": "The Bengali meaning 'অনিচ্ছুক' corresponds to which English word?",
+    "options": {
+      "a": "Eager",
+      "b": "Reluctant",
+      "c": "Willing",
+      "d": "Enthusiastic"
+    },
+    "answer": "b",
+    "explanation": "Reluctant means unwilling or hesitant, which translates to 'অনিচ্ছুক'."
+  },
+  {
+    "id": 8,
+    "question": "What is the primary part of speech for the word 'reluctant'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "Reluctant is an adjective describing unwillingness or hesitancy."
+  },
+  {
+    "id": 9,
+    "question": "The Bengali meaning 'কঠোর' corresponds to which English word?",
+    "options": {
+      "a": "Gentle",
+      "b": "Soft",
+      "c": "Austere",
+      "d": "Luxurious"
+    },
+    "answer": "c",
+    "explanation": "Austere means severe, strict, or harsh, which translates to 'কঠোর'."
+  },
+  {
+    "id": 10,
+    "question": "What is the primary part of speech for the word 'austere'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "Austere is an adjective describing something severe, strict, or without luxury."
+  },
+  {
+    "id": 11,
+    "question": "Which word is a synonym for 'abeyance'?",
+    "options": {
+      "a": "Implementation",
+      "b": "Postponement",
+      "c": "Acceleration",
+      "d": "Activation"
+    },
+    "answer": "b",
+    "explanation": "Postponement is a synonym for abeyance, both indicating delay or suspension."
+  },
+  {
+    "id": 12,
+    "question": "Which word is an antonym for 'abscond'?",
+    "options": {
+      "a": "Flee",
+      "b": "Escape",
+      "c": "Surrender",
+      "d": "Run away"
+    },
+    "answer": "c",
+    "explanation": "Surrender is an antonym of abscond, as it means to give oneself up rather than running away."
+  },
+  {
+    "id": 13,
+    "question": "Which word is a synonym for 'despondent'?",
+    "options": {
+      "a": "Cheerful",
+      "b": "Dejected",
+      "c": "Optimistic",
+      "d": "Confident"
+    },
+    "answer": "b",
+    "explanation": "Dejected is a synonym for despondent, both meaning feeling sad and discouraged."
+  },
+  {
+    "id": 14,
+    "question": "Which word is an antonym for 'reluctant'?",
+    "options": {
+      "a": "Hesitant",
+      "b": "Unwilling",
+      "c": "Eager",
+      "d": "Resistant"
+    },
+    "answer": "c",
+    "explanation": "Eager is an antonym of reluctant, as it means being enthusiastic rather than unwilling."
+  },
+  {
+    "id": 15,
+    "question": "Which word is a synonym for 'austere'?",
+    "options": {
+      "a": "Luxurious",
+      "b": "Severe",
+      "c": "Gentle",
+      "d": "Comfortable"
+    },
+    "answer": "b",
+    "explanation": "Severe is a synonym for austere, both meaning strict or harsh."
+  },
+  {
+    "id": 16,
+    "question": "Complete the sentence: 'The project was held in _____ until further notice.'",
+    "options": {
+      "a": "abeyance",
+      "b": "progress",
+      "c": "completion",
+      "d": "acceleration"
+    },
+    "answer": "a",
+    "explanation": "The phrase 'held in abeyance' is a common expression meaning temporarily suspended."
+  },
+  {
+    "id": 17,
+    "question": "Complete the sentence: 'The thief decided to _____ with the stolen goods.'",
+    "options": {
+      "a": "remain",
+      "b": "abscond",
+      "c": "surrender",
+      "d": "appear"
+    },
+    "answer": "b",
+    "explanation": "Abscond means to leave secretly, which fits the context of a thief escaping."
+  },
+  {
+    "id": 18,
+    "question": "Complete the sentence: 'After losing his job, he became _____ and withdrawn.'",
+    "options": {
+      "a": "cheerful",
+      "b": "energetic",
+      "c": "despondent",
+      "d": "optimistic"
+    },
+    "answer": "c",
+    "explanation": "Despondent means dejected and discouraged, which fits someone who lost their job."
+  },
+  {
+    "id": 19,
+    "question": "Complete the sentence: 'She was _____ to accept the dangerous mission.'",
+    "options": {
+      "a": "eager",
+      "b": "reluctant",
+      "c": "willing",
+      "d": "enthusiastic"
+    },
+    "answer": "b",
+    "explanation": "Reluctant means unwilling or hesitant, which fits someone facing a dangerous mission."
+  },
+  {
+    "id": 20,
+    "question": "Complete the sentence: 'The monk lived an _____ life with few possessions.'",
+    "options": {
+      "a": "luxurious",
+      "b": "comfortable",
+      "c": "austere",
+      "d": "extravagant"
+    },
+    "answer": "c",
+    "explanation": "Austere means severe or strict, often referring to a simple lifestyle without luxury."
+  }
+]
