@@ -1,0 +1,102 @@
+[
+  {
+    "id": 21,
+    "word": "alleviate",
+    "pos": "verb",
+    "bengali": "লাঘব করা, হ্রাস করা",
+    "Explanation": "Make (suffering, deficiency, or a problem) less severe.",
+    "synonym": ["reduce (হ্রাস করা)", "diminish (কমানো)", "lessen (হ্রাস করা)", "assuage (লাঘব করা)", "curtail (কমানো)"],
+    "antonym": ["aggravate (বাড়ানো)", "intensify (তীব্র করা)", "worsen (খারাপ করা)", "exacerbate (তীব্র করা)"],
+    "example": "Drinking warm tea can help alleviate stress after a long day. (সারা দিনের ক্লান্তির পর গরম চা পান করা মানসিক চাপ কমাতে সাহায্য করতে পারে।)"
+  },
+  {
+    "id": 22,
+    "word": "banal",
+    "pos": "adjective",
+    "bengali": "আকর্ষণহীন, গতানুগতিক, সাধারণ, তুচ্ছ",
+    "Explanation": "So lacking in originality as to be obvious and boring.",
+    "synonym": ["trite (তুচ্ছ)", "hackneyed (সাধারণ)", "stale (পুরনো)", "insipid (নিরস)", "mundane (সাধারণ)", "cliche (সাধারণ)"],
+    "antonym": ["original (মূল)", "fresh (নতুন)", "innovative (নবীন)", "exciting (রোমাঞ্চকর)"],
+    "example": "The teacher’s speech was so banal that most of the students lost interest. (শিক্ষকের বক্তৃতা এতটাই আকর্ষণহীন ছিল যে বেশিরভাগ ছাত্রের আগ্রহ হারিয়ে ফেলেছিল।)"
+  },
+  {
+    "id": 23,
+    "word": "caustic",
+    "pos": "adjective, noun",
+    "bengali": "ক্ষতিকর, তীব্র, ব্যঙ্গাত্মক, দগ্ধ কারক, ক্ষয়কারী পদার্থ",
+    "Explanation": "Able to burn or corrode organic tissue by chemical action; sarcastic in a scathing and bitter way.",
+    "synonym": ["sarcastic (ব্যঙ্গাত্মক)", "scathing (তীব্র)", "bitter (কটু)", "sharp (তীক্ষ্ণ)", "acrimonious (কটু)", "ironical (বিদ্রূপাত্মক)", "scorching (দগ্ধ)", "defeating (পরাজিত)", "burring (দগ্ধ)"],
+    "antonym": ["mild (মৃদু)", "gentle (নরম)", "soothing (শান্তিদায়ক)", "calming (শান্ত করা)"],
+    "example": "The critic's caustic remarks about the play were harsh but fair. (সমালোচকের নাটক সম্পর্কে ক্ষতিকর মন্তব্যগুলি কঠোর কিন্তু সঠিক ছিল।)"
+  },
+  {
+    "id": 24,
+    "word": "viable",
+    "pos": "adjective",
+    "bengali": "টেকসই",
+    "Explanation": "Capable of working successfully; feasible.",
+    "synonym": ["feasible (বাস্তবসম্মত)", "durable (টেকসই)", "serviceable (ব্যবহারিক)", "lasting (স্থায়ী)", "enduring (স্থায়ী)", "stable (স্থিতিশীল)"],
+    "antonym": ["impractical (অবাস্তব)", "unworkable (অকার্যকর)", "infeasible (অবাস্তব)", "unlikely (অস্বাভাবিক)"],
+    "example": "The committee is looking for a viable solution to the problem. (কমিটি সমস্যাটির জন্য একটি টেকসই সমাধান খুঁজছে।)"
+  },
+  {
+    "id": 25,
+    "word": "porous",
+    "pos": "adjective",
+    "bengali": "ছিদ্রযুক্ত",
+    "Explanation": "Having holes or spaces through which liquid or air may pass.",
+    "synonym": ["permeable (অবাধ্য)", "absorbent (শোষণকারী)", "spongy (স্পঞ্জের মতো)", "leaky (রস্রস)"],
+    "antonym": ["impermeable (অবাধ্য)", "solid (ঘন)", "dense (ঘন)"],
+    "example": "The porous nature of the soil allows water to drain easily. (মাটির ছিদ্রযুক্ত প্রকৃতি জলকে সহজেই নিষ্কাশন করতে দেয়।)"
+  },
+  {
+    "id": 26,
+    "word": "perfidious",
+    "pos": "adjective",
+    "bengali": "বিশ্বাসঘাতক",
+    "Explanation": "Deceitful and untrustworthy.",
+    "synonym": ["treacherous (বিশ্বাসঘাতক)", "disloyal (অবিশ্বাসী)", "duplicitous (দ্বিচারী)", "unfaithful (অবিশ্বাসী)", "insidious (গোপনভাবে ক্ষতিকর)", "mistrustful (অবিশ্বাসী)"],
+    "antonym": ["faithful (বিশ্বাসী)", "loyal (নিষ্ঠাবান)", "trustworthy (বিশ্বাসযোগ্য)", "reliable (বিশ্বাসযোগ্য)"],
+    "example": "The perfidious actions of the spy were eventually uncovered. (গোপনীয়তার বিশ্বাসঘাতক কার্যকলাপগুলি শেষ পর্যন্ত প্রকাশিত হয়েছিল।)"
+  },
+  {
+    "id": 27,
+    "word": "wary",
+    "pos": "adjective",
+    "bengali": "সতর্ক, সাবধান",
+    "Explanation": "Feeling or showing caution about possible dangers or problems.",
+    "synonym": ["cautious (সতর্ক)", "careful (যত্নশীল)", "vigilant (সতর্ক)", "alert (সতর্ক)", "watchful (সতর্ক)"],
+    "antonym": ["reckless (অবহেলাকারী)", "careless (অযত্নশীল)", "negligent (অবহেলাকারী)", "unwary (অসতর্ক)"],
+    "example": "She was wary of strangers bearing gifts. (উপহার নিয়ে আসা অচেনা লোকদের প্রতি সে সতর্ক ছিল।)"
+  },
+  {
+    "id": 28,
+    "word": "torpor",
+    "pos": "noun",
+    "bengali": "বোধহীনতা, ক্ষীণবুদ্ধি, অসাড়তা, নিষ্ক্রিয়তা",
+    "Explanation": "A state of inactivity or lethargy.",
+    "synonym": ["lethargy (অলসতা)", "inertia (জড়তা)", "sluggishness (আলস্য)", "apathy (উদাসীনতা)", "dormancy (নিদ্রা)"],
+    "antonym": ["activity (সক্রিয়তা)", "energy (শক্তি)", "vitality (জীবনশক্তি)", "alertness (সতর্কতা)"],
+    "example": "After the long winter, the garden was in a state of torpor. (দীর্ঘ শীতের পর, বাগানটি বোধহীনতার অবস্থায় ছিল।)"
+  },
+  {
+    "id": 29,
+    "word": "vituperative",
+    "pos": "adjective",
+    "bengali": "অপবাদ সূচক, গালিগালাজপূর্ণ",
+    "Explanation": "Bitter and abusive.",
+    "synonym": ["abusive (গালিগালাজপূর্ণ)", "scathing (তীব্র)", "vitriolic (বিষাক্ত)", "mordant (কটু)", "scolding (ধমক)", "defamatory (অপবাদসূচক)"],
+    "antonym": ["complimentary (প্রশংসাসূচক)", "flattering (প্রশংসা করা)", "praising (প্রশংসা করা)", "laudatory (প্রশংসাসূচক)"],
+    "example": "The politician's vituperative remarks shocked the audience and fueled the heated debate. (রাজনীতিবিদের অপবাদসূচক মন্তব্যগুলি দর্শকদের অবাক করেছিল এবং উত্তপ্ত বিতর্ককে জ্বালিয়ে দিয়েছিল।)"
+  },
+  {
+    "id": 30,
+    "word": "levee",
+    "pos": "noun",
+    "bengali": "নদীর পাড়, নদীতীরের উচু বাঁধ",
+    "Explanation": "A raised bank or mound built to prevent the overflow of a river.",
+    "synonym": ["embankment (বাঁধ)", "dike (ডাইক)", "berm (বার্ম)", "bank (পাড়)", "mound (টিলা)"],
+    "antonym": ["Breach (ভাঙন / ফাটল)"],
+    "example": "During the rainy season, the villagers built a levee to protect their homes from flooding. (বৃষ্টির মৌসুমে, গ্রামবাসীরা তাদের বাড়িগুলিকে বন্যা থেকে রক্ষা করার জন্য একটি বাঁধ তৈরি করেছিল।)"
+  }
+]

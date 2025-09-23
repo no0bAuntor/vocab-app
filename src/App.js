@@ -6,6 +6,8 @@ import Phase1VocabularyHome from './pages/phase1/VocabularyHome';
 import Phase1VocabularyQuiz from './pages/phase1/VocabularyQuiz';
 import Phase2VocabularyHome from './pages/phase2/VocabularyHome';
 import Phase2VocabularyQuiz from './pages/phase2/VocabularyQuiz';
+import Phase3VocabularyHome from './pages/phase3/VocabularyHome';
+import Phase3VocabularyQuiz from './pages/phase3/VocabularyQuiz';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -32,6 +34,8 @@ function App() {
           <Route path="/quiz" element={<Phase1VocabularyQuiz isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/phase2" element={<Phase2VocabularyHome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/quiz-phase2" element={<Phase2VocabularyQuiz isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+          <Route path="/phase3" element={<Phase3VocabularyHome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+          <Route path="/quiz-phase3" element={<Phase3VocabularyQuiz isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
         </Routes>
       </div>
     </Router>

@@ -101,6 +101,20 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                     <span className="mr-3">📚</span>
                     <span>Phase 2</span>
                   </Link>
+                  <Link
+                    to="/phase3"
+                    onClick={() => setIsVocabOpen(false)}
+                    className={`flex items-center px-4 py-2 transition-colors duration-200 ${
+                      isActive('/phase3')
+                        ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
+                        : isDarkMode 
+                          ? 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                          : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    <span className="mr-3">📖</span>
+                    <span>Phase 3</span>
+                  </Link>
                 </div>
               )}
             </div>
@@ -167,6 +181,20 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                   >
                     <span className="mr-3">🎯</span>
                     <span>Phase 2</span>
+                  </Link>
+                  <Link
+                    to="/quiz-phase3"
+                    onClick={() => setIsQuizOpen(false)}
+                    className={`flex items-center px-4 py-2 transition-colors duration-200 ${
+                      isActive('/quiz-phase3')
+                        ? isDarkMode ? 'bg-purple-600 text-white' : 'bg-purple-500 text-white'
+                        : isDarkMode 
+                          ? 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                          : 'text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    <span className="mr-3">🧠</span>
+                    <span>Phase 3</span>
                   </Link>
                 </div>
               )}
@@ -264,6 +292,20 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                   <span className="mr-3">📚</span>
                   <span>Phase 2</span>
                 </Link>
+                <Link
+                  to="/phase3"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center px-6 py-3 rounded-lg transition-colors duration-200 ${
+                    isActive('/phase3')
+                      ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
+                      : isDarkMode 
+                        ? 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <span className="mr-3">📖</span>
+                  <span>Phase 3</span>
+                </Link>
               </div>
 
               {/* Quiz Section */}
@@ -300,6 +342,20 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                 >
                   <span className="mr-3">🎯</span>
                   <span>Phase 2</span>
+                </Link>
+                <Link
+                  to="/quiz-phase3"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center px-6 py-3 rounded-lg transition-colors duration-200 ${
+                    isActive('/quiz-phase3')
+                      ? isDarkMode ? 'bg-purple-600 text-white' : 'bg-purple-500 text-white'
+                      : isDarkMode 
+                        ? 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                        : 'text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  <span className="mr-3">🧠</span>
+                  <span>Phase 3</span>
                 </Link>
               </div>
             </div>

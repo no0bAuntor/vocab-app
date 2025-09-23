@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "The new medication was designed to ______ the symptoms of the chronic illness, providing much-needed relief to patients.",
+    "options": {
+      "a": "exacerbate",
+      "b": "alleviate",
+      "c": "vituperate",
+      "d": "adulterate"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'alleviate', which means to make less severe. This fits the context of providing relief from symptoms. 'Exacerbate' is an antonym meaning to worsen, 'vituperate' means to criticize harshly, and 'adulterate' means to corrupt."
+  },
+  {
+    "id": 2,
+    "question": "Which word is a synonym for 'banal'?",
+    "options": {
+      "a": "Original",
+      "b": "Hackneyed",
+      "c": "Viable",
+      "d": "Wary"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'hackneyed'. Both 'banal' and 'hackneyed' describe something lacking originality and being boringly commonplace. 'Original' is an antonym, 'viable' means feasible, and 'wary' means cautious."
+  },
+  {
+    "id": 3,
+    "question": "The critic's ______ review dismantled the author's work with such bitter sarcasm that it sparked controversy.",
+    "options": {
+      "a": "porous",
+      "b": "viable",
+      "c": "caustic",
+      "d": "banal"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'caustic', which means sarcastic in a scathing and bitter way. The clues 'bitter sarcasm' and 'dismantled' confirm this. 'Porous' means full of holes, 'viable' means feasible, and 'banal' means boring."
+  },
+  {
+    "id": 4,
+    "question": "After the funding was cut, the team had to determine if their research project was still ______.",
+    "options": {
+      "a": "perfidious",
+      "b": "vituperative",
+      "c": "viable",
+      "d": "wary"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'viable', meaning capable of working successfully or feasible. This is the key question when assessing a project's future after a setback."
+  },
+  {
+    "id": 5,
+    "question": "What is the Bengali meaning of the word 'porous'?",
+    "options": {
+      "a": "টেকসই",
+      "b": "বিশ্বাসঘাতক",
+      "c": "ছিদ্রযুক্ত",
+      "d": "সতর্ক"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'ছিদ্রযুক্ত', which translates to 'having holes'. 'টেকসই' is for 'viable', 'বিশ্বাসঘাতক' for 'perfidious', and 'সতর্ক' for 'wary'."
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is an antonym for 'perfidious'?",
+    "options": {
+      "a": "Treacherous",
+      "b": "Loyal",
+      "c": "Duplicitous",
+      "d": "Insidious"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'loyal'. 'Perfidious' means deceitful and untrustworthy, so its direct opposite is faithful and loyal. The other options are synonyms."
+  },
+  {
+    "id": 7,
+    "question": "Investors were ______ of the startup's inflated claims, choosing to investigate thoroughly before committing any funds.",
+    "options": {
+      "a": "viable",
+      "b": "wary",
+      "c": "banal",
+      "d": "vituperative"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'wary', which means feeling or showing caution about possible dangers or problems. The context of investigating inflated claims indicates caution."
+  },
+  {
+    "id": 8,
+    "question": "Identify the part of speech for the word 'torpor'.",
+    "options": {
+      "a": "Verb",
+      "b": "Noun",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'Noun'. 'Torpor' is a noun that describes a state of inactivity or lethargy."
+  },
+  {
+    "id": 9,
+    "question": "The politician's ______ speech was filled with bitter insults and abusive language, shocking his opponents.",
+    "options": {
+      "a": "vituperative",
+      "b": "porous",
+      "c": "banal",
+      "d": "caustic"
+    },
+    "answer": "a",
+    "explanation": "The correct answer is 'vituperative', which specifically means bitter and abusive. While 'caustic' is related, 'vituperative' is more directly associated with abusive language. 'Bitter insults' is the key clue."
+  },
+  {
+    "id": 10,
+    "question": "A raised embankment built to prevent a river from flooding is called a ______.",
+    "options": {
+      "a": "Torpor",
+      "b": "Levee",
+      "c": "Alleviation",
+      "d": "Viability"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'levee'. This is the literal definition of the word."
+  },
+  {
+    "id": 11,
+    "question": "The sponge is highly ______, allowing it to absorb a large amount of liquid quickly.",
+    "options": {
+      "a": "viable",
+      "b": "perfidious",
+      "c": "porous",
+      "d": "wary"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'porous', meaning having holes or spaces through which liquid may pass. This directly explains the absorbent quality of a sponge."
+  },
+  {
+    "id": 12,
+    "question": "What is the primary meaning of 'alleviate'?",
+    "options": {
+      "a": "To make worse",
+      "b": "To burn or corrode",
+      "c": "To make less severe",
+      "d": "To deceive"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'To make less severe'. This is the core meaning of the verb 'alleviate'."
+  },
+  {
+    "id": 13,
+    "question": "Which word is NOT a synonym for 'caustic'?",
+    "options": {
+      "a": "Scathing",
+      "b": "Sarcastic",
+      "c": "Soothing",
+      "d": "Acrimonious"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'soothing'. 'Soothing' means calming, which is an antonym of the harsh, burning quality implied by 'caustic'. The other options are synonyms."
+  },
+  {
+    "id": 14,
+    "question": "The plot of the movie was so ______ that audiences could predict the ending within the first ten minutes.",
+    "options": {
+      "a": "viable",
+      "b": "banal",
+      "c": "vituperative",
+      "d": "wary"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'banal', which means lacking originality and boring. The predictability of the plot is a key indicator of banality."
+  },
+  {
+    "id": 15,
+    "question": "His ______ during the morning meetings was notorious; he would rarely speak before having his coffee.",
+    "options": {
+      "a": "levee",
+      "b": "alleviation",
+      "c": "torpor",
+      "d": "viability"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'torpor', meaning a state of inactivity or lethargy. This fits the description of someone who is inactive and uncommunicative in the morning."
+  },
+  {
+    "id": 16,
+    "question": "What is the Bengali meaning of 'wary'?",
+    "options": {
+      "a": "ক্ষতিকর",
+      "b": "সতর্ক",
+      "c": "বিশ্বাসঘাতক",
+      "d": "টেকসই"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'সতর্ক', which means 'cautious'. 'ক্ষতিকর' is for 'caustic', 'বিশ্বাসঘাতক' for 'perfidious', and 'টেকসই' for 'viable'."
+  },
+  {
+    "id": 17,
+    "question": "Which word pair represents an antonym relationship?",
+    "options": {
+      "a": "Vituperative - Abusive",
+      "b": "Perfidious - Loyal",
+      "c": "Porous - Permeable",
+      "d": "Banal - Hackneyed"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'Perfidious - Loyal'. 'Perfidious' means deceitful, and 'loyal' means faithful, making them antonyms. The other pairs are synonyms."
+  },
+  {
+    "id": 18,
+    "question": "The general's ______ lieutenant sold battle plans to the enemy, leading to a devastating defeat.",
+    "options": {
+      "a": "viable",
+      "b": "perfidious",
+      "c": "banal",
+      "d": "porous"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'perfidious', which means deceitful and untrustworthy. Selling secrets to the enemy is the ultimate act of treachery."
+  },
+  {
+    "id": 19,
+    "question": "The company needed a ______ plan that could be sustained financially for the long term.",
+    "options": {
+      "a": "vituperative",
+      "b": "viable",
+      "c": "caustic",
+      "d": "wary"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'viable', meaning capable of working successfully. The context of being 'sustained financially' points to feasibility."
+  },
+  {
+    "id": 20,
+    "question": "A ______ remark can be more damaging than a physical blow, leaving psychological scars.",
+    "options": {
+      "a": "banal",
+      "b": "porous",
+      "c": "caustic",
+      "d": "torpid"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'caustic', meaning sarcastic and bitter. The description of causing psychological damage aligns with the harmful nature of caustic comments."
+  },
+  {
+    "id": 21,
+    "question": "What is the part of speech for 'vituperative'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'Adjective'. 'Vituperative' is an adjective that describes something as bitter and abusive."
+  },
+  {
+    "id": 22,
+    "question": "The ______ soil in the area meant that water drained away rapidly, making it difficult to grow certain crops.",
+    "options": {
+      "a": "viable",
+      "b": "perfidious",
+      "c": "porous",
+      "d": "banal"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'porous'. Soil that allows water to pass through it quickly is porous."
+  },
+  {
+    "id": 23,
+    "question": "An antonym for 'viable' is:",
+    "options": {
+      "a": "Feasible",
+      "b": "Durable",
+      "c": "Unworkable",
+      "d": "Stable"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'unworkable'. 'Viable' means capable of working, so its direct opposite is something that cannot work."
+  },
+  {
+    "id": 24,
+    "question": "She remained ______ of his flattery, suspecting he had an ulterior motive.",
+    "options": {
+      "a": "torpid",
+      "b": "wary",
+      "c": "banal",
+      "d": "vituperative"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'wary', meaning cautious and suspicious. The suspicion of an 'ulterior motive' is a classic reason for wariness."
+  },
+  {
+    "id": 25,
+    "question": "The documentary aimed to ______ public ignorance about the climate crisis.",
+    "options": {
+      "a": "exacerbate",
+      "b": "alleviate",
+      "c": "vituperate",
+      "d": "perfide"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'alleviate'. While often used for physical suffering, 'alleviate' can also mean to make a deficiency (like ignorance) less severe."
+  },
+  {
+    "id": 26,
+    "question": "Which word describes a state of physical or mental inactivity?",
+    "options": {
+      "a": "Levee",
+      "b": "Torpor",
+      "c": "Alleviation",
+      "d": "Viability"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'torpor'. This is the definition of the word."
+  },
+  {
+    "id": 27,
+    "question": "The ______ of the argument was shocking; friends exchanged insults that ended their relationship permanently.",
+    "options": {
+      "a": "porousness",
+      "b": "viability",
+      "c": "vituperativeness",
+      "d": "banality"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'vituperativeness' (the noun form of 'vituperative'), meaning the quality of being bitter and abusive. The exchange of insults confirms this."
+  },
+  {
+    "id": 28,
+    "question": "What is the Bengali meaning of 'perfidious'?",
+    "options": {
+      "a": "ছিদ্রযুক্ত",
+      "b": "টেকসই",
+      "c": "বিশ্বাসঘাতক",
+      "d": "নদীর পাড়"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'বিশ্বাসঘাতক', which means 'treacherous' or 'traitorous'. 'ছিদ্রযুক্ত' is for 'porous', 'টেকসই' for 'viable', and 'নদীর পাড়' for 'levee'."
+  },
+  {
+    "id": 29,
+    "question": "The conversation was filled with ______ clichés, offering no new insights into the problem.",
+    "options": {
+      "a": "caustic",
+      "b": "banal",
+      "c": "wary",
+      "d": "viable"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'banal'. The word 'clichés' is a direct synonym for banal expressions."
+  },
+  {
+    "id": 30,
+    "question": "A substance that can burn or corrode tissue is described as:",
+    "options": {
+      "a": "Porous",
+      "b": "Viable",
+      "c": "Caustic",
+      "d": "Torporific"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'caustic'. This is one of the primary definitions of the word."
+  },
+  {
+    "id": 31,
+    "question": "The economic plan was not ______, as it relied on assumptions that were unrealistic.",
+    "options": {
+      "a": "perfidious",
+      "b": "viable",
+      "c": "vituperative",
+      "d": "banal"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'viable'. The clue 'unrealistic assumptions' indicates that the plan is not practical or workable."
+  },
+  {
+    "id": 32,
+    "question": "Which word is a synonym for 'wary'?",
+    "options": {
+      "a": "Reckless",
+      "b": "Vigilant",
+      "c": "Careless",
+      "d": "Unwary"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'vigilant', which means keeping careful watch for possible danger or difficulties, similar to 'wary'. The other options are antonyms."
+  },
+  {
+    "id": 33,
+    "question": "The hero in the story was betrayed by a ______ friend who had secretly been working for the antagonist.",
+    "options": {
+      "a": "viable",
+      "b": "porous",
+      "c": "perfidious",
+      "d": "caustic"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'perfidious'. Betrayal by a friend is a classic example of perfidy."
+  },
+  {
+    "id": 34,
+    "question": "What is the part of speech for 'levee'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'Noun'. A 'levee' is a thing—a raised bank or mound."
+  },
+  {
+    "id": 35,
+    "question": "The heatwave left everyone in a state of ______, with little energy for anything beyond the essentials.",
+    "options": {
+      "a": "alleviation",
+      "b": "levee",
+      "c": "torpor",
+      "d": "viability"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'torpor'. The lack of energy described is a key characteristic of torpor."
+  },
+  {
+    "id": 36,
+    "question": "A ______ argument relies on personal attacks rather than logic or evidence.",
+    "options": {
+      "a": "vituperative",
+      "b": "porous",
+      "c": "banal",
+      "d": "wary"
+    },
+    "answer": "a",
+    "explanation": "The correct answer is 'vituperative'. Personal attacks are abusive and bitter, which defines a vituperative argument."
+  },
+  {
+    "id": 37,
+    "question": "Which word can function as both a noun and an adjective?",
+    "options": {
+      "a": "Alleviate",
+      "b": "Caustic",
+      "c": "Torpor",
+      "d": "Levee"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'caustic'. According to the data, its part of speech is 'adjective, noun'."
+  },
+  {
+    "id": 38,
+    "question": "The constant criticism had a ______ effect on her confidence, slowly eroding it over time.",
+    "options": {
+      "a": "viable",
+      "b": "caustic",
+      "c": "banal",
+      "d": "porous"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'caustic'. The metaphor of 'eroding' confidence aligns with the burning, corrosive nature of something caustic."
+  },
+  {
+    "id": 39,
+    "question": "An antonym for 'alleviate' is:",
+    "options": {
+      "a": "Assuage",
+      "b": "Lessen",
+      "c": "Exacerbate",
+      "d": "Mitigate"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'exacerbate', which means to make a problem, bad situation, or negative feeling worse. This is the direct opposite of 'alleviate'. The other options are synonyms."
+  },
+  {
+    "id": 40,
+    "question": "The old fortress walls were surprisingly ______, having been weakened by centuries of rain and wind.",
+    "options": {
+      "a": "viable",
+      "b": "perfidious",
+      "c": "porous",
+      "d": "wary"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'porous'. Weakened walls that allow elements to pass through (even metaphorically) can be described as porous."
+  },
+  {
+    "id": 41,
+    "question": "What is the Bengali meaning of 'vituperative'?",
+    "options": {
+      "a": "সতর্ক",
+      "b": "গালিগালাজপূর্ণ",
+      "c": "ক্ষতিকর",
+      "d": "বোধহীনতা"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'গালিগালাজপূর্ণ', which means 'full of abusive language'. 'সতর্ক' is for 'wary', 'ক্ষতিকর' for 'caustic', and 'বোধহীনতা' for 'torpor'."
+  },
+  {
+    "id": 42,
+    "question": "The company's success was dependent on finding a ______ market for its new product.",
+    "options": {
+      "a": "vituperative",
+      "b": "viable",
+      "c": "banal",
+      "d": "caustic"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'viable', meaning a market that is capable of sustaining the product successfully."
+  },
+  {
+    "id": 43,
+    "question": "After the flood, engineers worked to reinforce the ______ to prevent future disasters.",
+    "options": {
+      "a": "torpor",
+      "b": "levee",
+      "c": "alleviation",
+      "d": "viability"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'levee'. This is the structure that would be reinforced after a flood."
+  },
+  {
+    "id": 44,
+    "question": "Which word describes something so unoriginal it becomes boring?",
+    "options": {
+      "a": "Wary",
+      "b": "Banal",
+      "c": "Viable",
+      "d": "Perfidious"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'banal'. This is the definition of the word."
+  },
+  {
+    "id": 45,
+    "question": "The journalist's ______ questions put the corrupt official on the defensive, exposing his lies.",
+    "options": {
+      "a": "porous",
+      "b": "caustic",
+      "c": "torpid",
+      "d": "banal"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'caustic'. Questions that are sharp, sarcastic, and exposing would be described as caustic."
+  },
+  {
+    "id": 46,
+    "question": "A sense of ______ fell over the hibernating animal's den.",
+    "options": {
+      "a": "levee",
+      "b": "viability",
+      "c": "torpor",
+      "d": "alleviation"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'torpor'. Hibernation is a state of deep torpor."
+  },
+  {
+    "id": 47,
+    "question": "What is the part of speech for 'alleviate'?",
+    "options": {
+      "a": "Noun",
+      "b": "Adjective",
+      "c": "Verb",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'Verb'. 'Alleviate' is an action word meaning to make less severe."
+  },
+  {
+    "id": 48,
+    "question": "She was ______ of walking alone in the city at night, so she always took a taxi.",
+    "options": {
+      "a": "banal",
+      "b": "wary",
+      "c": "viable",
+      "d": "perfidious"
+    },
+    "answer": "b",
+    "explanation": "The correct answer is 'wary'. The cautious action of taking a taxi instead of walking alone indicates wariness."
+  },
+  {
+    "id": 49,
+    "question": "The treaty was broken in a ______ act that led to renewed hostilities between the nations.",
+    "options": {
+      "a": "viable",
+      "b": "porous",
+      "c": "perfidious",
+      "d": "caustic"
+    },
+    "answer": "c",
+    "explanation": "The correct answer is 'perfidious'. Breaking a treaty is a deceitful and untrustworthy act, the definition of perfidy."
+  },
+  {
+    "id": 50,
+    "question": "A ______ solution is one that is both practical and sustainable.",
+    "options": {
+      "a": "Viable",
+      "b": "Vituperative",
+      "c": "Banal",
+      "d": "Porous"
+    },
+    "answer": "a",
+    "explanation": "The correct answer is 'viable'. The words 'practical and sustainable' are key descriptors of a viable solution."
+  }
+]
