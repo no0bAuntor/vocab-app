@@ -64,10 +64,10 @@ function Phase2Home({ isDarkMode, toggleDarkMode }) {
 
   const handleTouchEnd = () => {
     if (Math.abs(swipeDistance) > 100) {
-      if (swipeDistance < 0 && currentIndex < totalWords - 1) {
-        nextWordWithAnimation(); // Swipe left = next word
-      } else if (swipeDistance > 0 && currentIndex > 0) {
-        prevWordWithAnimation(); // Swipe right = previous word
+      if (swipeDistance > 0 && currentIndex < totalWords - 1) {
+        nextWordWithAnimation(); // Swipe left (right-to-left) = next word
+      } else if (swipeDistance < 0 && currentIndex > 0) {
+        prevWordWithAnimation(); // Swipe right (left-to-right) = previous word
       }
     }
     
