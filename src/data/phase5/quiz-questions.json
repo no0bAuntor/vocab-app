@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "The committee questioned the ______ of his actions, which seemed to blatantly ignore the established norms of conduct.",
+    "options": {
+      "a": "propriety",
+      "b": "ambivalence",
+      "c": "stigma",
+      "d": "erudition"
+    },
+    "answer": "a",
+    "explanation": "The context of 'established norms of conduct' points to what is socially correct or proper, which is the definition of 'propriety'."
+  },
+  {
+    "id": 2,
+    "question": "The word 'erudite' is most similar in meaning to:",
+    "options": {
+      "a": "ignorant",
+      "b": "scholarly",
+      "c": "ambiguous",
+      "d": "prodigal"
+    },
+    "answer": "b",
+    "explanation": "'Erudite' means having great knowledge. Its synonyms include 'learned' and 'scholarly'."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is the best antonym for 'prodigal'?",
+    "options": {
+      "a": "wasteful",
+      "b": "lavish",
+      "c": "frugal",
+      "d": "extravagant"
+    },
+    "answer": "c",
+    "explanation": "'Prodigal' means wastefully extravagant. Its direct antonym is 'frugal', which means economical or sparing."
+  },
+  {
+    "id": 4,
+    "question": "The contract will ______ that all materials used must be of the highest grade.",
+    "options": {
+      "a": "imply",
+      "b": "suggest",
+      "c": "stipulate",
+      "d": "equivocate"
+    },
+    "answer": "c",
+    "explanation": "A contract specifying a requirement is to 'stipulate' it."
+  },
+  {
+    "id": 5,
+    "question": "Her ______ response of 'perhaps' to the invitation left us unsure if she would attend.",
+    "options": {
+      "a": "clear",
+      "b": "ambiguous",
+      "c": "erudite",
+      "d": "esoteric"
+    },
+    "answer": "b",
+    "explanation": "A response that leaves people unsure is 'ambiguous' (open to more than one interpretation)."
+  },
+  {
+    "id": 6,
+    "question": "Despite societal progress, a significant ______ still surrounds discussions of addiction.",
+    "options": {
+      "a": "propriety",
+      "b": "stigma",
+      "c": "ambivalence",
+      "d": "castigation"
+    },
+    "answer": "b",
+    "explanation": "A 'mark of disgrace' associated with a condition like addiction is a 'stigma'."
+  },
+  {
+    "id": 7,
+    "question": "The manager grew suspicious of the employee who was often a ______, conveniently falling ill before major deadlines.",
+    "options": {
+      "a": "hard worker",
+      "b": "malingerer",
+      "c": "benefactor",
+      "d": "scholar"
+    },
+    "answer": "b",
+    "explanation": "A person who pretends to be ill to avoid work is a 'malingerer'."
+  },
+  {
+    "id": 8,
+    "question": "He felt a great deal of ______ about moving abroad, excited by the opportunity but sad to leave his family.",
+    "options": {
+      "a": "castigation",
+      "b": "ambivalence",
+      "c": "propriety",
+      "d": "erudition"
+    },
+    "answer": "b",
+    "explanation": "Having mixed or contradictory feelings (excitement and sadness) is 'ambivalence'."
+  },
+  {
+    "id": 9,
+    "question": "The professor's lecture on quantum mechanics was so ______ that only a few advanced students could follow it.",
+    "options": {
+      "a": "obvious",
+      "b": "esoteric",
+      "c": "exoteric",
+      "d": "clear"
+    },
+    "answer": "b",
+    "explanation": "Knowledge understood by only a small group with specialized knowledge is 'esoteric'."
+  },
+  {
+    "id": 10,
+    "question": "The public ______ of the corporation for its environmental negligence was swift and severe.",
+    "options": {
+      "a": "praise",
+      "b": "castigation",
+      "c": "ambivalence",
+      "d": "propriety"
+    },
+    "answer": "b",
+    "explanation": "Severe public criticism or punishment is 'castigation'."
+  },
+  {
+    "id": 11,
+    "question": "The Bengali meaning of 'stipulate' is:",
+    "options": {
+      "a": "কলঙ্ক",
+      "b": "উপযুক্ততা",
+      "c": "নির্ধারণ করা",
+      "d": "জ্ঞানী"
+    },
+    "answer": "c",
+    "explanation": "The Bengali meaning for 'stipulate' is 'নির্ধারণ করা' (to specify as a condition)."
+  },
+  {
+    "id": 12,
+    "question": "Which part of speech is 'ambivalence'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Ambivalence' is the name of a state of mind or feeling, so it is a noun."
+  },
+  {
+    "id": 13,
+    "question": "Choose the word that is NOT a synonym for 'esoteric'.",
+    "options": {
+      "a": "Arcane",
+      "b": "Abstruse",
+      "c": "Obvious",
+      "d": "Recondite"
+    },
+    "answer": "c",
+    "explanation": "'Obvious' is an antonym of 'esoteric'. The other options are all synonyms meaning difficult to understand."
+  },
+  {
+    "id": 14,
+    "question": "After winning the lottery, his ______ spending on luxury cars and vacations quickly diminished his fortune.",
+    "options": {
+      "a": "frugal",
+      "b": "prodigal",
+      "c": "thrifty",
+      "d": "erudite"
+    },
+    "answer": "b",
+    "explanation": "Reckless, wasteful spending is the hallmark of being 'prodigal'."
+  },
+  {
+    "id": 15,
+    "question": "It is a sign of ______ to dress appropriately for a formal interview.",
+    "options": {
+      "a": "stigma",
+      "b": "propriety",
+      "c": "ambivalence",
+      "d": "castigation"
+    },
+    "answer": "b",
+    "explanation": "Dressing appropriately shows an understanding of what is socially correct or proper, which is 'propriety'."
+  },
+  {
+    "id": 16,
+    "question": "Which word means 'a mark of disgrace associated with a particular circumstance'?",
+    "options": {
+      "a": "Propriety",
+      "b": "Stigma",
+      "c": "Ambivalence",
+      "d": "Castigation"
+    },
+    "answer": "b",
+    "explanation": "This is the precise definition of 'stigma'."
+  },
+  {
+    "id": 17,
+    "question": "The lawyer was careful to ______ the exact terms of the payment schedule to avoid future disputes.",
+    "options": {
+      "a": "stipulate",
+      "b": "imply",
+      "c": "equivocate",
+      "d": "malinger"
+    },
+    "answer": "a",
+    "explanation": "Specifying exact terms in a legal context is to 'stipulate' them."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is an antonym for 'ambiguous'?",
+    "options": {
+      "a": "Vague",
+      "b": "Unclear",
+      "c": "Definite",
+      "d": "Cryptic"
+    },
+    "answer": "c",
+    "explanation": "'Ambiguous' means unclear or open to interpretation. Its direct antonym is 'definite'."
+  },
+  {
+    "id": 19,
+    "question": "The ______ scholar had published dozens of books on ancient history.",
+    "options": {
+      "a": "ignorant",
+      "b": "erudite",
+      "c": "uninformed",
+      "d": "prodigal"
+    },
+    "answer": "b",
+    "explanation": "A scholar with many publications is clearly very learned, or 'erudite'."
+  },
+  {
+    "id": 20,
+    "question": "The sergeant's ______ of the private for his negligence was heard across the entire base.",
+    "options": {
+      "a": "praise",
+      "b": "castigation",
+      "c": "commendation",
+      "d": "ambivalence"
+    },
+    "answer": "b",
+    "explanation": "A severe scolding or criticism, especially from a sergeant to a private, is 'castigation'."
+  },
+  {
+    "id": 21,
+    "question": "The poem's meaning was deliberately ______, allowing each reader to find a personal interpretation.",
+    "options": {
+      "a": "clear",
+      "b": "ambiguous",
+      "c": "obvious",
+      "d": "erudite"
+    },
+    "answer": "b",
+    "explanation": "A meaning that allows for multiple personal interpretations is 'ambiguous'."
+  },
+  {
+    "id": 22,
+    "question": "Which word is most opposite in meaning to 'propriety'?",
+    "options": {
+      "a": "Decorum",
+      "b": "Impropriety",
+      "c": "Fitness",
+      "d": "Harmony"
+    },
+    "answer": "b",
+    "explanation": "'Propriety' means correct behavior. Its antonym is 'impropriety', meaning improper behavior."
+  },
+  {
+    "id": 23,
+    "question": "The text was so ______ that it required a specialized dictionary to decipher its meaning.",
+    "options": {
+      "a": "esoteric",
+      "b": "exoteric",
+      "c": "obvious",
+      "d": "clear"
+    },
+    "answer": "a",
+    "explanation": "A text that requires specialized knowledge to understand is 'esoteric'."
+  },
+  {
+    "id": 24,
+    "question": "The Bengali meaning of 'ambivalence' is:",
+    "options": {
+      "a": "উপযুক্ততা",
+      "b": "প্রতিকূল",
+      "c": "কলঙ্ক",
+      "d": "জ্ঞানী"
+    },
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'ambivalence' is 'প্রতিকূল' or 'দ্বিধা' (having mixed feelings)."
+  },
+  {
+    "id": 25,
+    "question": "Which part of speech is 'prodigal'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "b",
+    "explanation": "'Prodigal' describes a noun (e.g., a prodigal son), so it is an adjective."
+  },
+  {
+    "id": 26,
+    "question": "Her ______ was evident as she struggled to choose between the two excellent job offers.",
+    "options": {
+      "a": "castigation",
+      "b": "ambivalence",
+      "c": "stigma",
+      "d": "propriety"
+    },
+    "answer": "b",
+    "explanation": "Struggling to choose between two good options is a classic sign of 'ambivalence' (mixed feelings)."
+  },
+  {
+    "id": 27,
+    "question": "Choose the word that is a synonym for 'castigation'.",
+    "options": {
+      "a": "Praise",
+      "b": "Commendation",
+      "c": "Rebuke",
+      "d": "Approval"
+    },
+    "answer": "c",
+    "explanation": "'Rebuke' means a sharp disapproval or criticism, which is a synonym for 'castigation'. The other options are antonyms."
+  },
+  {
+    "id": 28,
+    "question": "To ensure there was no misunderstanding, she avoided ______ language and stated her terms explicitly.",
+    "options": {
+      "a": "ambiguous",
+      "b": "clear",
+      "c": "definite",
+      "d": "lucid"
+    },
+    "answer": "a",
+    "explanation": "Language that causes misunderstanding is 'ambiguous'. The other options describe clear language."
+  },
+  {
+    "id": 29,
+    "question": "The ______ of his vast library was a testament to his lifelong passion for learning.",
+    "options": {
+      "a": "impropriety",
+      "b": "erudition",
+      "c": "ignorance",
+      "d": "prodigality"
+    },
+    "answer": "b",
+    "explanation": "A vast library is evidence of great learning or knowledge, which is 'erudition' (the quality of being erudite)."
+  },
+  {
+    "id": 30,
+    "question": "A ______ often feigns illness to avoid responsibilities.",
+    "options": {
+      "a": "malingerer",
+      "b": "benefactor",
+      "c": "genius",
+      "d": "mentor"
+    },
+    "answer": "a",
+    "explanation": "This is the definition of a 'malingerer'."
+  },
+  {
+    "id": 31,
+    "question": "Which word does NOT describe a characteristic of an 'erudite' person?",
+    "options": {
+      "a": "Scholarly",
+      "b": "Learned",
+      "c": "Ignorant",
+      "d": "Knowledgeable"
+    },
+    "answer": "c",
+    "explanation": "'Ignorant' is an antonym of 'erudite'. The other options are synonyms."
+  },
+  {
+    "id": 32,
+    "question": "The ______ teachings of the sect were passed down orally to only the most trusted initiates.",
+    "options": {
+      "a": "exoteric",
+      "b": "esoteric",
+      "c": "obvious",
+      "d": "public"
+    },
+    "answer": "b",
+    "explanation": "Teachings for a small, trusted group are 'esoteric'."
+  },
+  {
+    "id": 33,
+    "question": "The ______ of the scandal followed him for the rest of his career, making it difficult to find employment.",
+    "options": {
+      "a": "propriety",
+      "b": "stigma",
+      "c": "praise",
+      "d": "honor"
+    },
+    "answer": "b",
+    "explanation": "A lasting mark of disgrace from a scandal is a 'stigma'."
+  },
+  {
+    "id": 34,
+    "question": "The Bengali meaning of 'prodigal' is:",
+    "options": {
+      "a": "উপযুক্ততা",
+      "b": "অমিতব্যয়ী",
+      "c": "নির্ধারণ করা",
+      "d": "গোপনীয়"
+    },
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'prodigal' is 'অমিতব্যয়ী' (wastefully extravagant)."
+  },
+  {
+    "id": 35,
+    "question": "Which part of speech is 'stigma'?",
+    "options": {
+      "a": "Adjective",
+      "b": "Verb",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Stigma' is the name of a concept (a mark of disgrace), so it is a noun."
+  },
+  {
+    "id": 36,
+    "question": "A person who is hesitant and has conflicting emotions demonstrates ______.",
+    "options": {
+      "a": "certainty",
+      "b": "ambivalence",
+      "c": "clarity",
+      "d": "decisiveness"
+    },
+    "answer": "b",
+    "explanation": "This is a direct example of 'ambivalence'."
+  },
+  {
+    "id": 37,
+    "question": "The agreement ______ that the work must be completed by a licensed professional.",
+    "options": {
+      "a": "implies",
+      "b": "suggests",
+      "c": "stipulates",
+      "d": "hides"
+    },
+    "answer": "c",
+    "explanation": "An agreement specifying a requirement is 'stipulating' it."
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is an antonym for 'stipulate'?",
+    "options": {
+      "a": "Specify",
+      "b": "Imply",
+      "c": "Demand",
+      "d": "Require"
+    },
+    "answer": "b",
+    "explanation": "'Stipulate' means to state clearly. To 'imply' is to suggest something without stating it directly, which is the opposite."
+  },
+  {
+    "id": 39,
+    "question": "The critic's ______ review of the film pointed out every flaw in excruciating detail.",
+    "options": {
+      "a": "castigation",
+      "b": "praise",
+      "c": "commendation",
+      "d": "approval"
+    },
+    "answer": "a",
+    "explanation": "A review that focuses severely on flaws is a form of 'castigation' (severe criticism)."
+  },
+  {
+    "id": 40,
+    "question": "His ______ with money eventually led to his financial ruin.",
+    "options": {
+      "a": "frugality",
+      "b": "thrift",
+      "c": "prodigality",
+      "d": "carefulness"
+    },
+    "answer": "c",
+    "explanation": "Financial ruin is the result of 'prodigality' (prodigal spending)."
+  },
+  {
+    "id": 41,
+    "question": "The diplomat acted with strict ______, adhering to every protocol during the state visit.",
+    "options": {
+      "a": "impropriety",
+      "b": "ambivalence",
+      "c": "propriety",
+      "d": "stigma"
+    },
+    "answer": "c",
+    "explanation": "Adhering to protocol is acting with 'propriety'."
+  },
+  {
+    "id": 42,
+    "question": "Choose the word that is a synonym for 'esoteric'.",
+    "options": {
+      "a": "Common",
+      "b": "Ordinary",
+      "c": "Arcane",
+      "d": "Well-known"
+    },
+    "answer": "c",
+    "explanation": "'Arcane' means understood by few, which is a synonym for 'esoteric'. The others are antonyms."
+  },
+  {
+    "id": 43,
+    "question": "The witness's testimony was deliberately ______, making it useless for the prosecution.",
+    "options": {
+      "a": "unambiguous",
+      "b": "definite",
+      "c": "ambiguous",
+      "d": "clear"
+    },
+    "answer": "c",
+    "explanation": "Testimony that is unclear and open to interpretation ('ambiguous') is not useful in court."
+  },
+  {
+    "id": 44,
+    "question": "The Bengali meaning of 'castigation' is:",
+    "options": {
+      "a": "শাস্তি",
+      "b": "উপযুক্ততা",
+      "c": "প্রতিকূল",
+      "d": "জ্ঞানী"
+    },
+    "answer": "a",
+    "explanation": "The Bengali meaning for 'castigation' is 'শাস্তি' or 'কঠোর ভৎসনা' (severe punishment or criticism)."
+  },
+  {
+    "id": 45,
+    "question": "Which part of speech is 'ambiguous'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Ambiguous' describes a noun (e.g., an ambiguous statement), so it is an adjective."
+  },
+  {
+    "id": 46,
+    "question": "A ______ interpretation of the law can lead to inconsistent enforcement.",
+    "options": {
+      "a": "clear",
+      "b": "definite",
+      "c": "ambiguous",
+      "d": "precise"
+    },
+    "answer": "c",
+    "explanation": "An interpretation that is open to more than one meaning ('ambiguous') leads to inconsistency."
+  },
+  {
+    "id": 47,
+    "question": "The company's code of conduct emphasizes the importance of ______ in all business dealings.",
+    "options": {
+      "a": "impropriety",
+      "b": "propriety",
+      "c": "stigma",
+      "d": "prodigality"
+    },
+    "answer": "b",
+    "explanation": "A code of conduct outlines correct and proper behavior, or 'propriety'."
+  },
+  {
+    "id": 48,
+    "question": "Which word best describes someone who pretends to be sick to avoid work?",
+    "options": {
+      "a": "Erudite",
+      "b": "Malingerer",
+      "c": "Prodigal",
+      "d": "Stipulator"
+    },
+    "answer": "b",
+    "explanation": "This is the definition of a 'malingerer'."
+  },
+  {
+    "id": 49,
+    "question": "The ______ of his argument was impressive; he cited obscure texts and complex theories with ease.",
+    "options": {
+      "a": "ignorance",
+      "b": "erudition",
+      "c": "ambivalence",
+      "d": "propriety"
+    },
+    "answer": "b",
+    "explanation": "Citing obscure texts and complex theories demonstrates deep learning, or 'erudition'."
+  },
+  {
+    "id": 50,
+    "question": "The ______ symbolism in the ancient text has been debated by scholars for centuries.",
+    "options": {
+      "a": "obvious",
+      "b": "esoteric",
+      "c": "clear",
+      "d": "exoteric"
+    },
+    "answer": "b",
+    "explanation": "Symbolism that is debated by scholars is likely difficult to understand and intended for a specialized audience, making it 'esoteric'."
+  }
+]

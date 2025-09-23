@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import phase1Words from '../data/phase1/vocabulary-words.json';
 import phase2Words from '../data/phase2/vocabulary-words.json';
 import phase3Words from '../data/phase3/vocabulary-words.json';
+import phase4Words from '../data/phase4/vocabulary-words.json';
+import phase5Words from '../data/phase5/vocabulary-words.json';
 
 export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
   const [activePhase, setActivePhase] = useState('all');
@@ -29,6 +31,20 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
       color: 'from-pink-500 to-red-500',
       bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
       borderColor: isDarkMode ? 'border-pink-500/30' : 'border-pink-200'
+    },
+    { 
+      name: 'Phase 4', 
+      words: phase4Words, 
+      color: 'from-pink-500 to-red-500',
+      bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
+      borderColor: isDarkMode ? 'border-red-500/30' : 'border-pink-200'
+    },
+    { 
+      name: 'Phase 5', 
+      words: phase5Words, 
+      color: 'from-pink-500 to-red-500',
+      bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
+      borderColor: isDarkMode ? 'border-red-500/30' : 'border-pink-200'
     }
   ];
 
@@ -201,6 +217,18 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
               >
                 📝 Phase 3 Practice
               </Link>
+              <Link 
+                to="/phase4"
+                className="px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                📝 Phase 4 Practice
+              </Link>
+              <Link 
+                to="/phase5"
+                className="px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+              >
+                📝 Phase 5 Practice
+              </Link>
             </div>
 
             {/* Phase Filter */}
@@ -208,7 +236,7 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
               <div className={`inline-flex rounded-lg p-1 ${
                 isDarkMode ? 'bg-gray-800' : 'bg-gray-100'
               }`}>
-                {['all', '1', '2', '3'].map((phase) => (
+                {['all', '1', '2', '3', '4'].map((phase) => (
                   <button
                     key={phase}
                     onClick={() => setActivePhase(phase)}

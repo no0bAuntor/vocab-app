@@ -1,0 +1,104 @@
+
+[
+
+  {
+    "id": 31,
+    "word": "viscous",
+    "pos": "adjective",
+    "bengali": "আঠালো, চটচটে",
+    "Explanation": "Having a high resistance to flow",
+    "synonym": ["sticky (আঠালো)", "thick (ঘন)", "syrupy (সিরাপের মতো)", "gelatinous (জেলি সদৃশ)", "gluey (আঠালো)", "tacky (আঠালো)", "colloidal (কোলয়েডাল)", "clingy (আঠালো)", "fixative (আঠালো)"],
+    "antonym": ["fluid (তরল)", "runny (পানীয়)", "watery (জলীয়)", "liquid (তরল)", "non-sticky (আঠালো নয়)", "thin (পাতলা)"],
+    "example": "The syrup was so viscous that it took a long time to pour out of the bottle. (সিরাপটি এত আঠালো ছিল যে বোতল থেকে বের হতে অনেক সময় লেগে গেল।)"
+  },
+  {
+    "id": 32,
+    "word": "recalcitrant",
+    "pos": "adjective",
+    "bengali": "অবাধ্য, বিদ্রুপ, কর্তৃত্ব",
+    "Explanation": "someone or something that is hard to manage, uncooperative, or defiant.",
+    "synonym": ["unruly (অবাধ্য)", "disobedient (অবাধ্য)", "defiant (বিদ্রোহী)", "intractable (অবাধ্য)", "wayward (অবাধ্য)", "headstrong (জেদি)", "contrary (বিপরীত)", "rebellious (বিদ্রোহী)", "fractious (অবাধ্য)", "averse() (অবাধ্য)"],
+    "antonym": ["obedient (আজ্ঞাবহ)", "compliant (অনুগত)", "cooperative (সহযোগী)", "manageable (পরিচালনাযোগ্য)", "tractable (পরিচালনাযোগ্য)", "amenable (অনুগত)", "docile (শান্ত)", "submissive (আজ্ঞাবহ)"],
+    "example": "The recalcitrant student refused to comply with the teacher's instructions. (অবাধ্য ছাত্রটি শিক্ষকের নির্দেশনা মেনে নিতে অস্বীকার করেছিল।)"
+  },
+  {
+    "id": 33,
+    "word": "volatile",
+    "pos": "adjective",
+    "bengali": "পরিবর্তনশীল, চঞ্চল",
+    "Explanation": "something unstable, unpredictable, or likely to change suddenly.",
+    "synonym": ["unstable (অস্থিতিশীল)", "erratic (অনিয়মিত)", "fickle (চঞ্চল)", "changeable (পরিবর্তনশীল)", "explosive (বিস্ফোরক)", "capricious (চঞ্চল)", "mercurial (চঞ্চল)", "turbulent (উত্তাল)"],
+    "antonym": ["stable (স্থিতিশীল)", "constant (অবিচল)", "predictable (পূর্বানুমানযোগ্য)", "steady (স্থিতিশীল)", "reliable (বিশ্বাসযোগ্য)", "settled (স্থির)", "calm (শান্ত)", "peaceful (শান্তিপূর্ণ)"],
+    "example": "The stock market is known for its volatile nature, with prices fluctuating wildly. (শেয়ার বাজার তার পরিবর্তনশীল প্রকৃতির জন্য পরিচিত, যেখানে দাম অস্থিরভাবে ওঠানামা করে।)"
+  },
+  {
+    "id": 34,
+    "word": "equivocate",
+    "pos": "verb",
+    "bengali": "দ্ব্যর্থবাদিতা করা, অস্পষ্ট কথা বলা, সত্য গোপন করা",
+    "Explanation": "to use ambiguous language so as to conceal the truth or avoid committing oneself.",
+    "synonym": ["prevaricate (দ্ব্যর্থবাদিতা করা)", "hedge (সতর্কতা অবলম্বন করা)", "dodge (এড়ানো)", "evade (এড়ানো)", "whiffle (সতর্কতা অবলম্বন করা)", "quibble (বিভ্রান্তি সৃষ্টি করা)", "vacillate (দোলাচল করা)", "waffle (অস্পষ্টভাবে কথা বলা)"],
+    "antonym": ["clarify (স্পষ্ট করা)", "define (সংজ্ঞায়িত করা)", "explain (ব্যাখ্যা করা)", "express (প্রকাশ করা)", "reveal (প্রকাশ করা)", "state (বক্তব্য করা)", "assert (দাবি করা)", "confirm (নিশ্চিত করা)"],
+    "example": ["When asked about his involvement, he seemed to equivocate, giving vague answers that didn't really address the question. (তার জড়িত থাকার বিষয়ে জিজ্ঞাসা করা হলে, তিনি দ্ব্যর্থবাদিতা করতে থাকেন, অস্পষ্ট উত্তর দেন যা আসলে প্রশ্নের উত্তর দেয় না।)"]
+  },
+  {
+    "id": 35,
+    "word": "lucid",
+    "pos": "adjective",
+    "bengali": "স্পষ্ট, পরিষ্কার, বোধগম্য",
+    "Explanation": "expressed clearly; easy to understand.",
+    "synonym": ["clear (স্পষ্ট)", "coherent (সঙ্গতিপূর্ণ)", "intelligible (বোধগম্য)", "comprehensible (বোধগম্য)", "transparent (স্বচ্ছ)", "unambiguous (অস্পষ্ট নয়)", "distinct (স্বতন্ত্র)", "plain (সোজা)", "limpid (স্বচ্ছ)", "manifest (প্রকাশ্য)", "understandable (বোধগম্য)"],
+    "antonym": ["obscure (অস্পষ্ট)", "confusing (বিভ্রান্তিকর)", "ambiguous (দ্ব্যর্থক)", "vague (অস্পষ্ট)", "unclear (অস্পষ্ট)", "complicated (জটিল)", "difficult (কঠিন)", "opaque (অস্বচ্ছ)"],
+    "example": ["The professor's explanation was so lucid that even the most complex concepts became clear. (প্রফেসরের ব্যাখ্যা এত স্পষ্ট ছিল যে সবচেয়ে জটিল ধারণাগুলি স্পষ্ট হয়ে উঠেছিল।)"]
+  },
+  {
+    "id": 36,
+    "word": "immutable",
+    "pos": "adjective",
+    "bengali": "অপরিবর্তনীয়, স্থির",
+    "Explanation": "not able to be changed or altered.",
+    "synonym": ["unchangeable (অপরিবর্তনীয়)", "fixed (স্থির)", "inflexible (অপরিবর্তনীয়)", "unmodifiable (অপরিবর্তনীয়)", "perpetual (চিরস্থায়ী)", "constant (অবিচল)", "enduring (স্থায়ী)", "stoic (অপরিবর্তনীয়)"],
+    "antonym": ["mutable (পরিবর্তনশীল)", "changeable (পরিবর্তনশীল)", "flexible (নমনীয়)", "modifiable (পরিবর্তনযোগ্য)", "temporary (অস্থায়ী)", "transient (অস্থায়ী)", "ephemeral (অস্থায়ী)", "fickle (চঞ্চল)"],
+    "example": ["The laws of physics are often considered immutable truths. (ভৌতবিজ্ঞানের আইনগুলি প্রায়শই অপরিবর্তনীয় সত্য হিসাবে বিবেচিত হয়।)"]
+  },
+  {
+    "id": 37,
+    "word": "levity",
+    "pos": "noun",
+    "bengali": "চপলতা, ছ্যাবলামি, অসভ্য রসিকতা",
+    "Explanation": "lightness of mind, behavior, or character, often in a way that lacks seriousness or respect when seriousness is expected.",
+    "synonym": ["vivacity (চপলতা)", "frivolity (হালকাতা)", "flippancy (অবজ্ঞাসূচকতা)", "liveliness (উদ্যম)", "fickleness (চঞ্চল)", "fandango (ছ্যাবলামি)", "humor (হাস্যরস)", "cheerfulness (আনন্দময়তা)", "clowning (মজার ছলে আচরণ করা)"],
+    "antonym": ["seriousness (গম্ভীরতা)", "gravity (গম্ভীরতা)", "sobriety (মিতভাষিতা)", "solemnity (গম্ভীরতা)", "earnestness (গম্ভীরতা)", "thoughtfulness (চিন্তাশীলতা)", "dignity (মর্যাদা)", "respectfulness (সম্মানজনকতা)"],
+    "example": "The teacher did not appreciate John's levity during the exam, as he kept making jokes. (পরীক্ষার সময় জনের ছ্যাবলামি শিক্ষক পছন্দ করেননি, কারণ সে বারবার রসিকতা করছিল।)"
+  },
+  {
+    "id": 38,
+    "word": "equanimity",
+    "pos": "noun",
+    "bengali": "প্রশান্তি",
+    "Explanation": "mental calmness, stability, or composure, especially in a difficult situation.",
+    "synonym": ["calmness (শান্তি)", "serenity (শান্তি)", "tranquility (শান্তি)", "composure (অবিচলতা)", "equilibrium (সাম্য)", "poise (সামঞ্জস্য)", "self-possession (আত্মনিয়ন্ত্রণ)", "aplomb (আত্মবিশ্বাস)"],
+    "antonym": ["agitation (উদ্বেগ)", "anxiety (চিন্তা)", "nervousness (উদ্বিগ্নতা)", "instability (অস্থিতিশীলতা)", "distraction (বিক্ষোভ)", "chaos (অরাজকতা)", "turmoil (কোলাহল)", "upheaval (অভ্যুত্থান)"],
+    "example": "She accepted the news of her promotion with equanimity, showing no signs of excessive excitement or anxiety. (তিনি তার পদোন্নতির খবরটি প্রশান্তির সাথে গ্রহণ করেছিলেন, অতিরিক্ত উত্তেজনা বা উদ্বেগের কোন চিহ্ন দেখাননি।)"
+  },
+  {
+    "id": 39,
+    "word": "amalgamate",
+    "pos": "verb",
+    "bengali": "একত্রিত করা, জোড়া লাগানো",
+    "Explanation": "to combine or unite to form one organization or structure.",
+    "synonym": ["merge (একত্রিত করা)", "combine (মিশ্রিত করা)", "unite (একত্রিত করা)", "consolidate (একত্রিত করা)", "consolidate (একত্রিত করা)", "blend (মিশ্রিত করা)", "coalesce (একত্রিত হওয়া)", "integrate (একত্রিত করা)", "adjoin (সংলগ্ন হওয়া)"],
+    "antonym": ["separate (বিভক্ত করা)", "divide (বিভক্ত করা)", "disunite (বিচ্ছিন্ন করা)", "disconnect (সংযোগ বিচ্ছিন্ন করা)", "split (ভাঙা)", "segregate (বিচ্ছিন্ন করা)", "isolate (একাকী করা)", "dissociate (বিচ্ছিন্ন করা)"],
+    "example": "The two companies decided to amalgamate in order to strengthen their market position. (দুটি কোম্পানি তাদের বাজারের অবস্থান শক্তিশালী করার জন্য একত্রিত হওয়ার সিদ্ধান্ত নিয়েছে।)"
+  },
+  {
+    "id": 40,
+    "word": "whimsical",
+    "pos": "adjective",
+    "bengali": "খামখেয়ালী",
+    "Explanation": "playfully quaint or fanciful, especially in an appealing and amusing way.",
+    "synonym": ["capricious (চঞ্চল)", "fanciful (কল্পনাপ্রসূত)", "quirky (অদ্ভুত)", "eccentric (বিচিত্র)", "exotic (বিচিত্র)", "humorous (হাস্যকর)", "mischievous (দুষ্টুমি)", "lighthearted (হালকা মেজাজের)"],
+    "antonym": ["serious (গম্ভীর)", "sober (মিতভাষী)", "earnest (গম্ভীর)", "grave (গম্ভীর)", "dignified (মর্যাদাপূর্ণ)", "staid (গম্ভীর)", "unimaginative (কল্পনাহীন)", "literal (অক্ষরশঃ)"],
+    "example": "The whimsical decorations at the party added a fun and playful atmosphere. (পার্টির খামখেয়ালী সাজসজ্জা একটি মজার এবং খেলাধুলার পরিবেশ যোগ করেছে।)"
+  }
+]

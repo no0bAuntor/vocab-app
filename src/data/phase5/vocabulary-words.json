@@ -1,0 +1,101 @@
+[
+  {
+    "id": 41,
+    "word": "propriety",
+    "pos": "noun",
+    "bengali": "উপযুক্ততা",
+    "Explanation": "The state or quality of being correct or proper.",
+    "synonym": ["fitness (সুস্থতা)", "harmony (সঙ্গতি)", "accord (ঐক্যমত)"],
+    "antonym": ["impropriety (অযাচিততা)", "indecency (অশালীনতা)"],
+    "example": "He was careful to maintain a sense of propriety in his speech. (তিনি তাঁর বক্তৃতায় উপযুক্ততার অনুভূতি বজায় রাখতে সতর্ক ছিলেন।)"
+  },
+  {
+    "id": 42,
+    "word": "stipulate",
+    "pos": "verb",
+    "bengali": "নির্ধারণ করা",
+    "Explanation": "To demand or specify a requirement, typically as part of a bargain or agreement.",
+    "synonym": ["specify (নির্দিষ্ট করা)", "impose (আরোপ করা)", "insist (জোর দেওয়া)"],
+    "antonym": ["imply (অর্থ বোঝানো)", "suggest (সুপারিশ করা)"],
+    "example": "The contract stipulates that the work must be completed by the end of the month. (চুক্তিতে নির্ধারণ করা হয়েছে যে কাজটি মাসের শেষের মধ্যে সম্পন্ন করতে হবে।)"
+  },
+  {
+    "id": 43,
+    "word": "erudite",
+    "pos": "adjective",
+    "bengali": "জ্ঞানী",
+    "Explanation": "Having or showing great knowledge or learning.",
+    "synonym": ["learned (শিক্ষিত)", "scholarly (গবেষণামূলক)", "intellectual (বুদ্ধিজীবী)", "sagacious (বিবেচক)", "wise (জ্ঞানী)"],
+    "antonym": ["ignorant (অজ্ঞ)", "uninformed (অবহিত)"],
+    "example": "The erudite professor was well-respected in his field. (জ্ঞানী অধ্যাপক তাঁর ক্ষেত্রে অত্যন্ত সম্মানিত ছিলেন।)"
+  },
+  {
+    "id": 44,
+    "word": "ambiguous",
+    "pos": "adjective",
+    "bengali": "অস্পষ্ট",
+    "Explanation": "Open to more than one interpretation; not having one obvious meaning.",
+    "synonym": ["unclear (অস্পষ্ট)", "vague (অস্পষ্ট)", "indeterminate (অসীম)", "oracular (অস্পষ্ট)", "cryptic (গুপ্ত)", "equivocal (দ্ব্যর্থক)", "obscure (অস্পষ্ট)", "dim (অস্পষ্ট)", "vague (অস্পষ্ট)", "fuzzy (অস্পষ্ট)", "mystical (রহস্যময়)"],
+    "antonym": ["clear (স্পষ্ট)", "definite (নিশ্চিত)"],
+    "example": "The instructions were ambiguous, leading to confusion among the participants. (নির্দেশাবলীর অস্পষ্টতা অংশগ্রহণকারীদের মধ্যে বিভ্রান্তি সৃষ্টি করেছিল।)"
+  },
+  {
+    "id": 45,
+    "word": "stigma",
+    "pos": "noun",
+    "bengali": "কলঙ্ক",
+    "Explanation": "A mark of disgrace associated with a particular circumstance, quality, or person.",
+    "synonym": ["shame (লজ্জা)", "dishonor (অপমান)", "stain (দাগ)", "taint (দূষণ)", "blemish (দাগ)", "disgrace (অপমান)", "opprobrium (অপমান)", "ignominy (অপমান)", "disrepute (অপমান)", "blot (দাগ)", "scar (দাগ)", "slur (অপমান)"],
+    "antonym": ["pride (গর্ব)", "honor (সম্মান)"],
+    "example": "The stigma surrounding mental health issues can prevent individuals from seeking help. (মানসিক স্বাস্থ্য সমস্যাগুলির চারপাশে কলঙ্ক ব্যক্তি বিশেষকে সাহায্য চাইতে বাধা দিতে পারে।)"
+  },
+  {
+    "id": 46,
+    "word": "malingerer",
+    "pos": "noun",
+    "bengali": "অসুস্থতার অজুহাতকারী",
+    "Explanation": "A person who pretends to be ill in order to escape duty or work.",
+    "synonym": ["slacker (অলস ব্যক্তি)", "shirker (কর্ম এড়ানো ব্যক্তি)", "faker (নকলকারী)", "layabout (অলস ব্যক্তি)"],
+    "antonym": ["hard worker (পরিশ্রমী)", "overachiever (অতিরিক্ত সফল ব্যক্তি)"],
+    "example": "The manager suspected that John was a malingerer, always calling in sick on Mondays. (ম্যানেজার সন্দেহ করলেন জন একজন অসুস্থতার ভানকারী, যে সবসময় সোমবারে অসুস্থ বলে ছুটি নেয়।)"
+  },
+  {
+    "id": 47,
+    "word": "ambivalence",
+    "pos": "noun",
+    "bengali": "প্রতিকূল",
+    "Explanation": "The state of having mixed feelings or contradictory ideas about something or someone.",
+    "synonym": ["uncertainty (অস্পষ্টতা)", "hostile (শত্রুতাপূর্ণ)", "conflict (সংঘাত)", "doubt (সন্দেহ)", "indecision (অসিদ্ধান্ত)", "unfavourable (অপ্রীতিকর)", "opposite (বিপরীত)"],
+    "antonym": ["certainty (নিশ্চয়তা)", "clarity (স্পষ্টতা)"],
+    "example": "Her ambivalence about the job offer made it difficult for her to make a decision. (চাকরির প্রস্তাব নিয়ে তাঁর দ্বিধা সিদ্ধান্ত নিতে তাঁর জন্য কঠিন করে তুলেছিল।)"
+  },
+  {
+    "id": 48,
+    "word": "esoteric",
+    "pos": "adjective",
+    "bengali": "গোপনীয়, রহস্যময়",
+    "Explanation": "Intended for or likely to be understood by only a small number of people with a specialized knowledge or interest.",
+    "synonym": ["abstruse (গূঢ়)", "arcane (গোপন)", "recondite (গূঢ়)", "enigmatic (রহস্যময়)", "cryptic (গুপ্ত)", "profound (গভীর)"],
+    "antonym": ["exoteric (সাধারণ)", "obvious (স্পষ্ট)"],
+    "example": "The esoteric teachings of the ancient philosophers are not easily understood. (প্রাচীন দার্শনিকদের গোপনীয় শিক্ষা সহজে বোঝা যায় না।)"
+  },
+  {
+    "id": 49,
+    "word": "castigation",
+    "pos": "noun",
+    "bengali": "শাস্তি, কঠোর ভৎসনা",
+    "Explanation": "Severe criticism or punishment.",
+    "synonym": ["punishment (শাস্তি)", "reprimand (নিন্দা)", "scolding (বিরক্তি)", "rebuke (প্রতিবাদ)", "censure (নিন্দা)", "criticism (সমালোচনা)", "penalty (শাস্তি)", "chastisement (শাস্তি)", "judgement (পরীক্ষা)", "reproof (প্রতিবাদ)"],
+    "antonym": ["praise (প্রশংসা)", "commendation (সার্টিফিকেট)"],
+    "example": "The teacher's castigation of the student's behavior was harsh but necessary. (শিক্ষকের ছাত্রের আচরণের শাস্তি কঠোর কিন্তু প্রয়োজনীয় ছিল।)"
+  },
+  {
+    "id": 50,
+    "word": "prodigal",
+    "pos": "adjective",
+    "bengali": "অমিতব্যয়ী, অপচয়কারী",
+    "Explanation": "Spending money or resources freely and recklessly; wastefully extravagant.",
+    "synonym": ["wasteful (অপচয়কারী)", "lavish (অমিতব্যয়ী)", "extravagant (অপচয়কারী)", "squandering (অপচয়কারী)", "profligate (অমিতব্যয়ী)", "wanton (অবাধ)"],
+    "antonym": ["frugal (মিতব্যয়ী)", "thrifty (অর্থ সাশ্রয়ী)"],
+    "example": "The prodigal son returned home after squandering his inheritance. (অমিতব্যয়ী পুত্র তার উত্তরাধিকার অপচয় করার পর বাড়িতে ফিরে এল।)"
+  }]

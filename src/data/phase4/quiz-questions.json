@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Despite the heated argument, she maintained her characteristic ______, responding to each accusation with calm logic.",
+    "options": {
+      "a": "levity",
+      "b": "viscosity",
+      "c": "equanimity",
+      "d": "volatility"
+    },
+    "answer": "c",
+    "explanation": "The context describes 'calm logic' in a difficult situation, which is the definition of 'equanimity' (mental calmness and composure)."
+  },
+  {
+    "id": 2,
+    "question": "The word 'recalcitrant' is most similar in meaning to:",
+    "options": {
+      "a": "obedient",
+      "b": "unruly",
+      "c": "stable",
+      "d": "lucid"
+    },
+    "answer": "b",
+    "explanation": "'Recalcitrant' means uncooperative and defiant. Its synonyms include 'unruly' and 'disobedient'."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is the best antonym for 'lucid'?",
+    "options": {
+      "a": "clear",
+      "b": "obscure",
+      "c": "intelligible",
+      "d": "transparent"
+    },
+    "answer": "b",
+    "explanation": "'Lucid' means clear and easy to understand. Its direct antonym is 'obscure', which means unclear and difficult to understand."
+  },
+  {
+    "id": 4,
+    "question": "The politician was known to ______ on sensitive topics, never giving a straight answer to avoid controversy.",
+    "options": {
+      "a": "amalgamate",
+      "b": "equivocate",
+      "c": "clarify",
+      "d": "define"
+    },
+    "answer": "b",
+    "explanation": "The context of avoiding a straight answer points directly to 'equivocate', which means to use ambiguous language to conceal the truth."
+  },
+  {
+    "id": 5,
+    "question": "The ______ nature of the chemical made it dangerous to store, as it could explode with the slightest change in temperature.",
+    "options": {
+      "a": "immutable",
+      "b": "viscous",
+      "c": "volatile",
+      "d": "whimsical"
+    },
+    "answer": "c",
+    "explanation": "The description of being unstable and potentially explosive defines 'volatile'."
+  },
+  {
+    "id": 6,
+    "question": "The company's plan was to ______ several smaller firms into a single, more powerful corporation.",
+    "options": {
+      "a": "separate",
+      "b": "equivocate",
+      "c": "amalgamate",
+      "d": "disconnect"
+    },
+    "answer": "c",
+    "explanation": "'Amalgamate' means to combine or unite to form one structure, which fits the context of merging smaller firms."
+  },
+  {
+    "id": 7,
+    "question": "Which word describes a substance that is thick and sticky, like honey or tar?",
+    "options": {
+      "a": "Recalcitrant",
+      "b": "Volatile",
+      "c": "Viscous",
+      "d": "Lucid"
+    },
+    "answer": "c",
+    "explanation": "'Viscous' specifically means having a thick, sticky consistency between solid and liquid, like honey."
+  },
+  {
+    "id": 8,
+    "question": "The author's ______ writing style was full of fanciful and playful elements that charmed both children and adults.",
+    "options": {
+      "a": "grave",
+      "b": "whimsical",
+      "c": "immutable",
+      "d": "sober"
+    },
+    "answer": "b",
+    "explanation": "'Whimsical' means playfully quaint or fanciful, which perfectly describes the charming and playful style mentioned."
+  },
+  {
+    "id": 9,
+    "question": "A fundamental, ______ law of the universe is that energy cannot be created or destroyed.",
+    "options": {
+      "a": "volatile",
+      "b": "mutable",
+      "c": "immutable",
+      "d": "fickle"
+    },
+    "answer": "c",
+    "explanation": "A fundamental law that cannot be changed is 'immutable' (unchanging over time)."
+  },
+  {
+    "id": 10,
+    "question": "His ______ during the solemn ceremony was considered highly disrespectful by the attendees.",
+    "options": {
+      "a": "equanimity",
+      "b": "levity",
+      "c": "viscosity",
+      "d": "lucidity"
+    },
+    "answer": "b",
+    "explanation": "'Levity' means lightness of manner which is inappropriate for a serious occasion, making it disrespectful in a solemn ceremony."
+  },
+  {
+    "id": 11,
+    "question": "The Bengali meaning of 'equivocate' is:",
+    "options": {
+      "a": "আঠালো",
+      "b": "অবাধ্য",
+      "c": "দ্ব্যর্থবাদিতা করা",
+      "d": "স্পষ্ট"
+    },
+    "answer": "c",
+    "explanation": "The Bengali meaning for 'equivocate' is 'দ্ব্যর্থবাদিতা করা' (to speak ambiguously)."
+  },
+  {
+    "id": 12,
+    "question": "Which part of speech is 'amalgamate'?",
+    "options": {
+      "a": "Noun",
+      "b": "Adjective",
+      "c": "Verb",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Amalgamate' is an action, meaning to combine or unite, so it is a verb."
+  },
+  {
+    "id": 13,
+    "question": "Choose the word that is NOT a synonym for 'immutable'.",
+    "options": {
+      "a": "Fixed",
+      "b": "Unchangeable",
+      "c": "Constant",
+      "d": "Mercurial"
+    },
+    "answer": "d",
+    "explanation": "'Mercurial' means subject to sudden or unpredictable changes, which is the opposite of 'immutable'. The other options are all synonyms."
+  },
+  {
+    "id": 14,
+    "question": "The ______ child refused to follow any instructions, testing the patience of his parents.",
+    "options": {
+      "a": "compliant",
+      "b": "docile",
+      "c": "recalcitrant",
+      "d": "lucid"
+    },
+    "answer": "c",
+    "explanation": "A child who refuses to follow instructions is 'recalcitrant' (uncooperative and defiant)."
+  },
+  {
+    "id": 15,
+    "question": "After the merger, the two departments will ______ into a single, more efficient unit.",
+    "options": {
+      "a": "equivocate",
+      "b": "amalgamate",
+      "c": "separate",
+      "d": "volatilize"
+    },
+    "answer": "b",
+    "explanation": "A merger involves combining units, which is the meaning of 'amalgamate'."
+  },
+  {
+    "id": 16,
+    "question": "Which word means 'mental calmness and composure, especially in a difficult situation'?",
+    "options": {
+      "a": "Levity",
+      "b": "Volatility",
+      "c": "Equanimity",
+      "d": "Viscosity"
+    },
+    "answer": "c",
+    "explanation": "This is the precise definition of 'equanimity'."
+  },
+  {
+    "id": 17,
+    "question": "The scientist's explanation was remarkably ______, making the complex theory accessible to everyone.",
+    "options": {
+      "a": "viscous",
+      "b": "opaque",
+      "c": "lucid",
+      "d": "ambiguous"
+    },
+    "answer": "c",
+    "explanation": "An explanation that makes complex ideas accessible is 'lucid' (clear and easy to understand)."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is an antonym for 'whimsical'?",
+    "options": {
+      "a": "Fanciful",
+      "b": "Quirky",
+      "c": "Serious",
+      "d": "Mischievous"
+    },
+    "answer": "c",
+    "explanation": "'Whimsical' means playful and fanciful. Its direct antonym is 'serious'."
+  },
+  {
+    "id": 19,
+    "question": "The ______ of the crude oil made it difficult to pump through the pipeline.",
+    "options": {
+      "a": "equanimity",
+      "b": "levity",
+      "c": "viscosity",
+      "d": "volatility"
+    },
+    "answer": "c",
+    "explanation": "A substance that is difficult to pump is likely thick and sticky, indicating high 'viscosity'."
+  },
+  {
+    "id": 20,
+    "question": "Instead of admitting his mistake, he chose to ______, talking in circles to avoid the issue.",
+    "options": {
+      "a": "state clearly",
+      "b": "equivocate",
+      "c": "confirm",
+      "d": "amalgamate"
+    },
+    "answer": "b",
+    "explanation": "'Talking in circles to avoid an issue' is the classic behavior of someone who is equivocating."
+  },
+  {
+    "id": 21,
+    "question": "The stock market is notoriously ______, with prices capable of swinging dramatically in a single day.",
+    "options": {
+      "a": "immutable",
+      "b": "viscous",
+      "c": "volatile",
+      "d": "lucid"
+    },
+    "answer": "c",
+    "explanation": "Dramatic and unpredictable swings are characteristic of something that is 'volatile'."
+  },
+  {
+    "id": 22,
+    "question": "Which word is most opposite in meaning to 'recalcitrant'?",
+    "options": {
+      "a": "Defiant",
+      "b": "Unruly",
+      "c": "Compliant",
+      "d": "Wayward"
+    },
+    "answer": "c",
+    "explanation": "'Recalcitrant' means disobedient. Its antonym is 'compliant', meaning obedient and cooperative."
+  },
+  {
+    "id": 23,
+    "question": "The principles of the constitution were designed to be ______, ensuring they would endure for generations.",
+    "options": {
+      "a": "whimsical",
+      "b": "mutable",
+      "c": "immutable",
+      "d": "volatile"
+    },
+    "answer": "c",
+    "explanation": "Principles designed to endure without change are 'immutable'."
+  },
+  {
+    "id": 24,
+    "question": "The Bengali meaning of 'levity' is:",
+    "options": {
+      "a": "প্রশান্তি",
+      "b": "চপলতা",
+      "c": "আঠালো",
+      "d": "অবাধ্য"
+    },
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'levity' is 'চপলতা' or 'ছ্যাবলামি' (lightness of mind)."
+  },
+  {
+    "id": 25,
+    "question": "Which part of speech is 'equanimity'?",
+    "options": {
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Equanimity' is a state of being, making it a noun."
+  },
+  {
+    "id": 26,
+    "question": "Her ______ personality made her a delightful friend, but an unreliable employee.",
+    "options": {
+      "a": "stable",
+      "b": "whimsical",
+      "c": "constant",
+      "d": "immutable"
+    },
+    "answer": "b",
+    "explanation": "A delightful but unreliable personality suggests someone who is 'whimsical' (guided by whim, fanciful and unpredictable)."
+  },
+  {
+    "id": 27,
+    "question": "Choose the word that is a synonym for 'viscous'.",
+    "options": {
+      "a": "Fluid",
+      "b": "Watery",
+      "c": "Syrupy",
+      "d": "Runny"
+    },
+    "answer": "c",
+    "explanation": "'Syrupy' describes a thick, sticky consistency, which is a synonym for 'viscous'. The other options are antonyms."
+  },
+  {
+    "id": 28,
+    "question": "The witness was asked to provide a ______ account of the event, free from any ambiguity.",
+    "options": {
+      "a": "viscous",
+      "b": "lucid",
+      "c": "equivocal",
+      "d": "volatile"
+    },
+    "answer": "b",
+    "explanation": "An account that is 'free from ambiguity' is clear and easy to understand, or 'lucid'."
+  },
+  {
+    "id": 29,
+    "question": "In the face of the crisis, the leader's ______ helped to reassure the frightened public.",
+    "options": {
+      "a": "levity",
+      "b": "equanimity",
+      "c": "volatility",
+      "d": "recalcitrance"
+    },
+    "answer": "b",
+    "explanation": "A leader calming a frightened public would demonstrate 'equanimity' (mental calmness and stability)."
+  },
+  {
+    "id": 30,
+    "question": "To ______ is to deliberately avoid making a clear statement or commitment.",
+    "options": {
+      "a": "amalgamate",
+      "b": "equivocate",
+      "c": "clarify",
+      "d": "stabilize"
+    },
+    "answer": "b",
+    "explanation": "This is the definition of 'equivocate'."
+  },
+  {
+    "id": 31,
+    "question": "Which word does NOT describe a characteristic of a 'recalcitrant' person?",
+    "options": {
+      "a": "Docile",
+      "b": "Intractable",
+      "c": "Unruly",
+      "d": "Defiant"
+    },
+    "answer": "a",
+    "explanation": "'Docile' (easily taught or led) is an antonym of 'recalcitrant'. The other options are synonyms."
+  },
+  {
+    "id": 32,
+    "question": "The artist's ______ sculptures seemed to be born from a delightful dream.",
+    "options": {
+      "a": "grave",
+      "b": "whimsical",
+      "c": "sober",
+      "d": "staid"
+    },
+    "answer": "b",
+    "explanation": "Art that seems from a 'delightful dream' is fanciful and playful, or 'whimsical'."
+  },
+  {
+    "id": 33,
+    "question": "The ______ of his argument was undermined by his use of vague and confusing language.",
+    "options": {
+      "a": "viscosity",
+      "b": "lucidity",
+      "c": "volatility",
+      "d": "levity"
+    },
+    "answer": "b",
+    "explanation": "Vague and confusing language would destroy the clarity, or 'lucidity', of an argument."
+  },
+  {
+    "id": 34,
+    "question": "The Bengali meaning of 'immutable' is:",
+    "options": {
+      "a": "পরিবর্তনশীল",
+      "b": "অপরিবর্তনীয়",
+      "c": "চঞ্চল",
+      "d": "স্পষ্ট"
+    },
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'immutable' is 'অপরিবর্তনীয়' (not subject to change)."
+  },
+  {
+    "id": 35,
+    "question": "Which part of speech is 'volatile'?",
+    "options": {
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Volatile' describes a noun (e.g., a volatile substance), so it is an adjective."
+  },
+  {
+    "id": 36,
+    "question": "A person who remains calm under pressure demonstrates ______.",
+    "options": {
+      "a": "levity",
+      "b": "equanimity",
+      "c": "viscosity",
+      "d": "recalcitrance"
+    },
+    "answer": "b",
+    "explanation": "This is a direct example of 'equanimity'."
+  },
+  {
+    "id": 37,
+    "question": "The peace treaty was meant to be an ______ agreement, not subject to future renegotiation.",
+    "options": {
+      "a": "ephemeral",
+      "b": "immutable",
+      "c": "volatile",
+      "d": "whimsical"
+    },
+    "answer": "b",
+    "explanation": "An agreement not subject to change is 'immutable'."
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is an antonym for 'equivocate'?",
+    "options": {
+      "a": "Hedge",
+      "b": "Prevaricate",
+      "c": "Assert",
+      "d": "Quibble"
+    },
+    "answer": "c",
+    "explanation": "'Equivocate' means to be ambiguous. To 'assert' is to state a fact or belief confidently and forcefully, which is the opposite."
+  },
+  {
+    "id": 39,
+    "question": "The new adhesive was incredibly ______, forming a bond that was almost impossible to break.",
+    "options": {
+      "a": "volatile",
+      "b": "viscous",
+      "c": "lucid",
+      "d": "recalcitrant"
+    },
+    "answer": "b",
+    "explanation": "Adhesives (glues) are described as 'viscous' (thick and sticky) before they set."
+  },
+  {
+    "id": 40,
+    "question": "His ______ in the meeting, cracking jokes while budgets were being cut, was ill-received.",
+    "options": {
+      "a": "equanimity",
+      "b": "levity",
+      "c": "lucidity",
+      "d": "viscosity"
+    },
+    "answer": "b",
+    "explanation": "Cracking jokes during a serious situation like budget cuts is a display of 'levity'."
+  },
+  {
+    "id": 41,
+    "question": "The two political factions agreed to ______ their efforts to pass the important legislation.",
+    "options": {
+      "a": "separate",
+      "b": "amalgamate",
+      "c": "equivocate",
+      "d": "disunite"
+    },
+    "answer": "b",
+    "explanation": "Combining efforts is synonymous with 'amalgamate'."
+  },
+  {
+    "id": 42,
+    "question": "Choose the word that is a synonym for 'volatile'.",
+    "options": {
+      "a": "Stable",
+      "b": "Constant",
+      "c": "Explosive",
+      "d": "Reliable"
+    },
+    "answer": "c",
+    "explanation": "'Explosive' captures the unstable and potentially sudden-change nature of 'volatile'. The others are antonyms."
+  },
+  {
+    "id": 43,
+    "question": "The professor's ______ lecture left the students more confused than when they arrived.",
+    "options": {
+      "a": "lucid",
+      "b": "opaque",
+      "c": "transparent",
+      "d": "intelligible"
+    },
+    "answer": "b",
+    "explanation": "A lecture that causes confusion is the opposite of clear; it is 'opaque' (difficult to understand), which is an antonym of 'lucid'."
+  },
+  {
+    "id": 44,
+    "question": "The Bengali meaning of 'amalgamate' is:",
+    "options": {
+      "a": "বিভক্ত করা",
+      "b": "একত্রিত করা",
+      "c": "এড়ানো",
+      "d": "স্পষ্ট করা"
+    },
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'amalgamate' is 'একত্রিত করা' (to unite or combine)."
+  },
+  {
+    "id": 45,
+    "question": "Which part of speech is 'levity'?",
+    "options": {
+      "a": "Adjective",
+      "b": "Verb",
+      "c": "Noun",
+      "d": "Adverb"
+    },
+    "answer": "c",
+    "explanation": "'Levity' is the name of a behavior or quality, so it is a noun."
+  },
+  {
+    "id": 46,
+    "question": "A ______ substance like water flows easily, unlike honey.",
+    "options": {
+      "a": "viscous",
+      "b": "non-viscous",
+      "c": "sticky",
+      "d": "syrupy"
+    },
+    "answer": "b",
+    "explanation": "Water, which flows easily, has low viscosity and is therefore 'non-viscous'."
+  },
+  {
+    "id": 47,
+    "question": "The CEO needed to ______ the different corporate cultures after the acquisition.",
+    "options": {
+      "a": "amalgamate",
+      "b": "segregate",
+      "c": "equivocate",
+      "d": "volatilize"
+    },
+    "answer": "a",
+    "explanation": "After an acquisition, combining cultures is a process of amalgamation."
+  },
+  {
+    "id": 48,
+    "question": "Which word best describes someone who stubbornly refuses to obey authority?",
+    "options": {
+      "a": "Amenable",
+      "b": "Recalcitrant",
+      "c": "Compliant",
+      "d": "Docile"
+    },
+    "answer": "b",
+    "explanation": "This is the definition of 'recalcitrant'. The other options describe someone who is obedient."
+  },
+  {
+    "id": 49,
+    "question": "The ______ of the situation called for a serious response, not lighthearted jokes.",
+    "options": {
+      "a": "levity",
+      "b": "gravity",
+      "c": "whimsy",
+      "d": "vivacity"
+    },
+    "answer": "b",
+    "explanation": "A situation requiring a serious response has 'gravity' (seriousness), which is an antonym for 'levity'."
+  },
+  {
+    "id": 50,
+    "question": "Her instructions were ______, leaving no room for misinterpretation.",
+    "options": {
+      "a": "ambiguous",
+      "b": "equivocal",
+      "c": "unambiguous",
+      "d": "vague"
+    },
+    "answer": "c",
+    "explanation": "Instructions with 'no room for misinterpretation' are clear and definite, or 'unambiguous'. This is a key quality of something that is 'lucid'."
+  }
+]
