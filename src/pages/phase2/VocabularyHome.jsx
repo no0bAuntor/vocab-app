@@ -58,16 +58,16 @@ function Phase2Home({ isDarkMode, toggleDarkMode }) {
     
     if (Math.abs(diff) > 10) {
       e.preventDefault();
-      setSwipeDistance(-diff);
+      setSwipeDistance(diff); // Remove the negative sign
     }
   };
 
   const handleTouchEnd = () => {
     if (Math.abs(swipeDistance) > 100) {
-      if (swipeDistance > 0 && currentIndex < totalWords - 1) {
-        nextWordWithAnimation();
-      } else if (swipeDistance < 0 && currentIndex > 0) {
-        prevWordWithAnimation();
+      if (swipeDistance < 0 && currentIndex < totalWords - 1) {
+        nextWordWithAnimation(); // Swipe left = next word
+      } else if (swipeDistance > 0 && currentIndex > 0) {
+        prevWordWithAnimation(); // Swipe right = previous word
       }
     }
     
