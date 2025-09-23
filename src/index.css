@@ -81,3 +81,8 @@
     background-position: 0% 50%;
   }
 }
+
+/* Radial gradient utility */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}

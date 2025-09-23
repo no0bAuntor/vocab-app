@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders vocabulary master app', () => {
   render(<App />);
-  const titleElement = screen.getByText(/vocabulary master/i);
+  const titleElement = screen.getByText(/📚 vocabulary master reference/i);
   expect(titleElement).toBeInTheDocument();
 });

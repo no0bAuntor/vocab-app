@@ -22,7 +22,7 @@
   {
     "id": 13,
     "word": "abstemious",
-    "pos": "adj",
+    "pos": "adjective",
     "bengali": "স্বল্পাহারী, সংযোগচিত্ত, মিতাচারী",
     "Explanation": "characterized by self-denial or abstinence, especially in the consumption of food or drink.",
     "synonym": ["temperate (মিতাচারী)", "continent (সংযোগচিত্ত)", "ascetic (তপস্বী)"],
@@ -52,7 +52,7 @@
   {
     "id": 16,
     "word": "aesthetic",
-    "pos": "adj",
+    "pos": "adjective",
     "bengali": "শিল্প রুচিসম্মত, নান্দনিক",
     "Explanation": "concerned with beauty or the appreciation of beauty.",
     "synonym": ["artistic (শিল্পীসুলভ)", "creative (সৃজনশীল)", "elegant (সুন্দর)", "tasteful (রুচিশীল)", "esthetic (শিল্প রুচিসম্মত)"],
@@ -92,7 +92,7 @@
   {
     "id": 20,
     "word": "verbose",
-    "pos": "adj",
+    "pos": "adjective",
     "bengali": "শব্দবহুল, বাগাড়ম্বরপূর্ণ",
     "Explanation": "using or expressed in more words than are needed.",
     "synonym": ["wordy (শব্দবহুল)", "long-winded (বাগাড়ম্বরপূর্ণ)", "prolix (বিস্তৃত)", "loquacious (বাগ্মী)", "garrulous (গালগল্পকারী)", "grandiloquent (বাগাড়ম্বরপূর্ণ)", "grandiose (বাগাড়ম্বরপূর্ণ)", "mouthy (বাগাড়ম্বরপূর্ণ)"],

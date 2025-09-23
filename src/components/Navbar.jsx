@@ -25,7 +25,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                 ? 'from-blue-400 to-purple-400' 
                 : 'from-blue-600 to-purple-600'
             } bg-clip-text text-transparent hidden sm:block`}>
-              Vocabulary Master v2.0
+              Vocabulary Master
             </span>
             <span className={`text-sm font-bold bg-gradient-to-r ${
               isDarkMode 
@@ -38,6 +38,21 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
+            {/* Master Reference Link */}
+            <Link
+              to="/"
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
+                isActive('/')
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md' 
+                  : isDarkMode
+                    ? 'text-gray-300 hover:text-white hover:bg-gray-800'
+                    : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
+              }`}
+            >
+              <span className="text-lg">📚</span>
+              <span className="font-medium">Master Reference</span>
+            </Link>
+
             {/* Vocabulary Dropdown */}
             <div className="relative">
               <button
@@ -46,14 +61,14 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                   setIsQuizOpen(false);
                 }}
                 className={`flex items-center space-x-1 px-4 py-2 rounded-lg transition-all duration-200 min-w-[120px] justify-between ${
-                  isActive('/') 
+                  isActive('/phase1') || isActive('/phase2') || isActive('/phase3')
                     ? 'bg-blue-500 text-white' 
                     : isDarkMode
                       ? 'text-gray-300 hover:text-white hover:bg-gray-800'
                       : 'text-gray-700 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
-                <span className="font-medium">Vocabulary</span>
+                <span className="font-medium">Practice</span>
                 <svg 
                   className={`w-4 h-4 transition-transform duration-200 ${
                     isVocabOpen ? 'rotate-180' : ''
@@ -74,10 +89,10 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
                     : 'bg-white border-gray-200'
                 } backdrop-blur-md`}>
                   <Link
-                    to="/"
+                    to="/phase1"
                     onClick={() => setIsVocabOpen(false)}
                     className={`flex items-center px-4 py-2 transition-colors duration-200 ${
-                      isActive('/')
+                      isActive('/phase1')
                         ? isDarkMode ? 'bg-blue-600 text-white' : 'bg-blue-500 text-white'
                         : isDarkMode 
                           ? 'text-gray-300 hover:bg-gray-700 hover:text-white'
