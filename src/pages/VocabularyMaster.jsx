@@ -61,7 +61,10 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
           {phase.name} - {phase.words.length} Words
         </h2>
         <p className="text-white/90 mt-1">
-          Words {phaseIndex === 0 ? '1-10' : phaseIndex === 1 ? '11-20' : '21-30'}
+          Words {phaseIndex === 0 ? '1-10' : 
+                 phaseIndex === 1 ? '11-20' : 
+                 phaseIndex === 2 ? '21-30' :
+                 phaseIndex === 3 ? '31-40' : '41-50'}
         </p>
       </div>
 
@@ -236,7 +239,7 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
               <div className={`inline-flex rounded-lg p-1 ${
                 isDarkMode ? 'bg-gray-800' : 'bg-gray-100'
               }`}>
-                {['all', '1', '2', '3', '4'].map((phase) => (
+                {['all', '1', '2', '3', '4', '5'].map((phase) => (
                   <button
                     key={phase}
                     onClick={() => setActivePhase(phase)}
@@ -274,7 +277,7 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
                 isDarkMode ? 'border-gray-700' : 'border-gray-200'
               }`}>
                 <div className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                  3
+                  5
                 </div>
                 <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   Learning Phases
