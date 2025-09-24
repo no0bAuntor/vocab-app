@@ -378,7 +378,6 @@ function Phase1Home({ isDarkMode, toggleDarkMode }) {
   const totalWords = words.length;
 
   // Navigation functions
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextWordWithAnimation = useCallback(() => {
     if (currentIndex < totalWords - 1) {
       setCardTransition(true);
@@ -387,9 +386,8 @@ function Phase1Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  }, [currentIndex]);
+  }, [currentIndex, totalWords]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const prevWordWithAnimation = useCallback(() => {
     if (currentIndex > 0) {
       setCardTransition(true);
@@ -398,7 +396,7 @@ function Phase1Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  }, [currentIndex]);
+  }, [currentIndex, totalWords]);
 
   // Touch handlers for swipe navigation
   const handleTouchStart = (e) => {

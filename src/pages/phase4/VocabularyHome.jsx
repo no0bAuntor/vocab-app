@@ -13,7 +13,6 @@ function Phase4Home({ isDarkMode, toggleDarkMode }) {
   const totalWords = words.length;
 
   // Navigation functions
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextWordWithAnimation = useCallback(() => {
     if (currentIndex < totalWords - 1) {
       setCardTransition(true);
@@ -22,9 +21,8 @@ function Phase4Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  }, [currentIndex]);
+  }, [currentIndex, totalWords]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const prevWordWithAnimation = useCallback(() => {
     if (currentIndex > 0) {
       setCardTransition(true);
@@ -33,7 +31,7 @@ function Phase4Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  }, [currentIndex]);
+  }, [currentIndex, totalWords]);
 
   // Touch handlers for swipe navigation
   const handleTouchStart = (e) => {
@@ -68,7 +66,6 @@ function Phase4Home({ isDarkMode, toggleDarkMode }) {
   };
 
   // Keyboard navigation
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'ArrowRight' && currentIndex < totalWords - 1) {
@@ -80,7 +77,7 @@ function Phase4Home({ isDarkMode, toggleDarkMode }) {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentIndex, nextWordWithAnimation, prevWordWithAnimation]);
+  }, [currentIndex, totalWords, nextWordWithAnimation, prevWordWithAnimation]);
 
   if (words.length === 0) {
     return (
