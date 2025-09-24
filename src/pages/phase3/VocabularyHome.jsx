@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useCallback } from "react";
 import WordCard from "../../components/WordCard";
 import phase3Words from "../../data/phase3/vocabulary-words.json";
 
@@ -14,7 +13,8 @@ function Phase3Home({ isDarkMode, toggleDarkMode }) {
   const totalWords = words.length;
 
   // Navigation functions
-  const nextWordWithAnimation = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const nextWordWithAnimation = useCallback(() => {
     if (currentIndex < totalWords - 1) {
       setCardTransition(true);
       setTimeout(() => {
@@ -22,9 +22,10 @@ function Phase3Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  };
+  }, [currentIndex]);
 
-  const prevWordWithAnimation = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const prevWordWithAnimation = useCallback(() => {
     if (currentIndex > 0) {
       setCardTransition(true);
       setTimeout(() => {
@@ -32,17 +33,7 @@ function Phase3Home({ isDarkMode, toggleDarkMode }) {
         setCardTransition(false);
       }, 150);
     }
-  };
-
-  const goToWord = (index) => {
-    if (index >= 0 && index < totalWords && index !== currentIndex) {
-      setCardTransition(true);
-      setTimeout(() => {
-        setCurrentIndex(index);
-        setCardTransition(false);
-      }, 150);
-    }
-  };
+  }, [currentIndex]);
 
   // Touch handlers for swipe navigation
   const handleTouchStart = (e) => {
@@ -77,6 +68,7 @@ function Phase3Home({ isDarkMode, toggleDarkMode }) {
   };
 
   // Keyboard navigation
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'ArrowRight' && currentIndex < totalWords - 1) {
@@ -88,7 +80,7 @@ function Phase3Home({ isDarkMode, toggleDarkMode }) {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentIndex, totalWords]);
+  }, [currentIndex, nextWordWithAnimation, prevWordWithAnimation]);
 
   if (words.length === 0) {
     return (

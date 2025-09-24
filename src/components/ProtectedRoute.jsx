@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import AuthModal from './AuthModal';
 
 export default function ProtectedRoute({ children, phase, requireAuth = true }) {
-  const { isAuthenticated, isPhaseUnlocked, user, getPhaseProgress } = useAuth();
+  const { isAuthenticated, isPhaseUnlocked, getPhaseProgress } = useAuth();
   const [showAuthModal, setShowAuthModal] = useState(false);
 
   // If authentication is required but user is not logged in
