@@ -1,0 +1,149 @@
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
+
+// User Schema
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: [true, 'Username is required'],
+    unique: true,
+    trim: true,
+    minlength: [3, 'Username must be at least 3 characters'],
+    maxlength: [20, 'Username cannot exceed 20 characters'],
+    match: [/^[a-zA-Z0-9_]+$/, 'Username can only contain letters, numbers, and underscores']
+  },
+  password: {
+    type: String,
+    required: [true, 'Password is required'],
+    minlength: [6, 'Password must be at least 6 characters']
+  },
+  email: {
+    type: String,
+    sparse: true, // Optional field, but unique if provided
+    trim: true,
+    lowercase: true,
+    match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email']
+  },
+  profile: {
+    avatar: {
+      type: String,
+      default: null
+    },
+    totalXP: {
+      type: Number,
+      default: 0
+    },
+    level: {
+      type: Number,
+      default: 1
+    },
+    achievements: [{
+      id: String,
+      name: String,
+      description: String,
+      icon: String,
+      dateEarned: {
+        type: Date,
+        default: Date.now
+      }
+    }]
+  },
+  progress: {
+    currentPhase: {
+      type: Number,
+      default: 1,
+      min: 1,
+      max: 5
+    },
+    unlockedPhases: {
+      type: [Number],
+      default: [1]
+    },
+    phaseScores: {
+      phase1: { type: Number, default: 0 },
+      phase2: { type: Number, default: 0 },
+      phase3: { type: Number, default: 0 },
+      phase4: { type: Number, default: 0 },
+      phase5: { type: Number, default: 0 }
+    },
+    lastQuizDate: {
+      type: Date,
+      default: null
+    },
+    streakDays: {
+      type: Number,
+      default: 0
+    }
+  },
+  settings: {
+    darkMode: {
+      type: Boolean,
+      default: false
+    },
+    notifications: {
+      type: Boolean,
+      default: true
+    },
+    language: {
+      type: String,
+      default: 'en'
+    }
+  }
+}, {
+  timestamps: true // Adds createdAt and updatedAt automatically
+});
+
+// Hash password before saving
+userSchema.pre('save', async function(next) {
+  // Only hash the password if it has been modified (or is new)
+  if (!this.isModified('password')) return next();
+  
+  try {
+    // Hash password with cost of 12
+    const hashedPassword = await bcrypt.hash(this.password, 12);
+    this.password = hashedPassword;
+    next();
+  } catch (error) {
+    next(error);
+  }
+});
+
+// Instance method to check password
+userSchema.methods.comparePassword = async function(candidatePassword) {
+  return bcrypt.compare(candidatePassword, this.password);
+};
+
+// Instance method to update phase progress
+userSchema.methods.updatePhaseScore = function(phase, score) {
+  const phaseKey = `phase${phase}`;
+  this.progress.phaseScores[phaseKey] = Math.max(this.progress.phaseScores[phaseKey], score);
+  
+  // Unlock next phase if score is 45 or higher (90%)
+  if (score >= 45 && phase < 5) {
+    const nextPhase = phase + 1;
+    if (!this.progress.unlockedPhases.includes(nextPhase)) {
+      this.progress.unlockedPhases.push(nextPhase);
+    }
+  }
+  
+  // Update total XP
+  this.profile.totalXP += score;
+  
+  // Update level (every 100 XP = 1 level)
+  this.profile.level = Math.floor(this.profile.totalXP / 100) + 1;
+  
+  // Update last quiz date
+  this.progress.lastQuizDate = new Date();
+};
+
+// Instance method to check if phase is unlocked
+userSchema.methods.isPhaseUnlocked = function(phase) {
+  return this.progress.unlockedPhases.includes(phase);
+};
+
+// Static method to find user by username
+userSchema.statics.findByUsername = function(username) {
+  return this.findOne({ username: username });
+};
+
+module.exports = mongoose.model('User', userSchema);

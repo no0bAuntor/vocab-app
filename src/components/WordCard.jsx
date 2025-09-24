@@ -13,8 +13,6 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
 
   // Pronunciation function
   const pronounceWord = () => {
-    console.log('Pronounce button clicked'); // Debug log
-    
     if (!('speechSynthesis' in window)) {
       alert('Speech synthesis not supported in this browser');
       return;
@@ -31,15 +29,6 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       utterance.pitch = 1;
       utterance.volume = 1;
       
-      // Add event listeners
-      utterance.onstart = () => {
-        console.log('Speech started for:', word.word);
-      };
-      
-      utterance.onend = () => {
-        console.log('Speech ended for:', word.word);
-      };
-      
       utterance.onerror = (event) => {
         console.error('Speech error:', event);
         alert('Speech error: ' + event.error);
@@ -47,17 +36,14 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
       
       // Check if voices are loaded
       const voices = window.speechSynthesis.getVoices();
-      console.log('Available voices:', voices.length);
       
       if (voices.length === 0) {
         // Wait for voices to load
         window.speechSynthesis.onvoiceschanged = () => {
-          console.log('Voices loaded, trying again');
           window.speechSynthesis.speak(utterance);
         };
       } else {
         // Voices already loaded
-        console.log('Speaking immediately');
         window.speechSynthesis.speak(utterance);
       }
       
@@ -109,7 +95,6 @@ export default function WordCard({ word, wordNumber, totalWords, isDarkMode }) {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              console.log('Button clicked!');
               pronounceWord();
             }}
             className={`p-2 md:p-3 rounded-full transition-all duration-200 hover:scale-110 cursor-pointer self-start sm:self-auto ${
