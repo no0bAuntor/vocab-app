@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
 import phase1Quiz from "../../data/phase1/quiz-questions.json";
 
 function Quiz({ isDarkMode, toggleDarkMode }) {
+  const { updateProgress } = useContext(AuthContext);
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -10,6 +12,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
   const [finished, setFinished] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [jumpToQuestion, setJumpToQuestion] = useState('');
+  const [progressUpdated, setProgressUpdated] = useState(false);
 
   const handleOption = (option) => {
     if (showExplanation) return;
@@ -39,6 +42,25 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
       setFinished(true);
     }
   };
+
+  // Update progress when quiz finishes
+  useEffect(() => {
+    if (finished && !progressUpdated) {
+      const updateQuizProgress = async () => {
+        try {
+          const result = await updateProgress(1, score);
+          if (result) {
+            console.log('Phase 1 progress updated:', result);
+            setProgressUpdated(true);
+          }
+        } catch (error) {
+          console.error('Failed to update Phase 1 progress:', error);
+        }
+      };
+      
+      updateQuizProgress();
+    }
+  }, [finished, score, updateProgress, progressUpdated]);
 
   const jumpToQuestionNumber = (questionNum) => {
     const questionIndex = questionNum - 1; // Convert to 0-based index
@@ -70,6 +92,7 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
     setFinished(false);
     setUserAnswers([]);
     setJumpToQuestion('');
+    setProgressUpdated(false);
   };
 
   if (finished) {
