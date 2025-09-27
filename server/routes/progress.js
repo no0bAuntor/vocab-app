@@ -11,8 +11,8 @@ router.post('/update-quiz', auth, [
     .isInt({ min: 1, max: 5 })
     .withMessage('Phase must be between 1 and 5'),
   body('score')
-    .isInt({ min: 0, max: 50 })
-    .withMessage('Score must be between 0 and 50')
+    .isInt({ min: 0 })
+    .withMessage('Score must be a non-negative integer')
 ], async (req, res) => {
   try {
     // Check for validation errors
@@ -45,6 +45,9 @@ router.post('/update-quiz', auth, [
       });
     }
 
+    // Check if next phase was unlocked before this quiz
+    const wasUnlockedBefore = user.progress.unlockedPhases.includes(phase + 1);
+
     // Update phase score and progress
     const previousScore = user.progress.phaseScores[`phase${phase}`] || 0;
     user.updatePhaseScore(phase, score);
@@ -52,8 +55,9 @@ router.post('/update-quiz', auth, [
     // Save user
     await user.save();
 
-    // Check if new phase was unlocked
-    const newPhaseUnlocked = score >= 45 && phase < 5 && !user.progress.unlockedPhases.includes(phase + 1);
+    // Check if next phase was newly unlocked
+    const isUnlockedNow = user.progress.unlockedPhases.includes(phase + 1);
+    const newPhaseUnlocked = !wasUnlockedBefore && isUnlockedNow;
 
     res.json({
       success: true,

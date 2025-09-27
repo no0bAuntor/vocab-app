@@ -118,8 +118,9 @@ userSchema.methods.updatePhaseScore = function(phase, score) {
   const phaseKey = `phase${phase}`;
   this.progress.phaseScores[phaseKey] = Math.max(this.progress.phaseScores[phaseKey], score);
   
-  // Unlock next phase if score is 45 or higher (90%)
-  if (score >= 45 && phase < 5) {
+  // Production: Phase 1 unlocks Phase 2 when score >= 45 (90%)
+  const unlockThreshold = phase === 1 ? 45 : 45;
+  if (score >= unlockThreshold && phase < 5) {
     const nextPhase = phase + 1;
     if (!this.progress.unlockedPhases.includes(nextPhase)) {
       this.progress.unlockedPhases.push(nextPhase);

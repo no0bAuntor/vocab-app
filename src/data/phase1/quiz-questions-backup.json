@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "The old hermit was a notorious ______, who had not spoken to another person in over twenty years.",
+    "options": {
+      "a": "philanthropist",
+      "b": "misanthrope",
+      "c": "humanitarian",
+      "d": "extrovert"
+    },
+    "answer": "b",
+    "explanation": "A person who avoids all social interaction and lives alone is a 'misanthrope' (a person who dislikes humankind)."
+  },
+  {
+    "id": 2,
+    "question": "After several hours, the storm began to ______, and the winds grew calm.",
+    "options": {
+      "a": "intensify",
+      "b": "escalate",
+      "c": "abate",
+      "d": "increase"
+    },
+    "answer": "c",
+    "explanation": "A storm growing calm means it is becoming less intense or severe, which is the definition of 'abate'."
+  }
+]
