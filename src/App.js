@@ -35,7 +35,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="App">
+        <div className={`App min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark bg-gray-900' : 'bg-pastel-cream'}`}>
           <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
           <Routes>
             <Route path="/" element={<VocabularyMaster isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />

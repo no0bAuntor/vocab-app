@@ -106,20 +106,19 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
       }}
     >
       <div 
-        className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md mx-4 overflow-hidden"
+        className="bg-pastel-cream dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-md mx-4 overflow-hidden border dark:border-gray-700"
         style={{
           maxHeight: '80vh',
           overflowY: 'auto',
           position: 'relative',
           width: '100%',
           maxWidth: '400px',
-          minHeight: '500px',
-          backgroundColor: 'white'
+          minHeight: '500px'
         }}
         onClick={(e) => e.stopPropagation()}
       >        
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-4 text-white">
+        <div className="bg-gradient-to-r from-pastel-pink to-pastel-lavender dark:from-gray-800 dark:to-black px-6 py-4 text-gray-800 dark:text-white">
           <div className="flex justify-between items-center">
             <h2 className="text-2xl font-bold">
               {mode === 'login' ? '🔐 Welcome Back!' : '🎓 Join Vocabulary Master'}
@@ -154,7 +153,7 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
                 name="username"
                 value={formData.username}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
+                className="w-full px-4 py-3 border border-pastel-pink dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-pastel-lavender dark:focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-800 dark:text-white transition-all"
                 placeholder="Enter your username"
                 required
               />
@@ -171,7 +170,7 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
+                  className="w-full px-4 py-3 pr-12 border border-pastel-pink dark:border-darkpastel-pink rounded-lg focus:ring-2 focus:ring-pastel-lavender focus:border-transparent bg-white dark:bg-darkpastel-blue dark:text-pastel-cream transition-all"
                   placeholder="Enter your password"
                   required
                 />
@@ -206,7 +205,7 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
                     name="confirmPassword"
                     value={formData.confirmPassword}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-all"
+                    className="w-full px-4 py-3 pr-12 border border-pastel-pink dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-pastel-lavender dark:focus:ring-purple-500 focus:border-transparent bg-white dark:bg-gray-800 dark:text-white transition-all"
                     placeholder="Confirm your password"
                     required
                   />
@@ -232,8 +231,8 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
 
             {/* Error Message */}
             {error && (
-              <div className="bg-red-50 dark:bg-red-900/50 border border-red-200 dark:border-red-800 rounded-lg p-3">
-                <p className="text-red-700 dark:text-red-300 text-sm">{error}</p>
+              <div className="bg-pastel-peach dark:bg-red-900/20 border border-pastel-pink dark:border-red-800 rounded-lg p-3">
+                <p className="text-red-600 dark:text-red-300 text-sm">{error}</p>
               </div>
             )}
 
@@ -241,7 +240,7 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="w-full bg-gradient-to-r from-pastel-blue to-pastel-lavender hover:from-pastel-pink hover:to-pastel-mint dark:from-purple-600 dark:to-indigo-600 dark:hover:from-purple-700 dark:hover:to-indigo-700 text-gray-800 dark:text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
             >
               {isLoading ? (
                 <>
@@ -272,11 +271,11 @@ export default function AuthModal({ isOpen, onClose, mode: initialMode = 'login'
 
           {/* Registration Info */}
           {mode === 'register' && (
-            <div className="mt-6 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-              <h3 className="font-semibold flex items-center mb-2" style={{ color: '#dc2626' }}>
+            <div className="mt-6 bg-pastel-blue dark:bg-gray-800/50 border border-pastel-lavender dark:border-gray-700 rounded-lg p-4">
+              <h3 className="font-semibold flex items-center mb-2 text-gray-700 dark:text-white">
                 🎯 Getting Started
               </h3>
-              <ul className="text-sm space-y-1" style={{ color: '#374151' }}>
+              <ul className="text-sm space-y-1 text-gray-600 dark:text-gray-200">
                 <li>• Start with Phase 1 vocabulary and quiz</li>
                 <li>• Score 45/50 (90%) to unlock next phase</li>
                 <li>• Track your progress and earn achievements</li>

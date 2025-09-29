@@ -37,37 +37,37 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
     { 
       name: 'Phase 1', 
       words: phase1Words.slice(0, 10), 
-      color: 'from-blue-500 to-purple-500',
-      bgColor: isDarkMode ? 'bg-blue-900/20' : 'bg-blue-50',
-      borderColor: isDarkMode ? 'border-blue-500/30' : 'border-blue-200'
+      color: 'from-pink-400 to-purple-500',
+      bgColor: isDarkMode ? 'bg-gray-800' : 'bg-pastel-pink',
+      borderColor: isDarkMode ? 'border-gray-700' : 'border-pastel-lavender'
     },
     { 
       name: 'Phase 2', 
       words: phase2Words, 
-      color: 'from-purple-500 to-pink-500',
-      bgColor: isDarkMode ? 'bg-purple-900/20' : 'bg-purple-50',
-      borderColor: isDarkMode ? 'border-purple-500/30' : 'border-purple-200'
+      color: 'from-blue-400 to-teal-500',
+      bgColor: isDarkMode ? 'bg-gray-800' : 'bg-pastel-blue',
+      borderColor: isDarkMode ? 'border-gray-700' : 'border-pastel-mint'
     },
     { 
       name: 'Phase 3', 
       words: phase3Words, 
-      color: 'from-pink-500 to-red-500',
-      bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
-      borderColor: isDarkMode ? 'border-pink-500/30' : 'border-pink-200'
+      color: 'from-purple-400 to-pink-500',
+      bgColor: isDarkMode ? 'bg-gray-800' : 'bg-pastel-lavender',
+      borderColor: isDarkMode ? 'border-gray-700' : 'border-pastel-peach'
     },
     { 
       name: 'Phase 4', 
       words: phase4Words, 
-      color: 'from-pink-500 to-red-500',
-      bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
-      borderColor: isDarkMode ? 'border-red-500/30' : 'border-pink-200'
+      color: 'from-teal-400 to-blue-500',
+      bgColor: isDarkMode ? 'bg-gray-800' : 'bg-pastel-mint',
+      borderColor: isDarkMode ? 'border-gray-700' : 'border-pastel-blue'
     },
     { 
       name: 'Phase 5', 
       words: phase5Words, 
-      color: 'from-pink-500 to-red-500',
-      bgColor: isDarkMode ? 'bg-pink-900/20' : 'bg-pink-50',
-      borderColor: isDarkMode ? 'border-red-500/30' : 'border-pink-200'
+      color: 'from-orange-400 to-pink-500',
+      bgColor: isDarkMode ? 'bg-gray-800' : 'bg-pastel-peach',
+      borderColor: isDarkMode ? 'border-gray-700' : 'border-pastel-pink'
     }
   ];
 
@@ -76,14 +76,14 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
   const WordTable = ({ phase, phaseIndex }) => (
     <div className={`rounded-xl ${phase.bgColor} ${phase.borderColor} border-2 overflow-hidden shadow-lg mb-8`}>
       {/* Phase Header */}
-      <div className={`bg-gradient-to-r ${phase.color} p-4 text-white`}>
-        <h2 className="text-2xl font-bold flex items-center">
+      <div className={`bg-gradient-to-r ${phase.color} p-4 text-white shadow-lg`}>
+        <h2 className="text-2xl font-bold flex items-center text-shadow">
           <span className="text-3xl mr-3">
             {phaseIndex === 0 ? '📚' : phaseIndex === 1 ? '📖' : '📝'}
           </span>
           {phase.name} - {phase.words.length} Words
         </h2>
-        <p className="text-white/90 mt-1">
+        <p className="text-white/90 mt-1 text-shadow">
           Words {phaseIndex === 0 ? '1-10' : 
                  phaseIndex === 1 ? '11-20' : 
                  phaseIndex === 2 ? '21-30' :
@@ -95,20 +95,20 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead>
-            <tr className={`${isDarkMode ? 'bg-gray-800' : 'bg-gray-100'} border-b`}>
-              <th className={`text-left p-4 font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+            <tr className={`${isDarkMode ? 'bg-black border-gray-600' : 'bg-white border-gray-300'} border-b-2`}>
+              <th className={`text-left p-4 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 #
               </th>
-              <th className={`text-left p-4 font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+              <th className={`text-left p-4 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 English Word
               </th>
-              <th className={`text-left p-4 font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+              <th className={`text-left p-4 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 Part of Speech
               </th>
-              <th className={`text-left p-4 font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+              <th className={`text-left p-4 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 Bengali Meaning (বাংলা অর্থ)
               </th>
-              <th className={`text-left p-4 font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-700'}`}>
+              <th className={`text-left p-4 font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                 Explanation
               </th>
             </tr>
@@ -155,16 +155,16 @@ export default function VocabularyMaster({ isDarkMode, toggleDarkMode }) {
   return (
     <div className={`min-h-screen transition-all duration-300 relative overflow-hidden ${
       isDarkMode 
-        ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' 
-        : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'
+        ? 'bg-gradient-to-br from-gray-900 via-black to-gray-800' 
+        : 'bg-gradient-to-br from-pastel-cream via-pastel-pink to-pastel-blue'
     }`}>
       {/* Stunning 3D Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Animated gradient mesh background */}
         <div className={`absolute inset-0 ${
           isDarkMode
-            ? 'bg-gradient-to-br from-purple-900/20 via-blue-800/30 to-indigo-900/20'
-            : 'bg-gradient-to-br from-blue-100/50 via-purple-100/30 to-pink-100/50'
+            ? 'bg-gradient-to-br from-purple-900/10 via-blue-900/15 to-indigo-900/10'
+            : 'bg-gradient-to-br from-pastel-blue/50 via-pastel-lavender/30 to-pastel-mint/50'
         }`} />
         
         {/* Large floating 3D spheres */}

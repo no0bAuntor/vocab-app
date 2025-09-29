@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Text shadow for better visibility */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* Bubble Animation */
 @keyframes bubble {
   0% {
