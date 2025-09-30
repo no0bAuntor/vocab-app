@@ -72,7 +72,7 @@ export const useQuizSession = (phase, quizData) => {
     if (finished && !progressUpdated) {
       const completeSession = async () => {
         try {
-          const result = await completeQuizSession(phase, score);
+          const result = await completeQuizSession(phase, score, quizData.length);
           if (result) {
             console.log(`Phase ${phase} session completed:`, result);
             setProgressUpdated(true);

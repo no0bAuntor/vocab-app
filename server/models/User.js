@@ -46,6 +46,34 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
       }
+    }],
+    quizHistory: [{
+      phase: {
+        type: Number,
+        required: true,
+        min: 1,
+        max: 5
+      },
+      score: {
+        type: Number,
+        required: true,
+        min: 0
+      },
+      questionsTotal: {
+        type: Number,
+        required: true,
+        min: 1
+      },
+      percentage: {
+        type: Number,
+        required: true,
+        min: 0,
+        max: 100
+      },
+      completedAt: {
+        type: Date,
+        default: Date.now
+      }
     }]
   },
   progress: {
@@ -208,7 +236,7 @@ userSchema.methods.saveQuizSession = function(phase, currentQuestionIndex, sessi
 };
 
 // Instance method to complete quiz session
-userSchema.methods.completeQuizSession = function(phase, finalScore) {
+userSchema.methods.completeQuizSession = function(phase, finalScore, questionsTotal = 50) {
   const phaseKey = `phase${phase}`;
   
   if (this.progress.quizSessions[phaseKey]) {
@@ -218,6 +246,27 @@ userSchema.methods.completeQuizSession = function(phase, finalScore) {
   
   // Update phase score with final score
   this.updatePhaseScore(phase, finalScore);
+  
+  // Record quiz completion in history
+  this.recordQuizCompletion(phase, finalScore, questionsTotal);
+};
+
+// Instance method to record quiz completion in history
+userSchema.methods.recordQuizCompletion = function(phase, score, questionsTotal) {
+  const percentage = Math.round((score / questionsTotal) * 100);
+  
+  this.profile.quizHistory.push({
+    phase,
+    score,
+    questionsTotal,
+    percentage,
+    completedAt: new Date()
+  });
+  
+  // Keep only last 100 quiz history entries to prevent unlimited growth
+  if (this.profile.quizHistory.length > 100) {
+    this.profile.quizHistory = this.profile.quizHistory.slice(-100);
+  }
 };
 
 // Instance method to reset quiz session

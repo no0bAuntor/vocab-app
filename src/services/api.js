@@ -116,10 +116,10 @@ class ApiService {
     return this.request(`/quiz/load-session/${phase}`);
   }
 
-  async completeQuizSession(phase, finalScore) {
+  async completeQuizSession(phase, finalScore, questionsTotal = 50) {
     return this.request('/quiz/complete-session', {
       method: 'POST',
-      body: JSON.stringify({ phase, finalScore })
+      body: JSON.stringify({ phase, finalScore, questionsTotal })
     });
   }
 
@@ -128,6 +128,10 @@ class ApiService {
       method: 'POST',
       body: JSON.stringify({ phase })
     });
+  }
+
+  async getQuizHistory(limit = 20, page = 1) {
+    return this.request(`/quiz/history?limit=${limit}&page=${page}`);
   }
 
   async updateUserSettings(settings) {

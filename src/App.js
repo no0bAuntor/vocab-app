@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
+import Dashboard from './pages/Dashboard';
 import VocabularyMaster from './pages/VocabularyMaster';
 import Phase1VocabularyHome from './pages/phase1/VocabularyHome';
 import Phase1VocabularyQuiz from './pages/phase1/VocabularyQuiz';
@@ -39,6 +40,13 @@ function App() {
           <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
           <Routes>
             <Route path="/" element={<VocabularyMaster isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+            
+            {/* Dashboard - Protected route */}
+            <Route path="/dashboard" element={
+              <ProtectedRoute requireAuth={true}>
+                <Dashboard isDarkMode={isDarkMode} />
+              </ProtectedRoute>
+            } />
             
             {/* Phase 1 - Always accessible */}
             <Route path="/phase1" element={

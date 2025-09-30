@@ -134,7 +134,11 @@ router.post('/complete-session', auth, [
     .withMessage('Phase must be between 1 and 5'),
   body('finalScore')
     .isInt({ min: 0 })
-    .withMessage('Final score must be a non-negative integer')
+    .withMessage('Final score must be a non-negative integer'),
+  body('questionsTotal')
+    .optional()
+    .isInt({ min: 1 })
+    .withMessage('Questions total must be a positive integer')
 ], async (req, res) => {
   try {
     // Check for validation errors
@@ -147,7 +151,7 @@ router.post('/complete-session', auth, [
       });
     }
 
-    const { phase, finalScore } = req.body;
+    const { phase, finalScore, questionsTotal = 50 } = req.body;
     const userId = req.user.userId;
 
     // Find user
@@ -171,7 +175,7 @@ router.post('/complete-session', auth, [
     const previousPhaseScore = user.progress.phaseScores[`phase${phase}`];
     const newPhaseUnlocked = finalScore >= 45 && phase < 5 && !user.progress.unlockedPhases.includes(phase + 1);
     
-    user.completeQuizSession(phase, finalScore);
+    user.completeQuizSession(phase, finalScore, questionsTotal);
     await user.save();
 
     res.json({
@@ -252,6 +256,50 @@ router.post('/reset-session', auth, [
     res.status(500).json({
       success: false,
       error: 'Failed to reset quiz session'
+    });
+  }
+});
+
+// Get quiz history
+router.get('/history', auth, async (req, res) => {
+  try {
+    const userId = req.user.userId;
+    const { limit = 20, page = 1 } = req.query;
+
+    // Find user
+    const user = await User.findById(userId).select('profile.quizHistory');
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        error: 'User not found'
+      });
+    }
+
+    // Get quiz history (sorted by most recent first)
+    const quizHistory = user.profile.quizHistory || [];
+    const sortedHistory = quizHistory.sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt));
+    
+    // Pagination
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + parseInt(limit);
+    const paginatedHistory = sortedHistory.slice(startIndex, endIndex);
+
+    res.json({
+      success: true,
+      data: {
+        history: paginatedHistory,
+        totalSessions: quizHistory.length,
+        currentPage: parseInt(page),
+        totalPages: Math.ceil(quizHistory.length / limit),
+        hasMore: endIndex < quizHistory.length
+      }
+    });
+
+  } catch (error) {
+    console.error('Get quiz history error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get quiz history'
     });
   }
 });
