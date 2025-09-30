@@ -1,99 +1,29 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
+import { useQuizSession } from "../../hooks/useQuizSession";
 import phase1Quiz from "../../data/phase1/quiz-questions.json";
 
 function Quiz({ isDarkMode, toggleDarkMode }) {
-  const { updateProgress } = useContext(AuthContext);
-  const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [showExplanation, setShowExplanation] = useState(false);
-  const [score, setScore] = useState(0);
-  const [finished, setFinished] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [jumpToQuestion, setJumpToQuestion] = useState('');
-  const [progressUpdated, setProgressUpdated] = useState(false);
-
-  const handleOption = (option) => {
-    if (showExplanation) return;
-    
-    setSelected(option);
-    setShowExplanation(true);
-    
-    const isCorrect = option === phase1Quiz[current].answer;
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-    
-    setUserAnswers([...userAnswers, {
-      questionId: phase1Quiz[current].id,
-      selected: option,
-      correct: phase1Quiz[current].answer,
-      isCorrect
-    }]);
-  };
-
-  const handleNext = () => {
-    if (current < phase1Quiz.length - 1) {
-      setCurrent(current + 1);
-      setSelected(null);
-      setShowExplanation(false);
-    } else {
-      setFinished(true);
-    }
-  };
-
-  // Update progress when quiz finishes
-  useEffect(() => {
-    if (finished && !progressUpdated) {
-      const updateQuizProgress = async () => {
-        try {
-          const result = await updateProgress(1, score);
-          if (result) {
-            console.log('Phase 1 progress updated:', result);
-            setProgressUpdated(true);
-          }
-        } catch (error) {
-          console.error('Failed to update Phase 1 progress:', error);
-        }
-      };
-      
-      updateQuizProgress();
-    }
-  }, [finished, score, updateProgress, progressUpdated]);
-
-  const jumpToQuestionNumber = (questionNum) => {
-    const questionIndex = questionNum - 1; // Convert to 0-based index
-    if (questionIndex >= 0 && questionIndex < phase1Quiz.length) {
-      setCurrent(questionIndex);
-      setSelected(null);
-      setShowExplanation(false);
-      setJumpToQuestion('');
-    }
-  };
-
-  const handleJumpInputChange = (e) => {
-    setJumpToQuestion(e.target.value);
-  };
-
-  const handleJumpSubmit = (e) => {
-    e.preventDefault();
-    const questionNum = parseInt(jumpToQuestion);
-    if (!isNaN(questionNum)) {
-      jumpToQuestionNumber(questionNum);
-    }
-  };
-
-  const restartQuiz = () => {
-    setCurrent(0);
-    setSelected(null);
-    setShowExplanation(false);
-    setScore(0);
-    setFinished(false);
-    setUserAnswers([]);
-    setJumpToQuestion('');
-    setProgressUpdated(false);
-  };
+  const {
+    current,
+    selected,
+    showExplanation,
+    score,
+    finished,
+    userAnswers,
+    jumpToQuestion,
+    progressUpdated,
+    sessionLoaded,
+    resumingSession,
+    handleOption,
+    handleNext,
+    jumpToQuestionNumber,
+    handleJumpInputChange,
+    handleJumpSubmit,
+    restartQuiz,
+    setJumpToQuestion
+  } = useQuizSession(1, phase1Quiz);
 
   if (finished) {
     const percentage = ((score / phase1Quiz.length) * 100).toFixed(1);
@@ -210,6 +140,22 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
             }`}>
               Test your knowledge of the first 10 vocabulary words
             </p>
+            
+            {/* Session Resume Indicator */}
+            {resumingSession && (
+              <div className={`mt-4 p-3 rounded-lg border-2 ${
+                isDarkMode 
+                  ? 'bg-blue-900/30 border-blue-400 text-blue-300' 
+                  : 'bg-blue-100 border-blue-400 text-blue-800'
+              } animate-pulse`}>
+                <div className="flex items-center justify-center gap-2">
+                  <span className="text-lg">🔄</span>
+                  <span className="font-medium">
+                    Continuing from question {current + 1} of {phase1Quiz.length} ({userAnswers.length} completed)
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Progress Bar */}
@@ -451,10 +397,10 @@ function Quiz({ isDarkMode, toggleDarkMode }) {
               <span className={`font-semibold ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                Score: {score}/{current + (showExplanation ? 1 : 0)}
+                Score: {score}/{userAnswers.length}
               </span>
               <span className="text-lg">
-                {score === current + (showExplanation ? 1 : 0) ? '🎉' : '📊'}
+                {score === userAnswers.length ? '🎉' : '📊'}
               </span>
             </div>
           </div>

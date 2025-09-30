@@ -99,6 +99,37 @@ class ApiService {
     return this.request('/user/profile');
   }
 
+  // Quiz session endpoints
+  async saveQuizSession(phase, currentQuestionIndex, sessionScore, sessionAnswers) {
+    return this.request('/quiz/save-session', {
+      method: 'POST',
+      body: JSON.stringify({ 
+        phase, 
+        currentQuestionIndex, 
+        sessionScore, 
+        sessionAnswers 
+      })
+    });
+  }
+
+  async loadQuizSession(phase) {
+    return this.request(`/quiz/load-session/${phase}`);
+  }
+
+  async completeQuizSession(phase, finalScore) {
+    return this.request('/quiz/complete-session', {
+      method: 'POST',
+      body: JSON.stringify({ phase, finalScore })
+    });
+  }
+
+  async resetQuizSession(phase) {
+    return this.request('/quiz/reset-session', {
+      method: 'POST',
+      body: JSON.stringify({ phase })
+    });
+  }
+
   async updateUserSettings(settings) {
     return this.request('/user/settings', {
       method: 'PATCH',

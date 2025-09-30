@@ -9,6 +9,7 @@ require('dotenv').config();
 const authRoutes = require('./routes/auth');
 const progressRoutes = require('./routes/progress');
 const userRoutes = require('./routes/user');
+const quizRoutes = require('./routes/quiz');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -56,6 +57,7 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use('/api/auth', authRoutes);
 app.use('/api/progress', progressRoutes);
 app.use('/api/user', userRoutes);
+app.use('/api/quiz', quizRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

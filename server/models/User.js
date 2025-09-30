@@ -73,6 +73,44 @@ const userSchema = new mongoose.Schema({
     streakDays: {
       type: Number,
       default: 0
+    },
+    // Quiz session tracking for each phase
+    quizSessions: {
+      phase1: {
+        currentQuestionIndex: { type: Number, default: 0 },
+        sessionScore: { type: Number, default: 0 },
+        sessionAnswers: { type: Array, default: [] },
+        sessionStartTime: { type: Date, default: null },
+        sessionCompleted: { type: Boolean, default: false }
+      },
+      phase2: {
+        currentQuestionIndex: { type: Number, default: 0 },
+        sessionScore: { type: Number, default: 0 },
+        sessionAnswers: { type: Array, default: [] },
+        sessionStartTime: { type: Date, default: null },
+        sessionCompleted: { type: Boolean, default: false }
+      },
+      phase3: {
+        currentQuestionIndex: { type: Number, default: 0 },
+        sessionScore: { type: Number, default: 0 },
+        sessionAnswers: { type: Array, default: [] },
+        sessionStartTime: { type: Date, default: null },
+        sessionCompleted: { type: Boolean, default: false }
+      },
+      phase4: {
+        currentQuestionIndex: { type: Number, default: 0 },
+        sessionScore: { type: Number, default: 0 },
+        sessionAnswers: { type: Array, default: [] },
+        sessionStartTime: { type: Date, default: null },
+        sessionCompleted: { type: Boolean, default: false }
+      },
+      phase5: {
+        currentQuestionIndex: { type: Number, default: 0 },
+        sessionScore: { type: Number, default: 0 },
+        sessionAnswers: { type: Array, default: [] },
+        sessionStartTime: { type: Date, default: null },
+        sessionCompleted: { type: Boolean, default: false }
+      }
     }
   },
   settings: {
@@ -140,6 +178,71 @@ userSchema.methods.updatePhaseScore = function(phase, score) {
 // Instance method to check if phase is unlocked
 userSchema.methods.isPhaseUnlocked = function(phase) {
   return this.progress.unlockedPhases.includes(phase);
+};
+
+// Instance method to save quiz session progress
+userSchema.methods.saveQuizSession = function(phase, currentQuestionIndex, sessionScore, sessionAnswers) {
+  const phaseKey = `phase${phase}`;
+  
+  if (!this.progress.quizSessions[phaseKey]) {
+    this.progress.quizSessions[phaseKey] = {
+      currentQuestionIndex: 0,
+      sessionScore: 0,
+      sessionAnswers: [],
+      sessionStartTime: new Date(),
+      sessionCompleted: false
+    };
+  }
+  
+  this.progress.quizSessions[phaseKey].currentQuestionIndex = currentQuestionIndex;
+  this.progress.quizSessions[phaseKey].sessionScore = sessionScore;
+  this.progress.quizSessions[phaseKey].sessionAnswers = sessionAnswers;
+  
+  // Set start time if this is the first question
+  if (currentQuestionIndex === 0 && !this.progress.quizSessions[phaseKey].sessionStartTime) {
+    this.progress.quizSessions[phaseKey].sessionStartTime = new Date();
+  }
+  
+  // Mark session as not completed
+  this.progress.quizSessions[phaseKey].sessionCompleted = false;
+};
+
+// Instance method to complete quiz session
+userSchema.methods.completeQuizSession = function(phase, finalScore) {
+  const phaseKey = `phase${phase}`;
+  
+  if (this.progress.quizSessions[phaseKey]) {
+    this.progress.quizSessions[phaseKey].sessionCompleted = true;
+    this.progress.quizSessions[phaseKey].sessionScore = finalScore;
+  }
+  
+  // Update phase score with final score
+  this.updatePhaseScore(phase, finalScore);
+};
+
+// Instance method to reset quiz session
+userSchema.methods.resetQuizSession = function(phase) {
+  const phaseKey = `phase${phase}`;
+  
+  if (this.progress.quizSessions[phaseKey]) {
+    this.progress.quizSessions[phaseKey].currentQuestionIndex = 0;
+    this.progress.quizSessions[phaseKey].sessionScore = 0;
+    this.progress.quizSessions[phaseKey].sessionAnswers = [];
+    this.progress.quizSessions[phaseKey].sessionStartTime = null;
+    this.progress.quizSessions[phaseKey].sessionCompleted = false;
+  }
+};
+
+// Instance method to get quiz session
+userSchema.methods.getQuizSession = function(phase) {
+  const phaseKey = `phase${phase}`;
+  return this.progress.quizSessions[phaseKey] || {
+    currentQuestionIndex: 0,
+    sessionScore: 0,
+    sessionAnswers: [],
+    sessionStartTime: null,
+    sessionCompleted: false
+  };
 };
 
 // Static method to find user by username

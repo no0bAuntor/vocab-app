@@ -190,6 +190,75 @@ export const AuthProvider = ({ children }) => {
     return null;
   };
 
+  // Quiz session management
+  const saveQuizSession = async (phase, currentQuestionIndex, sessionScore, sessionAnswers) => {
+    if (!user) return null;
+
+    try {
+      const response = await apiService.saveQuizSession(phase, currentQuestionIndex, sessionScore, sessionAnswers);
+      return response;
+    } catch (error) {
+      console.error('Save quiz session error:', error);
+      return null;
+    }
+  };
+
+  const loadQuizSession = async (phase) => {
+    if (!user) return null;
+
+    try {
+      const response = await apiService.loadQuizSession(phase);
+      if (response.success) {
+        return response.data.session;
+      }
+    } catch (error) {
+      console.error('Load quiz session error:', error);
+    }
+    return null;
+  };
+
+  const completeQuizSession = async (phase, finalScore) => {
+    if (!user) return null;
+
+    try {
+      const response = await apiService.completeQuizSession(phase, finalScore);
+      
+      if (response.success) {
+        // Update local user state with new progress
+        const updatedUser = { ...user };
+        updatedUser.progress.phaseScores[`phase${phase}`] = Math.max(
+          updatedUser.progress.phaseScores[`phase${phase}`] || 0, 
+          finalScore
+        );
+        updatedUser.progress.unlockedPhases = response.data.unlockedPhases;
+        updatedUser.profile.totalXP = response.data.totalXP;
+        updatedUser.profile.level = response.data.level;
+
+        setUser(updatedUser);
+
+        return {
+          ...response.data,
+          user: updatedUser
+        };
+      }
+    } catch (error) {
+      console.error('Complete quiz session error:', error);
+    }
+    return null;
+  };
+
+  const resetQuizSession = async (phase) => {
+    if (!user) return null;
+
+    try {
+      const response = await apiService.resetQuizSession(phase);
+      return response;
+    } catch (error) {
+      console.error('Reset quiz session error:', error);
+      return null;
+    }
+  };
+
   const value = {
     user,
     isLoading,
@@ -201,7 +270,11 @@ export const AuthProvider = ({ children }) => {
     isPhaseUnlocked,
     getPhaseProgress,
     refreshUser,
-    addAchievement
+    addAchievement,
+    saveQuizSession,
+    loadQuizSession,
+    completeQuizSession,
+    resetQuizSession
   };
 
   return (

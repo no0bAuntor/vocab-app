@@ -434,10 +434,10 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
               <span className={`font-semibold ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                Score: {score}/{current + (showExplanation ? 1 : 0)}
+                Score: {score}/{userAnswers.length}
               </span>
               <span className="text-lg">
-                {score === current + (showExplanation ? 1 : 0) ? '🎉' : '📊'}
+                {score === userAnswers.length ? '🎉' : '📊'}
               </span>
             </div>
           </div>
