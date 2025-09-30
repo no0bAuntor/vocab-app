@@ -3,10 +3,10 @@
     "id": 1,
     "question": "The project was held in ______ until the legal dispute was resolved, causing a significant delay.",
     "options": {
-      "a": "alacrity",
+      "a": "abundance",
       "b": "abeyance",
-      "c": "aggregate",
-      "d": "adulterate"
+      "c": "aberrance",
+      "d": "abstinence"
     },
     "answer": "b",
     "explanation": "The correct answer is 'abeyance', which means a temporary state of suspension or inactivity. This fits the context of a project being paused. 'Alacrity' means eagerness, 'aggregate' means total, and 'adulterate' means to corrupt."
@@ -15,10 +15,10 @@
     "id": 2,
     "question": "Which word is a synonym for 'abscond'?",
     "options": {
-      "a": "Remain",
-      "b": "Admonish",
+      "a": "Descend",
+      "b": "Decline",
       "c": "Decamp",
-      "d": "Aggregate"
+      "d": "Discount"
     },
     "answer": "c",
     "explanation": "The correct answer is 'decamp'. Both 'abscond' and 'decamp' mean to leave hurriedly and secretly. 'Remain' is an antonym, 'admonish' means to warn, and 'aggregate' means to collect."
@@ -27,10 +27,10 @@
     "id": 3,
     "question": "The chef was known for his ______ use of spices, never overloading a dish but achieving perfect balance.",
     "options": {
-      "a": "verbose",
-      "b": "aesthetic",
+      "a": "judicious",
+      "b": "avaricious",
       "c": "abstemious",
-      "d": "adulterated"
+      "d": "ambitious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'abstemious', which means sparing or moderate, especially in eating and drinking. This describes the chef's restrained use of spices. 'Verbose' means wordy, 'aesthetic' relates to beauty, and 'adulterated' means corrupted."
@@ -39,10 +39,10 @@
     "id": 4,
     "question": "The manager had to ______ the employee for consistently violating company policies.",
     "options": {
-      "a": "abscond",
-      "b": "adulterate",
+      "a": "abolish",
+      "b": "accomplish",
       "c": "admonish",
-      "d": "aggregate"
+      "d": "astonish"
     },
     "answer": "c",
     "explanation": "The correct answer is 'admonish', which means to warn or reprimand someone firmly. This fits the context of a manager correcting an employee. The other words do not fit: 'abscond' (to flee), 'adulterate' (to corrupt), 'aggregate' (to collect)."
@@ -63,10 +63,10 @@
     "id": 6,
     "question": "Which of the following is an antonym for 'alacrity'?",
     "options": {
-      "a": "Eagerness",
+      "a": "Reticence",
       "b": "Reluctance",
-      "c": "Zeal",
-      "d": "Promptness"
+      "c": "Resilience",
+      "d": "Reverence"
     },
     "answer": "b",
     "explanation": "The correct answer is 'reluctance'. 'Alacrity' means brisk and cheerful readiness, so its opposite is unwillingness or hesitation. The other options are synonyms of 'alacrity'."
@@ -75,10 +75,10 @@
     "id": 7,
     "question": "The ______ of the mineral samples showed a high concentration of quartz.",
     "options": {
-      "a": "zealot",
-      "b": "abeyance",
+      "a": "allegation",
+      "b": "aggregation",
       "c": "aggregate",
-      "d": "aesthetic"
+      "d": "aggravation"
     },
     "answer": "c",
     "explanation": "The correct answer is 'aggregate', which, as a noun, means a whole formed by combining several elements. This fits the context of analyzing the total composition of mineral samples."
@@ -100,9 +100,9 @@
     "question": "A person who is fanatical and uncompromising in their beliefs is best described as a ______.",
     "options": {
       "a": "zealot",
-      "b": "aggregate",
-      "c": "abstemious",
-      "d": "aesthetic"
+      "b": "despot",
+      "c": "patriot",
+      "d": "pilot"
     },
     "answer": "a",
     "explanation": "The correct answer is 'zealot'. A zealot is defined as a person who is fanatical and uncompromising in pursuit of their ideals."
@@ -111,10 +111,10 @@
     "id": 10,
     "question": "Which word means 'to make something impure by adding inferior substances'?",
     "options": {
-      "a": "Admonish",
-      "b": "Abscond",
+      "a": "Advocate",
+      "b": "Adjudicate",
       "c": "Adulterate",
-      "d": "Aggregate"
+      "d": "Adventure"
     },
     "answer": "c",
     "explanation": "The correct answer is 'adulterate'. This verb specifically means to corrupt or make impure by adding another substance."
@@ -123,10 +123,10 @@
     "id": 11,
     "question": "The speaker's ______ style made the simple topic seem complex and endless.",
     "options": {
-      "a": "abstemious",
-      "b": "aesthetic",
+      "a": "concise",
+      "b": "obtuse",
       "c": "verbose",
-      "d": "aggregate"
+      "d": "terse"
     },
     "answer": "c",
     "explanation": "The correct answer is 'verbose', which means using too many words. This directly explains why a simple topic seemed complex and endless."
@@ -135,10 +135,10 @@
     "id": 12,
     "question": "After the scandal, the CEO decided to ______ with the company's emergency funds.",
     "options": {
-      "a": "admonish",
-      "b": "aggregate",
+      "a": "absorb",
+      "b": "abstract",
       "c": "abscond",
-      "d": "adulterate"
+      "d": "absolve"
     },
     "answer": "c",
     "explanation": "The correct answer is 'abscond'. This verb means to leave hurriedly and secretly, typically to avoid detection, which fits the context of a CEO fleeing with funds."
@@ -147,10 +147,10 @@
     "id": 13,
     "question": "What is the primary meaning of 'abeyance'?",
     "options": {
-      "a": "Brisk readiness",
+      "a": "A state of abundance",
       "b": "A temporary suspension",
-      "c": "Moralistic warning",
-      "d": "A total sum"
+      "c": "A formal allegiance",
+      "d": "A total absence"
     },
     "answer": "b",
     "explanation": "The correct answer is 'A temporary suspension'. 'Abeyance' refers to a state of temporary disuse or suspension."
@@ -159,10 +159,10 @@
     "id": 14,
     "question": "Which word is NOT a synonym for 'admonish'?",
     "options": {
-      "a": "Reprimand",
-      "b": "Rebuke",
+      "a": "Condemn",
+      "b": "Recommend",
       "c": "Commend",
-      "d": "Reprove"
+      "d": "Command"
     },
     "answer": "c",
     "explanation": "The correct answer is 'commend'. 'Commend' means to praise, which is the opposite of warning or reprimanding. The other options are all synonyms for 'admonish'."
@@ -171,10 +171,10 @@
     "id": 15,
     "question": "The architect focused more on the ______ appeal of the structure than its pure functionality.",
     "options": {
-      "a": "abstemious",
+      "a": "acoustic",
       "b": "aesthetic",
-      "c": "verbose",
-      "d": "aggregate"
+      "c": "ascetic",
+      "d": "athletic"
     },
     "answer": "b",
     "explanation": "The correct answer is 'aesthetic', which relates to beauty or the appreciation of beauty. This contrasts with pure functionality."
@@ -183,10 +183,10 @@
     "id": 16,
     "question": "The ______ number of votes cast in the election was a record for the district.",
     "options": {
-      "a": "verbose",
+      "a": "approximate",
       "b": "aggregate",
-      "c": "aesthetic",
-      "d": "abstemious"
+      "c": "accurate",
+      "d": "adequate"
     },
     "answer": "b",
     "explanation": "The correct answer is 'aggregate'. Here, it is used as an adjective meaning 'total' or 'combined', which fits the context of the total number of votes."
@@ -207,10 +207,10 @@
     "id": 18,
     "question": "The political ______ was unwilling to listen to any opinions that contradicted his own.",
     "options": {
-      "a": "aggregate",
+      "a": "bigot",
       "b": "zealot",
-      "c": "abeyance",
-      "d": "aesthetic"
+      "c": "patriot",
+      "d": "escort"
     },
     "answer": "b",
     "explanation": "The correct answer is 'zealot'. A zealot is characterized by fanatical and uncompromising views, which explains the unwillingness to listen to other opinions."
@@ -219,10 +219,10 @@
     "id": 19,
     "question": "To ensure the drug's purity, it was crucial not to ______ it with any fillers.",
     "options": {
-      "a": "admonish",
+      "a": "administer",
       "b": "adulterate",
-      "c": "abscond",
-      "d": "aggregate"
+      "c": "adjudicate",
+      "d": "advocate"
     },
     "answer": "b",
     "explanation": "The correct answer is 'adulterate', which means to make something impure by adding inferior substances. This is the direct opposite of ensuring purity."
@@ -231,10 +231,10 @@
     "id": 20,
     "question": "She accepted the challenging assignment with surprising ______, eager to get started immediately.",
     "options": {
-      "a": "abeyance",
-      "b": "verbose",
+      "a": "lethargy",
+      "b": "clarity",
       "c": "alacrity",
-      "d": "abstemious"
+      "d": "charity"
     },
     "answer": "c",
     "explanation": "The correct answer is 'alacrity', which means brisk and cheerful readiness. This is indicated by her eagerness to start immediately."
@@ -255,10 +255,10 @@
     "id": 22,
     "question": "The professor's ______ lecture, though informative, could have been half as long.",
     "options": {
-      "a": "aesthetic",
+      "a": "terse",
       "b": "verbose",
-      "c": "aggregate",
-      "d": "abstemious"
+      "c": "diverse",
+      "d": "adverse"
     },
     "answer": "b",
     "explanation": "The correct answer is 'verbose', meaning using more words than necessary. The clue is that the lecture 'could have been half as long'."
@@ -279,10 +279,10 @@
     "id": 24,
     "question": "The peace talks have fallen into ______, with no date set for their resumption.",
     "options": {
-      "a": "alacrity",
+      "a": "abundance",
       "b": "abeyance",
-      "c": "aggregate",
-      "d": "aesthetic"
+      "c": "allegiance",
+      "d": "absence"
     },
     "answer": "b",
     "explanation": "The correct answer is 'abeyance', meaning a state of temporary suspension. This perfectly describes peace talks that are paused indefinitely."
@@ -291,10 +291,10 @@
     "id": 25,
     "question": "An antonym for 'verbose' is:",
     "options": {
-      "a": "Wordy",
+      "a": "Prolix",
       "b": "Loquacious",
       "c": "Succinct",
-      "d": "Grandiloquent"
+      "d": "Garrulous"
     },
     "answer": "c",
     "explanation": "The correct answer is 'succinct', which means brief and clearly expressed. This is the direct opposite of 'verbose'. The other options are synonyms."
@@ -315,10 +315,10 @@
     "id": 27,
     "question": "His ______ lifestyle, free from luxury and excess, allowed him to save a considerable amount of money.",
     "options": {
-      "a": "verbose",
-      "b": "aesthetic",
+      "a": "ostentatious",
+      "b": "parsimonious",
       "c": "abstemious",
-      "d": "zealot"
+      "d": "pretentious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'abstemious', which describes a lifestyle characterized by self-denial and moderation, explaining the lack of luxury and ability to save money."
@@ -339,10 +339,10 @@
     "id": 29,
     "question": "The museum's curator had an impeccable ______ sense, arranging the exhibits in a visually stunning manner.",
     "options": {
-      "a": "aggregate",
+      "a": "authentic",
       "b": "aesthetic",
-      "c": "abstemious",
-      "d": "verbose"
+      "c": "athletic",
+      "d": "automatic"
     },
     "answer": "b",
     "explanation": "The correct answer is 'aesthetic', which relates to a sense of beauty. This explains the visually stunning arrangement of the exhibits."
@@ -351,10 +351,10 @@
     "id": 30,
     "question": "The company was accused of attempting to ______ the fuel by mixing it with cheaper oils.",
     "options": {
-      "a": "admonish",
-      "b": "aggregate",
+      "a": "adjudicate",
+      "b": "accumulate",
       "c": "adulterate",
-      "d": "abscond"
+      "d": "accelerate"
     },
     "answer": "c",
     "explanation": "The correct answer is 'adulterate', which means to make something impure by adding inferior substances, such as mixing fuel with cheaper oil."
@@ -363,10 +363,10 @@
     "id": 31,
     "question": "Which word is most closely associated with the concept of 'beauty'?",
     "options": {
-      "a": "Abeyance",
+      "a": "Athletic",
       "b": "Aesthetic",
-      "c": "Aggregate",
-      "d": "Alacrity"
+      "c": "Authentic",
+      "d": "Automatic"
     },
     "answer": "b",
     "explanation": "The correct answer is 'aesthetic', which is directly concerned with beauty or the appreciation of beauty."
@@ -375,10 +375,10 @@
     "id": 32,
     "question": "Fearing arrest, the embezzler planned to ______ under the cover of darkness.",
     "options": {
-      "a": "admonish",
+      "a": "absorb",
       "b": "abscond",
-      "c": "aggregate",
-      "d": "adulterate"
+      "c": "abstract",
+      "d": "absolve"
     },
     "answer": "b",
     "explanation": "The correct answer is 'abscond', which means to leave secretly and hurriedly to avoid capture. The context of 'fearing arrest' and 'cover of darkness' confirms this."
@@ -387,10 +387,10 @@
     "id": 33,
     "question": "A synonym for 'alacrity' is:",
     "options": {
-      "a": "Apathy",
-      "b": "Reluctance",
+      "a": "Clarity",
+      "b": "Charity",
       "c": "Promptness",
-      "d": "Indifference"
+      "d": "Rarity"
     },
     "answer": "c",
     "explanation": "The correct answer is 'promptness'. Both 'alacrity' and 'promptness' imply quickness and readiness. The other options are antonyms."
@@ -447,10 +447,10 @@
     "id": 38,
     "question": "Her writing was praised for being powerful and ______, with not a single wasted word.",
     "options": {
-      "a": "verbose",
-      "b": "aesthetic",
+      "a": "prolix",
+      "b": "tedious",
       "c": "abstemious",
-      "d": "aggregate"
+      "d": "repetitious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'abstemious'. While typically used for consumption, it can be extended metaphorically to mean 'sparing' in the use of words, which is the opposite of verbose. The clue is 'not a single wasted word'."
@@ -459,10 +459,10 @@
     "id": 39,
     "question": "The contract was in ______ while the lawyers reviewed the fine print.",
     "options": {
-      "a": "alacrity",
+      "a": "abundance",
       "b": "abeyance",
-      "c": "aggregate",
-      "d": "aesthetic"
+      "c": "allegiance",
+      "d": "absence"
     },
     "answer": "b",
     "explanation": "The correct answer is 'abeyance', meaning a state of temporary suspension. The contract was paused during the review."
@@ -471,10 +471,10 @@
     "id": 40,
     "question": "An antonym for 'abstemious' is:",
     "options": {
-      "a": "Temperate",
-      "b": "Ascetic",
+      "a": "Parsimonious",
+      "b": "Fastidious",
       "c": "Gluttonous",
-      "d": "Moderate"
+      "d": "Cautious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'gluttonous', which means excessively greedy in eating. This is the direct opposite of 'abstemious'. The other options are synonyms."
@@ -483,10 +483,10 @@
     "id": 41,
     "question": "The intern completed every task with such ______ that she was promoted within six months.",
     "options": {
-      "a": "verbose",
-      "b": "abeyance",
+      "a": "lethargy",
+      "b": "clarity",
       "c": "alacrity",
-      "d": "zealot"
+      "d": "charity"
     },
     "answer": "c",
     "explanation": "The correct answer is 'alacrity', meaning cheerful readiness and promptness. This positive trait would logically lead to a quick promotion."
@@ -495,8 +495,8 @@
     "id": 42,
     "question": "To ______ the results, we need to add the scores from all three rounds.",
     "options": {
-      "a": "admonish",
-      "b": "abscond",
+      "a": "adjudicate",
+      "b": "accelerate",
       "c": "aggregate",
       "d": "adulterate"
     },
@@ -543,10 +543,10 @@
     "id": 46,
     "question": "The ______ design of the garden was more important to the owner than its practical use.",
     "options": {
-      "a": "aggregate",
+      "a": "authentic",
       "b": "aesthetic",
-      "c": "abstemious",
-      "d": "verbose"
+      "c": "athletic",
+      "d": "automatic"
     },
     "answer": "b",
     "explanation": "The correct answer is 'aesthetic', meaning concerned with beauty. The contrast with 'practical use' emphasizes the focus on appearance."
@@ -567,9 +567,9 @@
     "id": 48,
     "question": "The police were able to ______ the suspect before he could leave the country.",
     "options": {
-      "a": "admonish",
+      "a": "advocate",
       "b": "apprehend",
-      "c": "abscond",
+      "c": "adjudicate",
       "d": "adulterate"
     },
     "answer": "b",
@@ -579,10 +579,10 @@
     "id": 49,
     "question": "A state of suspension or inactivity is known as:",
     "options": {
-      "a": "Alacrity",
+      "a": "Absence",
       "b": "Abeyance",
-      "c": "Aggregate",
-      "d": "Zealot"
+      "c": "Abundance",
+      "d": "Allegiance"
     },
     "answer": "b",
     "explanation": "The correct answer is 'abeyance'. This is the literal definition of the word."
@@ -592,9 +592,9 @@
     "question": "The teacher's ______ was meant to correct the student's behavior, not to punish him.",
     "options": {
       "a": "admonishment",
-      "b": "adulteration",
-      "c": "abeyance",
-      "d": "aggregation"
+      "b": "encouragement",
+      "c": "acknowledgment",
+      "d": "accomplishment"
     },
     "answer": "a",
     "explanation": "The correct answer is 'admonishment' (the noun form of 'admonish'), which means a firm warning or reprimand. This fits the context of corrective, non-punitive action."

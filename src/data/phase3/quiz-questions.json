@@ -3,10 +3,10 @@
     "id": 1,
     "question": "The new medication was designed to ______ the symptoms of the chronic illness, providing much-needed relief to patients.",
     "options": {
-      "a": "exacerbate",
+      "a": "aggravate",
       "b": "alleviate",
-      "c": "vituperate",
-      "d": "adulterate"
+      "c": "alienate",
+      "d": "allocate"
     },
     "answer": "b",
     "explanation": "The correct answer is 'alleviate', which means to make less severe. This fits the context of providing relief from symptoms. 'Exacerbate' is an antonym meaning to worsen, 'vituperate' means to criticize harshly, and 'adulterate' means to corrupt."
@@ -15,10 +15,10 @@
     "id": 2,
     "question": "Which word is a synonym for 'banal'?",
     "options": {
-      "a": "Original",
+      "a": "Novel",
       "b": "Hackneyed",
-      "c": "Viable",
-      "d": "Wary"
+      "c": "Vibrant",
+      "d": "Varied"
     },
     "answer": "b",
     "explanation": "The correct answer is 'hackneyed'. Both 'banal' and 'hackneyed' describe something lacking originality and being boringly commonplace. 'Original' is an antonym, 'viable' means feasible, and 'wary' means cautious."
@@ -27,10 +27,10 @@
     "id": 3,
     "question": "The critic's ______ review dismantled the author's work with such bitter sarcasm that it sparked controversy.",
     "options": {
-      "a": "porous",
-      "b": "viable",
+      "a": "cautious",
+      "b": "candid",
       "c": "caustic",
-      "d": "banal"
+      "d": "cordial"
     },
     "answer": "c",
     "explanation": "The correct answer is 'caustic', which means sarcastic in a scathing and bitter way. The clues 'bitter sarcasm' and 'dismantled' confirm this. 'Porous' means full of holes, 'viable' means feasible, and 'banal' means boring."
@@ -39,10 +39,10 @@
     "id": 4,
     "question": "After the funding was cut, the team had to determine if their research project was still ______.",
     "options": {
-      "a": "perfidious",
-      "b": "vituperative",
+      "a": "variable",
+      "b": "valuable",
       "c": "viable",
-      "d": "wary"
+      "d": "virtual"
     },
     "answer": "c",
     "explanation": "The correct answer is 'viable', meaning capable of working successfully or feasible. This is the key question when assessing a project's future after a setback."
@@ -66,7 +66,7 @@
       "a": "Treacherous",
       "b": "Loyal",
       "c": "Duplicitous",
-      "d": "Insidious"
+      "d": "Devious"
     },
     "answer": "b",
     "explanation": "The correct answer is 'loyal'. 'Perfidious' means deceitful and untrustworthy, so its direct opposite is faithful and loyal. The other options are synonyms."
@@ -75,10 +75,10 @@
     "id": 7,
     "question": "Investors were ______ of the startup's inflated claims, choosing to investigate thoroughly before committing any funds.",
     "options": {
-      "a": "viable",
+      "a": "weary",
       "b": "wary",
-      "c": "banal",
-      "d": "vituperative"
+      "c": "wiry",
+      "d": "wordy"
     },
     "answer": "b",
     "explanation": "The correct answer is 'wary', which means feeling or showing caution about possible dangers or problems. The context of investigating inflated claims indicates caution."
@@ -100,9 +100,9 @@
     "question": "The politician's ______ speech was filled with bitter insults and abusive language, shocking his opponents.",
     "options": {
       "a": "vituperative",
-      "b": "porous",
-      "c": "banal",
-      "d": "caustic"
+      "b": "vindictive",
+      "c": "vivacious",
+      "d": "virtuous"
     },
     "answer": "a",
     "explanation": "The correct answer is 'vituperative', which specifically means bitter and abusive. While 'caustic' is related, 'vituperative' is more directly associated with abusive language. 'Bitter insults' is the key clue."
@@ -111,10 +111,10 @@
     "id": 10,
     "question": "A raised embankment built to prevent a river from flooding is called a ______.",
     "options": {
-      "a": "Torpor",
+      "a": "Ledge",
       "b": "Levee",
-      "c": "Alleviation",
-      "d": "Viability"
+      "c": "Lever",
+      "d": "Level"
     },
     "answer": "b",
     "explanation": "The correct answer is 'levee'. This is the literal definition of the word."
@@ -123,10 +123,10 @@
     "id": 11,
     "question": "The sponge is highly ______, allowing it to absorb a large amount of liquid quickly.",
     "options": {
-      "a": "viable",
-      "b": "perfidious",
-      "c": "porous",
-      "d": "wary"
+      "a": "porous",
+      "b": "fibrous",
+      "c": "viscous",
+      "d": "rigorous"
     },
     "answer": "c",
     "explanation": "The correct answer is 'porous', meaning having holes or spaces through which liquid may pass. This directly explains the absorbent quality of a sponge."
@@ -136,9 +136,9 @@
     "question": "What is the primary meaning of 'alleviate'?",
     "options": {
       "a": "To make worse",
-      "b": "To burn or corrode",
+      "b": "To make different",
       "c": "To make less severe",
-      "d": "To deceive"
+      "d": "To make longer"
     },
     "answer": "c",
     "explanation": "The correct answer is 'To make less severe'. This is the core meaning of the verb 'alleviate'."
@@ -148,9 +148,9 @@
     "question": "Which word is NOT a synonym for 'caustic'?",
     "options": {
       "a": "Scathing",
-      "b": "Sarcastic",
+      "b": "Scalding",
       "c": "Soothing",
-      "d": "Acrimonious"
+      "d": "Stinging"
     },
     "answer": "c",
     "explanation": "The correct answer is 'soothing'. 'Soothing' means calming, which is an antonym of the harsh, burning quality implied by 'caustic'. The other options are synonyms."
@@ -159,10 +159,10 @@
     "id": 14,
     "question": "The plot of the movie was so ______ that audiences could predict the ending within the first ten minutes.",
     "options": {
-      "a": "viable",
+      "a": "bizarre",
       "b": "banal",
-      "c": "vituperative",
-      "d": "wary"
+      "c": "brilliant",
+      "d": "brutal"
     },
     "answer": "b",
     "explanation": "The correct answer is 'banal', which means lacking originality and boring. The predictability of the plot is a key indicator of banality."
@@ -171,10 +171,10 @@
     "id": 15,
     "question": "His ______ during the morning meetings was notorious; he would rarely speak before having his coffee.",
     "options": {
-      "a": "levee",
-      "b": "alleviation",
+      "a": "temper",
+      "b": "tenor",
       "c": "torpor",
-      "d": "viability"
+      "d": "terror"
     },
     "answer": "c",
     "explanation": "The correct answer is 'torpor', meaning a state of inactivity or lethargy. This fits the description of someone who is inactive and uncommunicative in the morning."
@@ -219,10 +219,10 @@
     "id": 19,
     "question": "The company needed a ______ plan that could be sustained financially for the long term.",
     "options": {
-      "a": "vituperative",
+      "a": "variable",
       "b": "viable",
-      "c": "caustic",
-      "d": "wary"
+      "c": "valuable",
+      "d": "virtual"
     },
     "answer": "b",
     "explanation": "The correct answer is 'viable', meaning capable of working successfully. The context of being 'sustained financially' points to feasibility."
@@ -231,10 +231,10 @@
     "id": 20,
     "question": "A ______ remark can be more damaging than a physical blow, leaving psychological scars.",
     "options": {
-      "a": "banal",
-      "b": "porous",
+      "a": "casual",
+      "b": "careful",
       "c": "caustic",
-      "d": "torpid"
+      "d": "cordial"
     },
     "answer": "c",
     "explanation": "The correct answer is 'caustic', meaning sarcastic and bitter. The description of causing psychological damage aligns with the harmful nature of caustic comments."
@@ -255,10 +255,10 @@
     "id": 22,
     "question": "The ______ soil in the area meant that water drained away rapidly, making it difficult to grow certain crops.",
     "options": {
-      "a": "viable",
-      "b": "perfidious",
-      "c": "porous",
-      "d": "banal"
+      "a": "porous",
+      "b": "fibrous",
+      "c": "viscous",
+      "d": "rigorous"
     },
     "answer": "c",
     "explanation": "The correct answer is 'porous'. Soil that allows water to pass through it quickly is porous."
@@ -268,9 +268,9 @@
     "question": "An antonym for 'viable' is:",
     "options": {
       "a": "Feasible",
-      "b": "Durable",
+      "b": "Workable",
       "c": "Unworkable",
-      "d": "Stable"
+      "d": "Operable"
     },
     "answer": "c",
     "explanation": "The correct answer is 'unworkable'. 'Viable' means capable of working, so its direct opposite is something that cannot work."
@@ -279,10 +279,10 @@
     "id": 24,
     "question": "She remained ______ of his flattery, suspecting he had an ulterior motive.",
     "options": {
-      "a": "torpid",
+      "a": "weary",
       "b": "wary",
-      "c": "banal",
-      "d": "vituperative"
+      "c": "wordy",
+      "d": "worthy"
     },
     "answer": "b",
     "explanation": "The correct answer is 'wary', meaning cautious and suspicious. The suspicion of an 'ulterior motive' is a classic reason for wariness."
@@ -291,10 +291,10 @@
     "id": 25,
     "question": "The documentary aimed to ______ public ignorance about the climate crisis.",
     "options": {
-      "a": "exacerbate",
+      "a": "aggravate",
       "b": "alleviate",
-      "c": "vituperate",
-      "d": "perfide"
+      "c": "alienate",
+      "d": "allocate"
     },
     "answer": "b",
     "explanation": "The correct answer is 'alleviate'. While often used for physical suffering, 'alleviate' can also mean to make a deficiency (like ignorance) less severe."
@@ -351,10 +351,10 @@
     "id": 30,
     "question": "A substance that can burn or corrode tissue is described as:",
     "options": {
-      "a": "Porous",
-      "b": "Viable",
-      "c": "Caustic",
-      "d": "Torporific"
+      "a": "Caustic",
+      "b": "Kinetic",
+      "c": "Plastic",
+      "d": "Elastic"
     },
     "answer": "c",
     "explanation": "The correct answer is 'caustic'. This is one of the primary definitions of the word."
@@ -363,10 +363,10 @@
     "id": 31,
     "question": "The economic plan was not ______, as it relied on assumptions that were unrealistic.",
     "options": {
-      "a": "perfidious",
+      "a": "variable",
       "b": "viable",
-      "c": "vituperative",
-      "d": "banal"
+      "c": "valuable",
+      "d": "virtual"
     },
     "answer": "b",
     "explanation": "The correct answer is 'viable'. The clue 'unrealistic assumptions' indicates that the plan is not practical or workable."
@@ -375,10 +375,10 @@
     "id": 32,
     "question": "Which word is a synonym for 'wary'?",
     "options": {
-      "a": "Reckless",
+      "a": "Weary",
       "b": "Vigilant",
-      "c": "Careless",
-      "d": "Unwary"
+      "c": "Vivacious",
+      "d": "Vacant"
     },
     "answer": "b",
     "explanation": "The correct answer is 'vigilant', which means keeping careful watch for possible danger or difficulties, similar to 'wary'. The other options are antonyms."
@@ -387,10 +387,10 @@
     "id": 33,
     "question": "The hero in the story was betrayed by a ______ friend who had secretly been working for the antagonist.",
     "options": {
-      "a": "viable",
-      "b": "porous",
+      "a": "prestigious",
+      "b": "precious",
       "c": "perfidious",
-      "d": "caustic"
+      "d": "pernicious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'perfidious'. Betrayal by a friend is a classic example of perfidy."
@@ -447,10 +447,10 @@
     "id": 38,
     "question": "The constant criticism had a ______ effect on her confidence, slowly eroding it over time.",
     "options": {
-      "a": "viable",
+      "a": "cordial",
       "b": "caustic",
-      "c": "banal",
-      "d": "porous"
+      "c": "casual",
+      "d": "careful"
     },
     "answer": "b",
     "explanation": "The correct answer is 'caustic'. The metaphor of 'eroding' confidence aligns with the burning, corrosive nature of something caustic."
@@ -459,10 +459,10 @@
     "id": 39,
     "question": "An antonym for 'alleviate' is:",
     "options": {
-      "a": "Assuage",
-      "b": "Lessen",
+      "a": "Alleviate",
+      "b": "Accelerate",
       "c": "Exacerbate",
-      "d": "Mitigate"
+      "d": "Allocate"
     },
     "answer": "c",
     "explanation": "The correct answer is 'exacerbate', which means to make a problem, bad situation, or negative feeling worse. This is the direct opposite of 'alleviate'. The other options are synonyms."
@@ -471,10 +471,10 @@
     "id": 40,
     "question": "The old fortress walls were surprisingly ______, having been weakened by centuries of rain and wind.",
     "options": {
-      "a": "viable",
-      "b": "perfidious",
-      "c": "porous",
-      "d": "wary"
+      "a": "porous",
+      "b": "fibrous",
+      "c": "rigorous",
+      "d": "vigorous"
     },
     "answer": "c",
     "explanation": "The correct answer is 'porous'. Weakened walls that allow elements to pass through (even metaphorically) can be described as porous."
@@ -495,9 +495,9 @@
     "id": 42,
     "question": "The company's success was dependent on finding a ______ market for its new product.",
     "options": {
-      "a": "vituperative",
+      "a": "variable",
       "b": "viable",
-      "c": "banal",
+      "c": "valuable",
       "d": "caustic"
     },
     "answer": "b",
@@ -521,8 +521,8 @@
     "options": {
       "a": "Wary",
       "b": "Banal",
-      "c": "Viable",
-      "d": "Perfidious"
+      "c": "Viral",
+      "d": "Royal"
     },
     "answer": "b",
     "explanation": "The correct answer is 'banal'. This is the definition of the word."
@@ -531,10 +531,10 @@
     "id": 45,
     "question": "The journalist's ______ questions put the corrupt official on the defensive, exposing his lies.",
     "options": {
-      "a": "porous",
+      "a": "cordial",
       "b": "caustic",
-      "c": "torpid",
-      "d": "banal"
+      "c": "casual",
+      "d": "careful"
     },
     "answer": "b",
     "explanation": "The correct answer is 'caustic'. Questions that are sharp, sarcastic, and exposing would be described as caustic."
@@ -567,10 +567,10 @@
     "id": 48,
     "question": "She was ______ of walking alone in the city at night, so she always took a taxi.",
     "options": {
-      "a": "banal",
+      "a": "weary",
       "b": "wary",
-      "c": "viable",
-      "d": "perfidious"
+      "c": "wordy",
+      "d": "worthy"
     },
     "answer": "b",
     "explanation": "The correct answer is 'wary'. The cautious action of taking a taxi instead of walking alone indicates wariness."
@@ -579,10 +579,10 @@
     "id": 49,
     "question": "The treaty was broken in a ______ act that led to renewed hostilities between the nations.",
     "options": {
-      "a": "viable",
-      "b": "porous",
+      "a": "prestigious",
+      "b": "precious",
       "c": "perfidious",
-      "d": "caustic"
+      "d": "pernicious"
     },
     "answer": "c",
     "explanation": "The correct answer is 'perfidious'. Breaking a treaty is a deceitful and untrustworthy act, the definition of perfidy."
@@ -592,9 +592,9 @@
     "question": "A ______ solution is one that is both practical and sustainable.",
     "options": {
       "a": "Viable",
-      "b": "Vituperative",
-      "c": "Banal",
-      "d": "Porous"
+      "b": "Variable",
+      "c": "Valuable",
+      "d": "Virtual"
     },
     "answer": "a",
     "explanation": "The correct answer is 'viable'. The words 'practical and sustainable' are key descriptors of a viable solution."
