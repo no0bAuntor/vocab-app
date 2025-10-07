@@ -11,6 +11,8 @@ export const useQuizSession = (phase, quizData) => {
   } = useContext(AuthContext);
   
   const [current, setCurrent] = useState(0);
+  const [orderedQuiz, setOrderedQuiz] = useState(quizData);
+  const [questionOrder, setQuestionOrder] = useState(null);
   const [selected, setSelected] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
@@ -26,9 +28,29 @@ export const useQuizSession = (phase, quizData) => {
     const loadSession = async () => {
       try {
         const session = await loadQuizSession(phase);
-        if (session && !session.sessionCompleted && session.currentQuestionIndex >= 0) {
+        if (session && !session.sessionCompleted) {
+          // If backend returned a saved question order, apply it to quizData
+          if (session.questionOrder && Array.isArray(session.questionOrder) && session.questionOrder.length === quizData.length) {
+            // Reorder quizData according to saved indices
+            const newOrder = session.questionOrder;
+            const reordered = newOrder.map(idx => quizData[idx]).filter(Boolean);
+            setOrderedQuiz(reordered);
+            setQuestionOrder(newOrder);
+          } else {
+            // No saved order - create one for this session
+            const indices = quizData.map((_, i) => i);
+            for (let i = indices.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [indices[i], indices[j]] = [indices[j], indices[i]];
+            }
+            setQuestionOrder(indices);
+            setOrderedQuiz(indices.map(i => quizData[i]));
+            // Persist initial session with questionOrder (no answers yet)
+            await saveQuizSession(phase, -1, 0, [], indices);
+          }
+
           const answeredQuestions = session.sessionAnswers?.length || 0;
-          
+
           // Only resume if there are answered questions and more questions remain
           if (answeredQuestions > 0 && answeredQuestions < quizData.length) {
             setResumingSession(true);
@@ -36,7 +58,7 @@ export const useQuizSession = (phase, quizData) => {
             setCurrent(answeredQuestions);
             setScore(session.sessionScore);
             setUserAnswers(session.sessionAnswers || []);
-            
+
             // Hide resuming indicator after 3 seconds
             setTimeout(() => setResumingSession(false), 3000);
           }
@@ -57,7 +79,7 @@ export const useQuizSession = (phase, quizData) => {
       const saveSession = async () => {
         try {
           // Save the number of answered questions as currentQuestionIndex
-          await saveQuizSession(phase, userAnswers.length - 1, score, userAnswers);
+          await saveQuizSession(phase, userAnswers.length - 1, score, userAnswers, questionOrder);
         } catch (error) {
           console.error(`Failed to save quiz session for phase ${phase}:`, error);
         }
@@ -65,14 +87,14 @@ export const useQuizSession = (phase, quizData) => {
 
       saveSession();
     }
-  }, [sessionLoaded, current, score, userAnswers, showExplanation, finished, saveQuizSession, phase]);
+  }, [sessionLoaded, current, score, userAnswers, showExplanation, finished, saveQuizSession, phase, questionOrder]);
 
   // Complete session when quiz finishes
   useEffect(() => {
     if (finished && !progressUpdated) {
       const completeSession = async () => {
         try {
-          const result = await completeQuizSession(phase, score, quizData.length);
+          const result = await completeQuizSession(phase, score, orderedQuiz.length);
           if (result) {
             console.log(`Phase ${phase} session completed:`, result);
             setProgressUpdated(true);
@@ -84,7 +106,7 @@ export const useQuizSession = (phase, quizData) => {
       
       completeSession();
     }
-  }, [finished, score, completeQuizSession, progressUpdated, phase]);
+  }, [finished, score, completeQuizSession, progressUpdated, phase, orderedQuiz.length]);
 
   const handleOption = (option) => {
     if (showExplanation) return;
@@ -92,14 +114,14 @@ export const useQuizSession = (phase, quizData) => {
     setSelected(option);
     setShowExplanation(true);
     
-    const isCorrect = option === quizData[current].answer;
+    const isCorrect = option === orderedQuiz[current].answer;
     const newScore = isCorrect ? score + 1 : score;
     setScore(newScore);
     
     const newAnswer = {
-      questionId: quizData[current].id,
+      questionId: orderedQuiz[current].id,
       selected: option,
-      correct: quizData[current].answer,
+      correct: orderedQuiz[current].answer,
       isCorrect
     };
     
@@ -107,7 +129,7 @@ export const useQuizSession = (phase, quizData) => {
   };
 
   const handleNext = () => {
-    if (current < quizData.length - 1) {
+    if (current < orderedQuiz.length - 1) {
       setCurrent(current + 1);
       setSelected(null);
       setShowExplanation(false);
@@ -118,7 +140,7 @@ export const useQuizSession = (phase, quizData) => {
 
   const jumpToQuestionNumber = (questionNum) => {
     const questionIndex = questionNum - 1; // Convert to 0-based index
-    if (questionIndex >= 0 && questionIndex < quizData.length) {
+    if (questionIndex >= 0 && questionIndex < orderedQuiz.length) {
       setCurrent(questionIndex);
       setSelected(null);
       setShowExplanation(false);
@@ -180,6 +202,8 @@ export const useQuizSession = (phase, quizData) => {
     progressUpdated,
     sessionLoaded,
     resumingSession,
+    orderedQuiz,
+    questionOrder,
     
     // Actions
     handleOption,

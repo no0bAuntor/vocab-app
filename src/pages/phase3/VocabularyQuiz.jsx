@@ -1,103 +1,35 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthContext";
+import { useQuizSession } from "../../hooks/useQuizSession";
 import phase3Quiz from "../../data/phase3/quiz-questions.json";
 
 function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
-  const { updateProgress } = useContext(AuthContext);
-  const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState(null);
-  const [showExplanation, setShowExplanation] = useState(false);
-  const [score, setScore] = useState(0);
-  const [finished, setFinished] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [jumpToQuestion, setJumpToQuestion] = useState('');
-  const [progressUpdated, setProgressUpdated] = useState(false);
-
-  const handleOption = (option) => {
-    if (showExplanation) return;
-    
-    setSelected(option);
-    setShowExplanation(true);
-
-    const isCorrect = option === phase3Quiz[current].answer;
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-    
-    setUserAnswers([...userAnswers, {
-      questionId: phase3Quiz[current].id,
-      selected: option,
-      correct: phase3Quiz[current].answer,
-      isCorrect
-    }]);
-  };
-
-  const handleNext = () => {
-    if (current < phase3Quiz.length - 1) {
-      setCurrent(current + 1);
-      setSelected(null);
-      setShowExplanation(false);
-    } else {
-      setFinished(true);
-    }
-  };
-
-  // Update progress when quiz finishes
-  useEffect(() => {
-    if (finished && !progressUpdated) {
-      const updateQuizProgress = async () => {
-        try {
-          const result = await updateProgress(3, score);
-          if (result) {
-            console.log('Phase 3 progress updated:', result);
-            setProgressUpdated(true);
-          }
-        } catch (error) {
-          console.error('Failed to update Phase 3 progress:', error);
-        }
-      };
-      
-      updateQuizProgress();
-    }
-  }, [finished, score, updateProgress, progressUpdated]);
-
-  const jumpToQuestionNumber = (questionNum) => {
-    const questionIndex = questionNum - 1; // Convert to 0-based index
-    if (questionIndex >= 0 && questionIndex < phase3Quiz.length) {
-      setCurrent(questionIndex);
-      setSelected(null);
-      setShowExplanation(false);
-      setJumpToQuestion('');
-    }
-  };
-
-  const handleJumpInputChange = (e) => {
-    setJumpToQuestion(e.target.value);
-  };
-
-  const handleJumpSubmit = (e) => {
-    e.preventDefault();
-    const questionNum = parseInt(jumpToQuestion);
-    if (!isNaN(questionNum)) {
-      jumpToQuestionNumber(questionNum);
-    }
-  };
-
-  const restartQuiz = () => {
-    setCurrent(0);
-    setSelected(null);
-    setShowExplanation(false);
-    setScore(0);
-    setFinished(false);
-    setUserAnswers([]);
-    setJumpToQuestion('');
-    setProgressUpdated(false);
-  };
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const {
+    current,
+    selected,
+    showExplanation,
+    score,
+    finished,
+    userAnswers,
+    jumpToQuestion,
+    progressUpdated,
+    sessionLoaded,
+    resumingSession,
+    handleOption,
+    handleNext,
+    jumpToQuestionNumber,
+    handleJumpInputChange,
+    handleJumpSubmit,
+    restartQuiz,
+    orderedQuiz
+  } = useQuizSession(3, phase3Quiz);
+  // handleOption, handleNext, jump handlers and restartQuiz are provided by useQuizSession
 
   // Quiz finished screen
   if (finished) {
-    const percentage = Math.round((score / phase3Quiz.length) * 100);
+    const total = (orderedQuiz && orderedQuiz.length) || phase3Quiz.length;
+    const percentage = Math.round((score / total) * 100);
     
     return (
       <div className={`min-h-screen transition-all duration-300 ${
@@ -121,7 +53,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
                   isDarkMode ? 'text-gray-300' : 'text-gray-600'
                 }`}>
                   Your Score: <span className="font-bold text-2xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    {score}/{phase3Quiz.length}
+                    {score}/{((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)}
                   </span>
                 </p>
                 <p className={`text-lg ${
@@ -156,7 +88,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
     );
   }
 
-  const q = phase3Quiz[current];
+  const q = (orderedQuiz && orderedQuiz[current]) || phase3Quiz[current];
 
   return (
     <div className={`min-h-screen transition-all duration-300 ${
@@ -205,7 +137,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
               <span className={`text-sm font-medium ${
                 isDarkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                {current + 1} of {phase3Quiz.length}
+                {current + 1} of {((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)}
               </span>
             </div>
             <div className={`w-full rounded-full h-3 ${
@@ -213,7 +145,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
             }`}>
               <div 
                 className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-300"
-                style={{ width: `${((current + 1) / phase3Quiz.length) * 100}%` }}
+                style={{ width: `${((current + 1) / ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)) * 100}%` }}
               ></div>
             </div>
           </div>
@@ -258,7 +190,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
                 <input
                   type="number"
                   min="1"
-                  max={phase3Quiz.length}
+                  max={(orderedQuiz && orderedQuiz.length) || phase3Quiz.length}
                   value={jumpToQuestion}
                   onChange={handleJumpInputChange}
                   placeholder="Enter #"
@@ -271,28 +203,41 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
                 <button
                   type="submit"
                   className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 ${
-                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= phase3Quiz.length
+                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)
                       ? 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-md'
                       : isDarkMode
                         ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
                         : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
-                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > phase3Quiz.length}
+                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)}
                 >
                   Go
                 </button>
               </form>
             </div>
 
-            {/* Question Range Info */}
-            <div className={`mt-3 pt-3 border-t text-center ${
+            {/* Question Range Info and Reset Button */}
+            <div className={`mt-3 pt-3 border-t flex flex-col sm:flex-row items-center justify-between gap-3 ${
               isDarkMode ? 'border-gray-700' : 'border-gray-200'
             }`}>
               <p className={`text-xs ${
                 isDarkMode ? 'text-gray-400' : 'text-gray-500'
               }`}>
-                You can jump to any question (1-{phase3Quiz.length}). Your progress and score will be maintained.
+                You can jump to any question (1-{((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)}). Your progress and score will be maintained.
               </p>
+              
+              <button
+                onClick={() => setShowResetConfirm(true)}
+                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 flex items-center gap-2 ${
+                  isDarkMode
+                    ? 'bg-red-900/50 hover:bg-red-800/70 text-red-300 border border-red-700'
+                    : 'bg-red-50 hover:bg-red-100 text-red-600 border border-red-200'
+                }`}
+                title="Reset quiz to start from question 1"
+              >
+                <span>🔄</span>
+                <span>Reset Quiz</span>
+              </button>
             </div>
           </div>
 
@@ -390,14 +335,14 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
               <div className={`text-sm font-medium ${
                 isDarkMode ? 'text-gray-400' : 'text-gray-500'
               }`}>
-                Question {current + 1} of {phase3Quiz.length}
+                Question {current + 1} of {((orderedQuiz && orderedQuiz.length) || phase3Quiz.length)}
               </div>
 
               <button
                 onClick={() => jumpToQuestionNumber(current + 2)}
-                disabled={current === phase3Quiz.length - 1}
+                disabled={current === ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length) - 1}
                 className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  current === phase3Quiz.length - 1
+                  current === ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length) - 1
                     ? isDarkMode
                       ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -420,7 +365,7 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
                   onClick={handleNext}
                   className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
                 >
-                  {current < phase3Quiz.length - 1 ? 'Next Question →' : 'Finish Quiz 🎯'}
+                  {current < ((orderedQuiz && orderedQuiz.length) || phase3Quiz.length) - 1 ? 'Next Question →' : 'Finish Quiz 🎯'}
                 </button>
               </div>
             )}
@@ -443,6 +388,54 @@ function Phase3Quiz({ isDarkMode, toggleDarkMode }) {
           </div>
         </div>
       </div>
+
+      {/* Reset Confirmation Modal */}
+      {showResetConfirm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className={`max-w-md w-full rounded-xl shadow-2xl ${
+            isDarkMode ? 'bg-gray-800' : 'bg-white'
+          }`}>
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <span className="text-2xl mr-3">⚠️</span>
+                <h3 className={`text-lg font-semibold ${
+                  isDarkMode ? 'text-white' : 'text-gray-800'
+                }`}>
+                  Reset Quiz?
+                </h3>
+              </div>
+              
+              <p className={`mb-6 ${
+                isDarkMode ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+                This will restart the quiz from question 1. Your current progress and score will be lost. Are you sure you want to continue?
+              </p>
+              
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowResetConfirm(false)}
+                  className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                    isDarkMode
+                      ? 'bg-gray-700 hover:bg-gray-600 text-gray-300'
+                      : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                  }`}
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={() => {
+                    restartQuiz();
+                    setShowResetConfirm(false);
+                  }}
+                  className="flex-1 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-all duration-200"
+                >
+                  Yes, Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

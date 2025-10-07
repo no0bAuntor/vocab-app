@@ -1,587 +1,602 @@
 [
   {
     "id": 1,
-    "question": "The project was held in ______ until the legal dispute was resolved, causing a significant delay.",
+    "question": "The hermit's ______ lifestyle reflected his deep-seated distrust of humanity, making him avoid all social gatherings.",
     "options": {
-      "a": "abundance",
-      "b": "abeyance",
-      "c": "aberrance",
-      "d": "abstinence"
+      "a": "misanthropic",
+      "b": "misanthrope",
+      "c": "philanthropist",
+      "d": "miscreant"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'abeyance', which means a temporary state of suspension or inactivity. This fits the context of a project being paused. 'Alacrity' means eagerness, 'aggregate' means total, and 'adulterate' means to corrupt."
+    "explanation": "Someone who avoids all social interaction due to distrust of humanity is a 'misanthrope'."
   },
   {
     "id": 2,
-    "question": "Which word is a synonym for 'abscond'?",
+    "question": "As the hurricane moved inland, its destructive force began to ______, much to the relief of coastal residents.",
     "options": {
-      "a": "Descend",
-      "b": "Decline",
-      "c": "Decamp",
-      "d": "Discount"
+      "a": "intensify",
+      "b": "escalate",
+      "c": "abate",
+      "d": "abatement"
     },
     "answer": "c",
-    "explanation": "The correct answer is 'decamp'. Both 'abscond' and 'decamp' mean to leave hurriedly and secretly. 'Remain' is an antonym, 'admonish' means to warn, and 'aggregate' means to collect."
+    "explanation": "A destructive force becoming less severe is said to 'abate'."
   },
   {
     "id": 3,
-    "question": "The chef was known for his ______ use of spices, never overloading a dish but achieving perfect balance.",
+    "question": "The word 'ephemeral' is most similar in meaning to:",
     "options": {
-      "a": "judicious",
-      "b": "avaricious",
-      "c": "abstemious",
-      "d": "ambitious"
+      "a": "permanent",
+      "b": "transient",
+      "c": "transience",
+      "d": "impermanent"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'abstemious', which means sparing or moderate, especially in eating and drinking. This describes the chef's restrained use of spices. 'Verbose' means wordy, 'aesthetic' relates to beauty, and 'adulterated' means corrupted."
+    "answer": "b",
+    "explanation": "'Ephemeral' means lasting for a very short time, making 'transient' its closest synonym."
   },
   {
     "id": 4,
-    "question": "The manager had to ______ the employee for consistently violating company policies.",
+    "question": "Which of the following is the best antonym for 'aberrant'?",
     "options": {
-      "a": "abolish",
-      "b": "accomplish",
-      "c": "admonish",
-      "d": "astonish"
+      "a": "deviant",
+      "b": "abnormal",
+      "c": "conventional",
+      "d": "deviance"
     },
     "answer": "c",
-    "explanation": "The correct answer is 'admonish', which means to warn or reprimand someone firmly. This fits the context of a manager correcting an employee. The other words do not fit: 'abscond' (to flee), 'adulterate' (to corrupt), 'aggregate' (to collect)."
+    "explanation": "'Aberrant' means departing from the norm, while 'conventional' means following established norms."
   },
   {
     "id": 5,
-    "question": "What is the Bengali meaning of the word 'aesthetic'?",
+    "question": "The stock market crash created a ______ of panic selling and confused investors.",
     "options": {
-      "a": "স্থগিতাবস্থা",
-      "b": "স্বল্পাহারী",
-      "c": "শিল্প রুচিসম্মত",
-      "d": "উদ্যম"
+      "a": "welter",
+      "b": "turmoil",
+      "c": "calm",
+      "d": "order"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'শিল্প রুচিসম্মত', which translates to 'concerned with beauty or artistic taste'. 'স্থগিতাবস্থা' is for 'abeyance', 'স্বল্পাহারী' for 'abstemious', and 'উদ্যম' for 'alacrity'."
+    "answer": "a",
+    "explanation": "A confused multitude of panic and confusion is a 'welter' (state of turmoil)."
   },
   {
     "id": 6,
-    "question": "Which of the following is an antonym for 'alacrity'?",
+    "question": "His ______ adherence to outdated theories prevented him from accepting new scientific evidence.",
     "options": {
-      "a": "Reticence",
-      "b": "Reluctance",
-      "c": "Resilience",
-      "d": "Reverence"
+      "a": "dogmatism",
+      "b": "dogmatic",
+      "c": "doctrinaire",
+      "d": "open-minded"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'reluctance'. 'Alacrity' means brisk and cheerful readiness, so its opposite is unwillingness or hesitation. The other options are synonyms of 'alacrity'."
+    "explanation": "Rigid adherence to beliefs despite contrary evidence is 'dogmatic'."
   },
   {
     "id": 7,
-    "question": "The ______ of the mineral samples showed a high concentration of quartz.",
+    "question": "The medical team questioned the ______ of the experimental treatment after multiple patients showed no improvement.",
     "options": {
-      "a": "allegation",
-      "b": "aggregation",
-      "c": "aggregate",
-      "d": "aggravation"
+      "a": "efficacy",
+      "b": "efficiency",
+      "c": "effectiveness",
+      "d": "inefficacy"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'aggregate', which, as a noun, means a whole formed by combining several elements. This fits the context of analyzing the total composition of mineral samples."
+    "answer": "a",
+    "explanation": "The effectiveness or ability to produce intended results is 'efficacy'."
   },
   {
     "id": 8,
-    "question": "Identify the part of speech for the word 'verbose'.",
-    "options": { "a": "Verb", "b": "Noun", "c": "Adjective", "d": "Adverb" },
+    "question": "As a ______ observer, she could provide an unbiased assessment of the conflict.",
+    "options": {
+      "a": "prejudiced",
+      "b": "partial",
+      "c": "disinterested",
+      "d": "uninterested"
+    },
     "answer": "c",
-    "explanation": "The correct answer is 'Adjective'. 'Verbose' is an adjective that describes someone or something as using more words than needed."
+    "explanation": "An unbiased, impartial observer is 'disinterested'."
   },
   {
     "id": 9,
-    "question": "A person who is fanatical and uncompromising in their beliefs is best described as a ______.",
+    "question": "The spy's ______ responses to interrogation revealed nothing to his captors.",
     "options": {
-      "a": "zealot",
-      "b": "despot",
-      "c": "patriot",
-      "d": "pilot"
+      "a": "verbose",
+      "b": "laconic",
+      "c": "taciturn",
+      "d": "garrulous"
     },
-    "answer": "a",
-    "explanation": "The correct answer is 'zealot'. A zealot is defined as a person who is fanatical and uncompromising in pursuit of their ideals."
+    "answer": "b",
+    "explanation": "Very brief, concise responses are 'laconic'."
   },
   {
     "id": 10,
-    "question": "Which word means 'to make something impure by adding inferior substances'?",
+    "question": "The boxer's ______ intimidated his opponents before they even entered the ring.",
     "options": {
-      "a": "Advocate",
-      "b": "Adjudicate",
-      "c": "Adulterate",
-      "d": "Adventure"
+      "a": "gentleness",
+      "b": "truculence",
+      "c": "meekness",
+      "d": "ferocity"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'adulterate'. This verb specifically means to corrupt or make impure by adding another substance."
+    "answer": "b",
+    "explanation": "Aggressive, intimidating behavior is 'truculence'."
   },
   {
     "id": 11,
-    "question": "The speaker's ______ style made the simple topic seem complex and endless.",
+    "question": "The Bengali meaning of 'abate' is:",
     "options": {
-      "a": "concise",
-      "b": "obtuse",
-      "c": "verbose",
-      "d": "terse"
+      "a": "ক্ষণস্থায়ী",
+      "b": "হ্রাস করা",
+      "c": "নীতিভ্রষ্ট",
+      "d": "বিশৃংখল"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'verbose', which means using too many words. This directly explains why a simple topic seemed complex and endless."
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'abate' is 'হ্রাস করা' or 'কমানো'."
   },
   {
     "id": 12,
-    "question": "After the scandal, the CEO decided to ______ with the company's emergency funds.",
+    "question": "Which part of speech is 'welter'?",
     "options": {
-      "a": "absorb",
-      "b": "abstract",
-      "c": "abscond",
-      "d": "absolve"
+      "a": "Adjective only",
+      "b": "Verb and Noun",
+      "c": "Adverb only",
+      "d": "Only Verb"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'abscond'. This verb means to leave hurriedly and secretly, typically to avoid detection, which fits the context of a CEO fleeing with funds."
+    "answer": "b",
+    "explanation": "'Welter' can function as both a noun (a state of confusion) and a verb (to wallow)."
   },
   {
     "id": 13,
-    "question": "What is the primary meaning of 'abeyance'?",
+    "question": "Choose the word that is NOT a synonym for 'dogmatic'.",
     "options": {
-      "a": "A state of abundance",
-      "b": "A temporary suspension",
-      "c": "A formal allegiance",
-      "d": "A total absence"
+      "a": "Opinionated",
+      "b": "Flexible",
+      "c": "Doctrinal",
+      "d": "Arbitrary"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'A temporary suspension'. 'Abeyance' refers to a state of temporary disuse or suspension."
+    "explanation": "'Flexible' is an antonym of 'dogmatic', while the others describe rigid thinking."
   },
   {
     "id": 14,
-    "question": "Which word is NOT a synonym for 'admonish'?",
+    "question": "The celebrity's fame proved ______, as the public quickly moved on to the next sensation.",
     "options": {
-      "a": "Condemn",
-      "b": "Recommend",
-      "c": "Commend",
-      "d": "Command"
+      "a": "ephemeral",
+      "b": "permanent",
+      "c": "perpetual",
+      "d": "transient"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'commend'. 'Commend' means to praise, which is the opposite of warning or reprimanding. The other options are all synonyms for 'admonish'."
+    "answer": "a",
+    "explanation": "Fame that quickly disappears is 'ephemeral' (short-lived)."
   },
   {
     "id": 15,
-    "question": "The architect focused more on the ______ appeal of the structure than its pure functionality.",
+    "question": "The scientist's ______ results could not be replicated by other researchers.",
     "options": {
-      "a": "acoustic",
-      "b": "aesthetic",
-      "c": "ascetic",
-      "d": "athletic"
+      "a": "aberrant",
+      "b": "conventional",
+      "c": "orthodox",
+      "d": "routine"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'aesthetic', which relates to beauty or the appreciation of beauty. This contrasts with pure functionality."
+    "answer": "a",
+    "explanation": "Results that deviate from the norm and cannot be replicated are 'aberrant'."
   },
   {
     "id": 16,
-    "question": "The ______ number of votes cast in the election was a record for the district.",
+    "question": "Which word means 'the ability to produce the intended result'?",
     "options": {
-      "a": "verbose",
-      "b": "aggregate",
-      "c": "aesthetic",
-      "d": "abstemious"
+      "a": "Truculence",
+      "b": "Efficacy",
+      "c": "Efficiency",
+      "d": "Effectiveness"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'aggregate'. Here, it is used as an adjective meaning 'total' or 'combined', which fits the context of the total number of votes."
+    "explanation": "This is the definition of 'efficacy'."
   },
   {
     "id": 17,
-    "question": "Which word pair represents an antonym relationship?",
+    "question": "The mediator remained ______ throughout the negotiations, favoring neither side.",
     "options": {
-      "a": "Alacrity - Promptness",
-      "b": "Abstemious - Gluttonous",
-      "c": "Admonish - Reprimand",
-      "d": "Aggregate - Collect"
+      "a": "disinterested",
+      "b": "prejudicial",
+      "c": "partisan",
+      "d": "biased"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'Abstemious - Gluttonous'. 'Abstemious' means self-denying, especially in food, while 'gluttonous' means excessively greedy. They are antonyms. The other pairs are synonyms."
+    "answer": "a",
+    "explanation": "A mediator who favors neither side is impartial or 'disinterested'."
   },
   {
     "id": 18,
-    "question": "The political ______ was unwilling to listen to any opinions that contradicted his own.",
+    "question": "Which of the following is an antonym for 'laconic'?",
     "options": {
-      "a": "bigot",
-      "b": "zealot",
-      "c": "patriot",
-      "d": "escort"
+      "a": "Terse",
+      "b": "Verbose",
+      "c": "Prolix",
+      "d": "Loquacious"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'zealot'. A zealot is characterized by fanatical and uncompromising views, which explains the unwillingness to listen to other opinions."
+    "explanation": "'Laconic' means brief, while 'verbose' means using too many words."
   },
   {
     "id": 19,
-    "question": "To ensure the drug's purity, it was crucial not to ______ it with any fillers.",
+    "question": "The political debate was marked by unnecessary ______ from both candidates.",
     "options": {
-      "a": "administer",
-      "b": "adulterate",
-      "c": "adjudicate",
-      "d": "advocate"
+      "a": "belligerence",
+      "b": "truculence",
+      "c": "meekness",
+      "d": "pugnacity"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'adulterate', which means to make something impure by adding inferior substances. This is the direct opposite of ensuring purity."
+    "explanation": "Unnecessary aggressiveness in debate shows 'truculence'."
   },
   {
     "id": 20,
-    "question": "She accepted the challenging assignment with surprising ______, eager to get started immediately.",
+    "question": "The Bengali meaning of 'ephemeral' is:",
     "options": {
-      "a": "lethargy",
-      "b": "clarity",
-      "c": "alacrity",
-      "d": "charity"
+      "a": "হ্রাস করা",
+      "b": "ক্ষণস্থায়ী",
+      "c": "উদ্দত",
+      "d": "কার্যক্ষমতা"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'alacrity', which means brisk and cheerful readiness. This is indicated by her eagerness to start immediately."
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'ephemeral' is 'ক্ষণস্থায়ী'."
   },
   {
     "id": 21,
-    "question": "What is the Bengali meaning of 'abstemious'?",
+    "question": "Which part of speech is 'efficacy'?",
     "options": {
-      "a": "পলাতক হওয়া",
-      "b": "স্বল্পাহারী",
-      "c": "সতর্ক করা",
-      "d": "শিল্প রুচিসম্মত"
+      "a": "Verb",
+      "b": "Adjective",
+      "c": "Noun",
+      "d": "Adverb"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'স্বল্পাহারী', which translates to 'eating and drinking in moderation'. 'পলাতক হওয়া' is for 'abscond', 'সতর্ক করা' for 'admonish', and 'শিল্প রুচিসম্মত' for 'aesthetic'."
+    "answer": "c",
+    "explanation": "'Efficacy' is a noun denoting a quality or ability."
   },
   {
     "id": 22,
-    "question": "The professor's ______ lecture, though informative, could have been half as long.",
+    "question": "The CEO's ______ memos were famous for conveying complex decisions in just three sentences.",
     "options": {
-      "a": "aesthetic",
+      "a": "laconic",
       "b": "verbose",
-      "c": "aggregate",
-      "d": "abstemious"
+      "c": "prolix",
+      "d": "garrulous"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'verbose', meaning using more words than necessary. The clue is that the lecture 'could have been half as long'."
+    "answer": "a",
+    "explanation": "Conveying complex information in few words is 'laconic'."
   },
   {
     "id": 23,
-    "question": "Which word can function as both a verb and an adjective?",
+    "question": "The crime scene was a ______ of overturned furniture and scattered evidence.",
     "options": {
-      "a": "Alacrity",
-      "b": "Abeyance",
-      "c": "Adulterate",
-      "d": "Zealot"
+      "a": "welter",
+      "b": "turmoil",
+      "c": "calm",
+      "d": "chaos"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'adulterate'. According to the data, its part of speech is 'adj, verb', meaning it can be used as both an adjective and a verb."
+    "answer": "a",
+    "explanation": "A scene of confusion and disorder is a 'welter'."
   },
   {
     "id": 24,
-    "question": "The peace talks have fallen into ______, with no date set for their resumption.",
+    "question": "Choose the word that is a synonym for 'truculence'.",
     "options": {
-      "a": "alacrity",
-      "b": "abeyance",
-      "c": "aggregate",
-      "d": "aesthetic"
+      "a": "belligerence",
+      "b": "cruelty",
+      "c": "ferocity",
+      "d": "meekness"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'abeyance', meaning a state of temporary suspension. This perfectly describes peace talks that are paused indefinitely."
+    "explanation": "'Cruelty' shares the aggressive, harsh quality of 'truculence'."
   },
   {
     "id": 25,
-    "question": "An antonym for 'verbose' is:",
+    "question": "His ______ approach to management alienated employees who wanted to voice their opinions.",
     "options": {
-      "a": "Wordy",
-      "b": "Loquacious",
-      "c": "Succinct",
-      "d": "Grandiloquent"
+      "a": "open-minded",
+      "b": "dogmatic",
+      "c": "doctrinaire",
+      "d": "authoritarian"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'succinct', which means brief and clearly expressed. This is the direct opposite of 'verbose'. The other options are synonyms."
+    "answer": "b",
+    "explanation": "A management style that doesn't allow for others' opinions is 'dogmatic'."
   },
   {
     "id": 26,
-    "question": "The judge will ______ the defendant before passing sentence, offering a final warning.",
+    "question": "The Bengali meaning of 'disinterested' is:",
     "options": {
-      "a": "abscond",
-      "b": "adulterate",
-      "c": "admonish",
-      "d": "aggregate"
+      "a": "নৃশংসা",
+      "b": "নির্লিপ্ত",
+      "c": "অল্প কথায় অর্থপূর্ণ",
+      "d": "উদ্দত"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'admonish', which means to warn or reprimand someone firmly. This is a typical action for a judge before sentencing."
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'disinterested' is 'নির্লিপ্ত' (impartial)."
   },
   {
     "id": 27,
-    "question": "His ______ lifestyle, free from luxury and excess, allowed him to save a considerable amount of money.",
+    "question": "Which part of speech is 'misanthrope'?",
     "options": {
-      "a": "ostentatious",
-      "b": "parsimonious",
-      "c": "abstemious",
-      "d": "pretentious"
+      "a": "Adjective",
+      "b": "Verb",
+      "c": "Noun",
+      "d": "Adverb"
     },
     "answer": "c",
-    "explanation": "The correct answer is 'abstemious', which describes a lifestyle characterized by self-denial and moderation, explaining the lack of luxury and ability to save money."
+    "explanation": "'Misanthrope' is a noun referring to a type of person."
   },
   {
     "id": 28,
-    "question": "What is the part of speech for 'zealot'?",
-    "options": { "a": "Verb", "b": "Adjective", "c": "Adverb", "d": "Noun" },
-    "answer": "d",
-    "explanation": "The correct answer is 'Noun'. A 'zealot' is a person, which is a noun."
+    "question": "The city implemented measures to ______ pollution levels in the urban center.",
+    "options": {
+      "a": "intensify",
+      "b": "abate",
+      "c": "escalate",
+      "d": "attenuate"
+    },
+    "answer": "b",
+    "explanation": "Measures to reduce pollution aim to 'abate' it."
   },
   {
     "id": 29,
-    "question": "The museum's curator had an impeccable ______ sense, arranging the exhibits in a visually stunning manner.",
+    "question": "The morning fog's ______ quality made the landscape appear mystical but fleeting.",
     "options": {
-      "a": "authentic",
-      "b": "aesthetic",
-      "c": "athletic",
-      "d": "automatic"
+      "a": "permanent",
+      "b": "ephemeral",
+      "c": "fleeting",
+      "d": "evanescent"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'aesthetic', which relates to a sense of beauty. This explains the visually stunning arrangement of the exhibits."
+    "explanation": "Fog that is fleeting and temporary is 'ephemeral'."
   },
   {
     "id": 30,
-    "question": "The company was accused of attempting to ______ the fuel by mixing it with cheaper oils.",
+    "question": "Which word does NOT describe a characteristic of 'aberrant' behavior?",
     "options": {
-      "a": "adjudicate",
-      "b": "accumulate",
-      "c": "adulterate",
-      "d": "accelerate"
+      "a": "Deviant",
+      "b": "Normal",
+      "c": "Anomalous",
+      "d": "Abnormal"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'adulterate', which means to make something impure by adding inferior substances, such as mixing fuel with cheaper oil."
+    "answer": "b",
+    "explanation": "'Normal' is the opposite of 'aberrant'."
   },
   {
     "id": 31,
-    "question": "Which word is most closely associated with the concept of 'beauty'?",
+    "question": "Researchers measured the ______ of the new teaching method through standardized test scores.",
     "options": {
-      "a": "Abeyance",
-      "b": "Aesthetic",
-      "c": "Aggregate",
-      "d": "Alacrity"
+      "a": "efficacy",
+      "b": "inefficacy",
+      "c": "effectiveness",
+      "d": "efficiency"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'aesthetic', which is directly concerned with beauty or the appreciation of beauty."
+    "answer": "a",
+    "explanation": "Measuring effectiveness through test scores assesses 'efficacy'."
   },
   {
     "id": 32,
-    "question": "Fearing arrest, the embezzler planned to ______ under the cover of darkness.",
+    "question": "The arbitration required a ______ third party to resolve the dispute fairly.",
     "options": {
-      "a": "admonish",
-      "b": "abscond",
-      "c": "aggregate",
-      "d": "adulterate"
+      "a": "disinterested",
+      "b": "partial",
+      "c": "partisan",
+      "d": "biased"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'abscond', which means to leave secretly and hurriedly to avoid capture. The context of 'fearing arrest' and 'cover of darkness' confirms this."
+    "answer": "a",
+    "explanation": "Fair dispute resolution requires an impartial, 'disinterested' arbitrator."
   },
   {
     "id": 33,
-    "question": "A synonym for 'alacrity' is:",
+    "question": "The poet's ______ style conveyed profound emotions in just a few carefully chosen words.",
     "options": {
-      "a": "Apathy",
-      "b": "Reluctance",
-      "c": "Promptness",
-      "d": "Indifference"
+      "a": "laconic",
+      "b": "verbose",
+      "c": "garrulous",
+      "d": "prolix"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'promptness'. Both 'alacrity' and 'promptness' imply quickness and readiness. The other options are antonyms."
+    "answer": "a",
+    "explanation": "Expressing much in few words is 'laconic'."
   },
   {
     "id": 34,
-    "question": "The ______ data from all regional offices provided a comprehensive overview of the company's performance.",
+    "question": "The coach's ______ during practice sessions pushed the team to their limits.",
     "options": {
-      "a": "verbose",
-      "b": "aesthetic",
-      "c": "aggregate",
-      "d": "abstemious"
+      "a": "sternness",
+      "b": "truculence",
+      "c": "gentleness",
+      "d": "meekness"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'aggregate'. Here, it is used as an adjective to describe data that has been combined from multiple sources to form a complete picture."
+    "answer": "b",
+    "explanation": "Aggressive, pushing behavior from a coach shows 'truculence'."
   },
   {
     "id": 35,
-    "question": "What is the Bengali meaning of 'admonish'?",
+    "question": "The Bengali meaning of 'dogmatic' is:",
     "options": {
-      "a": "গা ঢাকা দেওয়া",
-      "b": "অশুদ্ধ করা",
-      "c": "সতর্ক করা",
-      "d": "একত্রিত করা"
+      "a": "কার্যক্ষমতা",
+      "b": "উদ্দত",
+      "c": "বিশৃংখল",
+      "d": "নীতিভ্রষ্ট"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'সতর্ক করা', which means 'to warn'. 'গা ঢাকা দেওয়া' is for 'abscond', 'অশুদ্ধ করা' for 'adulterate', and 'একত্রিত করা' for 'aggregate'."
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'dogmatic' is 'উদ্দত'."
   },
   {
     "id": 36,
-    "question": "The ______ of the opposing team was so extreme that he refused to shake hands after the game.",
+    "question": "Which part of speech is 'aberrant'?",
     "options": {
-      "a": "zealot",
-      "b": "patriot",
-      "c": "pilot",
-      "d": "bigot"
+      "a": "Noun",
+      "b": "Verb",
+      "c": "Adjective",
+      "d": "Adverb"
     },
-    "answer": "a",
-    "explanation": "The correct answer is 'zealot'. The extreme, uncompromising behavior (refusing to shake hands) is characteristic of a zealot."
+    "answer": "c",
+    "explanation": "'Aberrant' is an adjective describing something that deviates from the norm."
   },
   {
     "id": 37,
-    "question": "Which word describes a person who is fanatical?",
+    "question": "The noise from the construction site will ______ after 6 PM according to city regulations.",
     "options": {
-      "a": "Patriot",
-      "b": "Zealot",
-      "c": "Bigot",
-      "d": "Despot"
+      "a": "abate",
+      "b": "intensify",
+      "c": "subside",
+      "d": "escalate"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'zealot'. The definition of 'zealot' explicitly includes being fanatical."
+    "answer": "a",
+    "explanation": "Noise decreasing or becoming less is to 'abate'."
   },
   {
     "id": 38,
-    "question": "Her writing was praised for being powerful and ______, with not a single wasted word.",
+    "question": "Which of the following is an antonym for 'misanthrope'?",
     "options": {
-      "a": "prolix",
-      "b": "tedious",
-      "c": "abstemious",
-      "d": "repetitious"
+      "a": "Cynic",
+      "b": "Recluse",
+      "c": "Philanthropist",
+      "d": "altruist"
     },
     "answer": "c",
-    "explanation": "The correct answer is 'abstemious'. While typically used for consumption, it can be extended metaphorically to mean 'sparing' in the use of words, which is the opposite of verbose. The clue is 'not a single wasted word'."
+    "explanation": "A 'philanthropist' loves humanity, opposite of a 'misanthrope'."
   },
   {
     "id": 39,
-    "question": "The contract was in ______ while the lawyers reviewed the fine print.",
+    "question": "Social media trends are often ______, capturing public attention for just a few days.",
     "options": {
-      "a": "alacrity",
-      "b": "abeyance",
-      "c": "aggregate",
-      "d": "aesthetic"
+      "a": "enduring",
+      "b": "ephemeral",
+      "c": "short-lived",
+      "d": "transient"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'abeyance', meaning a state of temporary suspension. The contract was paused during the review."
+    "explanation": "Trends that last only briefly are 'ephemeral'."
   },
   {
     "id": 40,
-    "question": "An antonym for 'abstemious' is:",
+    "question": "The professor's ______ teaching style left no room for student questions or discussion.",
     "options": {
-      "a": "Temperate",
-      "b": "Ascetic",
-      "c": "Gluttonous",
-      "d": "Moderate"
+      "a": "dogmatic",
+      "b": "open-minded",
+      "c": "flexible",
+      "d": "doctrinaire"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'gluttonous', which means excessively greedy in eating. This is the direct opposite of 'abstemious'. The other options are synonyms."
+    "answer": "a",
+    "explanation": "Teaching without allowing questions or discussion is 'dogmatic'."
   },
   {
     "id": 41,
-    "question": "The intern completed every task with such ______ that she was promoted within six months.",
+    "question": "The detective's ______ questioning style often yielded more information than lengthy interrogations.",
     "options": {
-      "a": "verbose",
-      "b": "abeyance",
-      "c": "alacrity",
-      "d": "zealot"
+      "a": "laconic",
+      "b": "terse",
+      "c": "lengthy",
+      "d": "prolix"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'alacrity', meaning cheerful readiness and promptness. This positive trait would logically lead to a quick promotion."
+    "answer": "a",
+    "explanation": "Brief but effective questioning is 'laconic'."
   },
   {
     "id": 42,
-    "question": "To ______ the results, we need to add the scores from all three rounds.",
+    "question": "The soldier's ______ in battle earned him both fear and respect from his comrades.",
     "options": {
-      "a": "admonish",
-      "b": "abscond",
-      "c": "aggregate",
-      "d": "adulterate"
+      "a": "meekness",
+      "b": "truculence",
+      "c": "ferocity",
+      "d": "valor"
     },
-    "answer": "c",
-    "explanation": "The correct answer is 'aggregate', which as a verb means to collect or combine into a whole. This fits the action of adding scores together."
+    "answer": "b",
+    "explanation": "Aggressive fierceness in battle is 'truculence'."
   },
   {
     "id": 43,
-    "question": "What is the primary meaning of 'adulterate'?",
+    "question": "The Bengali meaning of 'laconic' is:",
     "options": {
-      "a": "To warn firmly",
-      "b": "To flee secretly",
-      "c": "To combine into a whole",
-      "d": "To make impure"
+      "a": "নৃশংসা",
+      "b": "অল্প কথায় অর্থপূর্ণ",
+      "c": "কৌতুহল শূন্য",
+      "d": "হ্রাস করা"
     },
-    "answer": "d",
-    "explanation": "The correct answer is 'To make impure'. This is the core meaning of the verb 'adulterate'."
+    "answer": "b",
+    "explanation": "The Bengali meaning for 'laconic' is 'অল্প কথায় অর্থপূর্ণ'."
   },
   {
     "id": 44,
-    "question": "The critic's review was unnecessarily ______, filled with jargon and tangential remarks.",
+    "question": "Which part of speech is 'truculence'?",
     "options": {
-      "a": "terse",
-      "b": "diverse",
-      "c": "verbose",
-      "d": "adverse"
+      "a": "Adjective",
+      "b": "Verb",
+      "c": "Noun",
+      "d": "Adverb"
     },
     "answer": "c",
-    "explanation": "The correct answer is 'verbose'. The clues 'unnecessarily' and 'filled with jargon and tangential remarks' point to the use of too many words."
+    "explanation": "'Truculence' is a noun denoting a quality or state."
   },
   {
     "id": 45,
-    "question": "Which word is a synonym for 'zealot'?",
+    "question": "The laboratory tests confirmed the ______ of the new cleaning product against stubborn stains.",
     "options": {
-      "a": "Pragmatic",
-      "b": "Fanatic",
-      "c": "Systematic",
-      "d": "Democratic"
+      "a": "inefficacy",
+      "b": "efficacy",
+      "c": "effectiveness",
+      "d": "efficaciousness"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'fanatic'. A 'zealot' is, by definition, a fanatic. The other options are not synonyms."
+    "explanation": "Confirmed effectiveness is 'efficacy'."
   },
   {
     "id": 46,
-    "question": "The ______ design of the garden was more important to the owner than its practical use.",
+    "question": "A ______ analysis from an outside consultant provided valuable insights into the company's problems.",
     "options": {
-      "a": "authentic",
-      "b": "aesthetic",
-      "c": "athletic",
-      "d": "automatic"
+      "a": "disinterested",
+      "b": "objective",
+      "c": "prejudiced",
+      "d": "partial"
     },
-    "answer": "b",
-    "explanation": "The correct answer is 'aesthetic', meaning concerned with beauty. The contrast with 'practical use' emphasizes the focus on appearance."
+    "answer": "a",
+    "explanation": "An unbiased, impartial analysis is 'disinterested'."
   },
   {
     "id": 47,
-    "question": "What is the part of speech for 'alacrity'?",
-    "options": { "a": "Verb", "b": "Adjective", "c": "Noun", "d": "Adverb" },
-    "answer": "c",
-    "explanation": "The correct answer is 'Noun'. 'Alacrity' is a noun meaning briskness or readiness."
+    "question": "The author's ______ writing style meant that her novels were surprisingly short but deeply impactful.",
+    "options": {
+      "a": "laconic",
+      "b": "concise",
+      "c": "verbose",
+      "d": "succinct"
+    },
+    "answer": "a",
+    "explanation": "Short but impactful writing is 'laconic'."
   },
   {
     "id": 48,
-    "question": "The police were able to ______ the suspect before he could leave the country.",
+    "question": "The negotiation failed due to the ______ of both parties, who seemed more interested in fighting than compromising.",
     "options": {
-      "a": "admonish",
-      "b": "apprehend",
-      "c": "abscond",
-      "d": "adulterate"
+      "a": "belligerence",
+      "b": "truculence",
+      "c": "intransigence",
+      "d": "conciliatory"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'apprehend', which means to arrest. This is the action that would prevent someone from 'absconding' (fleeing). 'Admonish' is too weak, and 'adulterate' does not fit."
+    "explanation": "Aggressive unwillingness to compromise shows 'truculence'."
   },
   {
     "id": 49,
-    "question": "A state of suspension or inactivity is known as:",
+    "question": "The ______ data point was excluded from the final analysis as it skewed the results.",
     "options": {
-      "a": "Absence",
-      "b": "Abeyance",
-      "c": "Abundance",
-      "d": "Allegiance"
+      "a": "normal",
+      "b": "aberrant",
+      "c": "outlier",
+      "d": "anomalous"
     },
     "answer": "b",
-    "explanation": "The correct answer is 'abeyance'. This is the literal definition of the word."
+    "explanation": "A data point that deviates significantly from others is 'aberrant'."
   },
   {
     "id": 50,
-    "question": "The teacher's ______ was meant to correct the student's behavior, not to punish him.",
+    "question": "Unlike his ______ brother who avoided people, he enjoyed community events and social gatherings.",
     "options": {
-      "a": "admonishment",
-      "b": "encouragement",
-      "c": "acknowledgment",
-      "d": "accomplishment"
+      "a": "misanthrope",
+      "b": "philanthropist",
+      "c": "humanitarian",
+      "d": "gregarious"
     },
     "answer": "a",
-    "explanation": "The correct answer is 'admonishment' (the noun form of 'admonish'), which means a firm warning or reprimand. This fits the context of corrective, non-punitive action."
+    "explanation": "Someone who avoids people is a 'misanthrope', opposite of someone who enjoys social gatherings."
   }
 ]

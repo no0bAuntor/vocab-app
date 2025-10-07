@@ -100,15 +100,13 @@ class ApiService {
   }
 
   // Quiz session endpoints
-  async saveQuizSession(phase, currentQuestionIndex, sessionScore, sessionAnswers) {
+  async saveQuizSession(phase, currentQuestionIndex, sessionScore, sessionAnswers, questionOrder = null) {
+    const body = { phase, currentQuestionIndex, sessionScore, sessionAnswers };
+    if (questionOrder) body.questionOrder = questionOrder;
+
     return this.request('/quiz/save-session', {
       method: 'POST',
-      body: JSON.stringify({ 
-        phase, 
-        currentQuestionIndex, 
-        sessionScore, 
-        sessionAnswers 
-      })
+      body: JSON.stringify(body)
     });
   }
 

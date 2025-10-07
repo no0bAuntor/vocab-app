@@ -195,7 +195,12 @@ export const AuthProvider = ({ children }) => {
     if (!user) return null;
 
     try {
-      const response = await apiService.saveQuizSession(phase, currentQuestionIndex, sessionScore, sessionAnswers);
+      // Allow an optional 'questionOrder' property inside sessionAnswers (or pass separately later)
+      const questionOrder = (sessionAnswers && sessionAnswers._questionOrder) || null;
+      // If questionOrder was attached on sessionAnswers, remove it before sending answers
+      const answersToSend = Array.isArray(sessionAnswers) ? sessionAnswers : (sessionAnswers?.answers || sessionAnswers);
+
+      const response = await apiService.saveQuizSession(phase, currentQuestionIndex, sessionScore, answersToSend, questionOrder);
       return response;
     } catch (error) {
       console.error('Save quiz session error:', error);
@@ -209,6 +214,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await apiService.loadQuizSession(phase);
       if (response.success) {
+        // Return the session object which may include a saved questionOrder
         return response.data.session;
       }
     } catch (error) {
