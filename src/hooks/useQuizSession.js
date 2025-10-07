@@ -71,7 +71,15 @@ export const useQuizSession = (phase, quizData) => {
     };
 
     loadSession();
-  }, [loadQuizSession, phase, quizData.length]);
+    // We intentionally omit `loadQuizSession` from the dependency list.
+    // `loadQuizSession` is a function coming from AuthContext and can have a
+    // different identity across provider re-renders (for example when the
+    // app theme toggles). Re-running this effect on those identity changes
+    // causes the session to reload unexpectedly and may change `current`.
+    // Depend only on `phase` and `quizData.length` so we load once per quiz
+    // type or when the quiz data changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, quizData.length]);
 
   // Save session progress after each answer
   useEffect(() => {
@@ -114,25 +122,49 @@ export const useQuizSession = (phase, quizData) => {
     setSelected(option);
     setShowExplanation(true);
     
-    const isCorrect = option === orderedQuiz[current].answer;
+    const currentQ = orderedQuiz[current];
+    if (!currentQ) return;
+
+    const isCorrect = option === currentQ.answer;
     const newScore = isCorrect ? score + 1 : score;
     setScore(newScore);
-    
+
     const newAnswer = {
-      questionId: orderedQuiz[current].id,
+      questionId: currentQ.id,
       selected: option,
-      correct: orderedQuiz[current].answer,
+      correct: currentQ.answer,
       isCorrect
     };
-    
-    setUserAnswers([...userAnswers, newAnswer]);
+
+    // Replace existing answer for this question if present, otherwise append
+    const existingIndex = userAnswers.findIndex(a => a.questionId === currentQ.id);
+    if (existingIndex >= 0) {
+      const updated = [...userAnswers];
+      // adjust score: if replacing, recalc score from answers array not here
+      updated[existingIndex] = newAnswer;
+      setUserAnswers(updated);
+      // Recalculate score from answers to keep consistent
+      const recalculatedScore = updated.reduce((acc, a) => acc + (a.isCorrect ? 1 : 0), 0);
+      setScore(recalculatedScore);
+    } else {
+      setUserAnswers([...userAnswers, newAnswer]);
+    }
   };
 
   const handleNext = () => {
     if (current < orderedQuiz.length - 1) {
-      setCurrent(current + 1);
-      setSelected(null);
-      setShowExplanation(false);
+      const nextIndex = current + 1;
+      setCurrent(nextIndex);
+      // If next has an answer, show it; otherwise clear selection
+      const nextQ = orderedQuiz[nextIndex];
+      const nextAnswer = userAnswers.find(a => a.questionId === nextQ?.id);
+      if (nextAnswer) {
+        setSelected(nextAnswer.selected);
+        setShowExplanation(true);
+      } else {
+        setSelected(null);
+        setShowExplanation(false);
+      }
     } else {
       setFinished(true);
     }
@@ -142,8 +174,15 @@ export const useQuizSession = (phase, quizData) => {
     const questionIndex = questionNum - 1; // Convert to 0-based index
     if (questionIndex >= 0 && questionIndex < orderedQuiz.length) {
       setCurrent(questionIndex);
-      setSelected(null);
-      setShowExplanation(false);
+      const q = orderedQuiz[questionIndex];
+      const ans = userAnswers.find(a => a.questionId === q?.id);
+      if (ans) {
+        setSelected(ans.selected);
+        setShowExplanation(true);
+      } else {
+        setSelected(null);
+        setShowExplanation(false);
+      }
       setJumpToQuestion('');
     }
   };

@@ -33,16 +33,10 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
     const percentage = Math.round((score / total) * 100);
     
     return (
-      <div className={`min-h-screen transition-all duration-300 ${
-        isDarkMode 
-          ? 'bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900' 
-          : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50'
-      }`}>
+      <div className={`min-h-screen transition-all duration-300 ${isDarkMode ? 'theme-quiz-dark' : 'theme-quiz-light'}`}>
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-2xl mx-auto">
-            <div className={`p-8 rounded-xl shadow-lg text-center ${
-              isDarkMode ? 'bg-gray-800' : 'bg-white'
-            }`}>
+            <div className={`p-8 rounded-xl shadow-lg text-center quiz-card`}>
               <div className="mb-6">
                 <h1 className={`text-3xl font-bold mb-4 ${
                   isDarkMode ? 'text-white' : 'text-gray-800'
@@ -67,7 +61,7 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
               <div className="space-y-4">
                 <button 
                   onClick={restartQuiz}
-                  className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
+                  className="w-full px-6 py-3 quiz-accent rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
                 >
                   🔄 Retake Quiz
                 </button>
@@ -151,83 +145,19 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
             </div>
           </div>
 
-          {/* Jump to Question Section */}
+          {/* Top info and Reset Button (Jump controls removed) */}
           <div className={`p-4 rounded-xl shadow-md mb-6 ${
             isDarkMode ? 'bg-gray-800/50' : 'bg-white/50'
           } backdrop-blur-md border ${
             isDarkMode ? 'border-gray-700' : 'border-gray-200'
           }`}>
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <div className="flex items-center gap-3 flex-1">
-                <span className={`text-sm font-medium whitespace-nowrap ${
-                  isDarkMode ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  🎯 Jump to Question:
-                </span>
-                
-                {/* Quick Jump Buttons for first 10 questions */}
-                <div className="flex flex-wrap gap-1">
-                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
-                    <button
-                      key={num}
-                      onClick={() => jumpToQuestionNumber(num)}
-                      className={`w-8 h-8 rounded-full text-xs font-semibold transition-all duration-200 hover:scale-110 ${
-                        current + 1 === num
-                          ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg'
-                          : isDarkMode
-                            ? 'bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white'
-                            : 'bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-800'
-                      }`}
-                      title={`Jump to question ${num}`}
-                    >
-                      {num}
-                    </button>
-                  ))}
-                </div>
-              </div>
+            <div className="flex items-center justify-between gap-4">
+              <p className={`text-sm ${
+                isDarkMode ? 'text-gray-300' : 'text-gray-600'
+              }`}>Your progress will be saved automatically. Please answer the current question to proceed to the next one.</p>
 
-              {/* Manual Input for any question number */}
-              <form onSubmit={handleJumpSubmit} className="flex items-center gap-2">
-                <input
-                  type="number"
-                  min="1"
-                  max={(orderedQuiz && orderedQuiz.length) || phase4Quiz.length}
-                  value={jumpToQuestion}
-                  onChange={handleJumpInputChange}
-                  placeholder="Enter #"
-                  className={`w-20 px-3 py-2 rounded-lg border text-center text-sm transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent ${
-                    isDarkMode 
-                      ? 'bg-gray-700 border-gray-600 text-gray-200 placeholder-gray-400' 
-                      : 'bg-white border-gray-300 text-gray-800 placeholder-gray-500'
-                  }`}
-                />
-                <button
-                  type="submit"
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 ${
-                    jumpToQuestion && parseInt(jumpToQuestion) >= 1 && parseInt(jumpToQuestion) <= ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length)
-                      ? 'bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-md'
-                      : isDarkMode
-                        ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
-                        : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                  }`}
-                  disabled={!jumpToQuestion || parseInt(jumpToQuestion) < 1 || parseInt(jumpToQuestion) > ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length)}
-                >
-                  Go
-                </button>
-              </form>
-            </div>
-
-            {/* Question Range Info and Reset Button */}
-            <div className={`mt-3 pt-3 border-t flex flex-col sm:flex-row items-center justify-between gap-3 ${
-              isDarkMode ? 'border-gray-700' : 'border-gray-200'
-            }`}>
-              <p className={`text-xs ${
-                isDarkMode ? 'text-gray-400' : 'text-gray-500'
-              }`}>
-                You can jump to any question (1-{(orderedQuiz && orderedQuiz.length) || phase4Quiz.length}). Your progress and score will be maintained.
-              </p>
-              
               <button
+                type="button"
                 onClick={() => setShowResetConfirm(true)}
                 className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 hover:scale-105 flex items-center gap-2 ${
                   isDarkMode
@@ -243,9 +173,7 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
           </div>
 
           {/* Quiz Card */}
-          <div className={`p-8 rounded-xl shadow-lg mb-6 ${
-            isDarkMode ? 'bg-gray-800' : 'bg-white'
-          }`}>
+          <div className={`p-8 rounded-xl shadow-lg mb-6 quiz-card`}>
             {/* Question */}
             <div className="mb-8">
               <h2 className={`text-xl font-semibold mb-4 ${
@@ -262,8 +190,9 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
 
             {/* Options */}
             <div className="space-y-4 mb-8">
-              {Object.entries(q.options).map(([key, option]) => (
+                  {Object.entries(q.options).map(([key, option]) => (
                 <button
+                  type="button"
                   key={key}
                   onClick={() => handleOption(key)}
                   disabled={showExplanation}
@@ -315,6 +244,7 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
             {/* Navigation Buttons */}
             <div className="flex justify-between items-center mt-6">
               <button
+                type="button"
                 onClick={() => current > 0 && jumpToQuestionNumber(current)}
                 disabled={current === 0}
                 className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
@@ -340,10 +270,11 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
               </div>
 
               <button
+                type="button"
                 onClick={() => jumpToQuestionNumber(current + 2)}
-                disabled={current === ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length) - 1}
+                disabled={current === ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length) - 1 || !(userAnswers.find(a => a.questionId === q.id))}
                 className={`flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  current === ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length) - 1
+                  current === ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length) - 1 || !(userAnswers.find(a => a.questionId === q.id))
                     ? isDarkMode
                       ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -363,8 +294,9 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
             {showExplanation && (
               <div className="text-center">
                 <button
+                  type="button"
                   onClick={handleNext}
-                  className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
+                  className="px-8 py-3 quiz-accent rounded-lg font-semibold transition-all duration-200 hover:shadow-lg"
                 >
                   {current < ((orderedQuiz && orderedQuiz.length) || phase4Quiz.length) - 1 ? 'Next Question →' : 'Finish Quiz 🎯'}
                 </button>
@@ -413,6 +345,7 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
               
               <div className="flex gap-3">
                 <button
+                  type="button"
                   onClick={() => setShowResetConfirm(false)}
                   className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
                     isDarkMode
@@ -423,6 +356,7 @@ function Phase4Quiz({ isDarkMode, toggleDarkMode }) {
                   Cancel
                 </button>
                 <button
+                  type="button"
                   onClick={() => {
                     restartQuiz();
                     setShowResetConfirm(false);

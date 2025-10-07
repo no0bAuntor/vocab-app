@@ -91,3 +91,75 @@
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));
 }
+
+/* Theme variables for quiz/practice areas */
+:root {
+  /* Light theme - sea blue pink palette */
+  --quiz-bg: linear-gradient(135deg,#E6F7FF 0%, #FFF0F6 50%, #F0F7FF 100%);
+  --quiz-card-bg: #FFFFFF;
+  --quiz-card-border: rgba(15, 76, 129, 0.08);
+  --quiz-text-primary: #073763;
+  --quiz-accent-start: #00A3FF; /* sea blue */
+  --quiz-accent-end: #FF8ECF;   /* pink */
+
+  /* Dark theme - much darker backgrounds and higher contrast */
+  /* deeper, near-black gradient to reduce perceived brightness */
+  --quiz-dark-bg: linear-gradient(135deg,#00040a 0%, #030610 50%, #04030a 100%);
+  /* card slightly lighter than page but still very dark */
+  --quiz-card-dark-bg: #070812; /* near-black card */
+  /* subtle but more visible divider in very dark UI */
+  --quiz-card-dark-border: rgba(255,255,255,0.06);
+  /* brighter text for better contrast on near-black */
+  --quiz-text-dark: #F8FAFC;
+  /* richer, deeper accents that still read on dark backgrounds */
+  --quiz-accent-dark-start: #0f172a; /* deep slate */
+  --quiz-accent-dark-end: #6b1942;   /* deep maroon */
+}
+
+/* Helper classes that quiz pages will toggle */
+.theme-quiz-light {
+  background: var(--quiz-bg);
+}
+
+.theme-quiz-light .quiz-card {
+  background: var(--quiz-card-bg);
+  border: 1px solid var(--quiz-card-border);
+  color: var(--quiz-text-primary);
+}
+
+.theme-quiz-light .quiz-accent {
+  background: linear-gradient(90deg, var(--quiz-accent-start), var(--quiz-accent-end));
+  color: white;
+}
+
+.theme-quiz-dark {
+  background: var(--quiz-dark-bg);
+}
+
+.theme-quiz-dark .quiz-card {
+  background: var(--quiz-card-dark-bg);
+  border: 1px solid var(--quiz-card-dark-border);
+  color: var(--quiz-text-dark);
+}
+
+.theme-quiz-dark .quiz-accent {
+  background: linear-gradient(90deg, var(--quiz-accent-dark-start), var(--quiz-accent-dark-end));
+  color: white;
+}
+
+/* small helper to apply accent gradient text */
+.text-accent-gradient {
+  background: linear-gradient(90deg, var(--quiz-accent-start), var(--quiz-accent-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* dark-mode variant for gradient text using dark-mode accent colors */
+.theme-quiz-dark .text-accent-gradient {
+  background: linear-gradient(90deg, var(--quiz-accent-dark-start), var(--quiz-accent-dark-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

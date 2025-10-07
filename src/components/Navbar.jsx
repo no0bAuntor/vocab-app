@@ -388,7 +388,8 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
 
               {/* Dark Mode Toggle */}
               <button
-                onClick={toggleDarkMode}
+                type="button"
+                onClick={(e) => { e.preventDefault(); toggleDarkMode(); }}
                 className={`p-2 rounded-lg transition-all duration-200 ${
                   isDarkMode
                     ? 'text-gray-300 hover:text-white hover:bg-gray-800'
@@ -405,7 +406,8 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
           {/* Mobile Menu Button & Dark Mode Toggle */}
           <div className="flex md:hidden items-center space-x-2">
             <button
-              onClick={toggleDarkMode}
+              type="button"
+              onClick={(e) => { e.preventDefault(); toggleDarkMode(); }}
               className={`p-2 rounded-lg transition-all duration-200 ${
                 isDarkMode
                   ? 'text-gray-300 hover:text-white hover:bg-gray-800'
