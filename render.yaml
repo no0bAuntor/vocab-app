@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vocab-app
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node server/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        value: https://vocab-app-ujb5.onrender.com

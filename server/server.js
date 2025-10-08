@@ -32,6 +32,8 @@ const corsOptions = {
   origin: [
     'http://localhost:3000',
     'http://localhost:5001',
+    'https://vocab-app-1.onrender.com',
+    'https://vocab-app-ujb5.onrender.com',
     process.env.FRONTEND_URL || 'http://localhost:3000'
   ],
   credentials: true,
